@@ -165,4 +165,14 @@
 
     }
   }
+
+  @media only screen and (max-width: 985px) {
+
+    .nav_link_wrapper {
+      display: none;
+    }
+  }
+
 }
+
+

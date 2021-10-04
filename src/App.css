@@ -36,7 +36,7 @@ a {
 
 .nav_bar {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr;
   align-items: center;
   height: 8vh;
   grid-column-gap: 5rem;
@@ -50,7 +50,7 @@ a {
 
 .nav_list,
 .nav_right-list {
-  display: flex;
+  display: none;
   align-items: center;
   list-style: none;
 }
@@ -91,33 +91,21 @@ a {
 /* Hero section */
 
 .hero {
-  background-image: linear-gradient(
+  background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.949) 33.86%,
+    rgba(0, 0, 0, 0.83) 33.86%,
     rgba(0, 0, 0, 0) 114.81%
-  );
+  ),
+  url("./images/hero-bg.png") 50% / cover no-repeat;
 }
 
 .hero_content {
-  height: 92vh;
+  min-height: 92vh;
   display: grid;
   grid-template-rows: 1fr auto;
   align-items: center;
-  padding: 3rem 0 3rem 15rem;
-}
-
-.hero_bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.hero_bg img {
-  width: 100%;
-  height: 100%;
+  padding: 3rem 1.5rem 3rem 1.5rem;
+  text-align: center;
 }
 
 .hero_info h1 {
@@ -138,7 +126,7 @@ a {
 }
 
 .hero_nav-list {
-  display: flex;
+  display: none;
   list-style: none;
 }
 
@@ -178,16 +166,27 @@ a {
 /* Goals Section */
 
 .goals {
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 0 15rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
 }
 
 .goals_content {
   flex-basis: 30.5%;
 }
+
+div.balls {
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 3.5rem);
+  grid-column-gap: 1.5rem;
+  justify-content: center;
+}
+
 
 .goals_content h2 {
   font-size: calc(4rem * var(--type-scale, 1));
@@ -213,13 +212,15 @@ a {
 .reason {
   min-height: 100vh;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15rem;
+  padding: 3rem 1.5rem;
 }
 
 .reason_intro {
-  flex-basis: 30%;
+  text-align: center;
+  padding: 2rem 0;
 }
 
 .reason_intro h3 {
@@ -243,10 +244,6 @@ a {
   line-height: calc(3.546rem * var(--height-scale, 1));
   font-weight: 400;
   color: #040404;
-}
-
-.reason_list {
-  flex-basis: 50%;
 }
 
 .reason_item {
@@ -304,6 +301,12 @@ a {
   margin: 0 1rem;
 }
 
+.reasons_option {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
 .inner_line {
   display: inline-block;
   width: 4.8rem;
@@ -331,12 +334,12 @@ a {
   display: grid;
   align-items: center;
   background: #f7f7f7;
-  padding: 2rem 7rem;
   color: #070c25;
 }
 
 .testimonial header {
   text-align: center;
+  padding: 2rem 0;
 }
 
 .testimonial h3 {
@@ -355,7 +358,7 @@ a {
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 40%;
+  width: 20%;
   height: 0.1rem;
   background: #c4c4c4;
 }
@@ -368,6 +371,10 @@ a {
   right: 0;
 }
 
+.testimonial_content {
+  padding: 2rem 1.5rem;
+}
+
 .testify_card {
   background: transparent;
   -webkit-transition: all 0.3s ease-out;
@@ -375,6 +382,8 @@ a {
   transition: all 0.3s ease-out;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  margin: 2rem 0;
 }
 
 .testify_card h5 {
@@ -391,13 +400,21 @@ a {
 }
 
 .card_img-top {
-  height: 26.9rem;
+  max-height: 26.9rem;
 }
 
 .first_test-row {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.first_test-row img,
+.second_test-row img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .first_test-row h4 {
@@ -413,6 +430,7 @@ a {
 
 .second_test-row {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -423,7 +441,7 @@ a {
 /* Challenging Questions Section */
 
 .questions {
-  padding: 2rem 18rem;
+  padding: 2rem 1.5rem;
   min-height: 50vh;
   display: grid;
   align-items: center;
@@ -444,6 +462,10 @@ a {
   letter-spacing: 0.02em;
   color: #040724;
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.questions header {
   margin-bottom: 2rem;
 }
 
@@ -475,7 +497,7 @@ a {
 
 .join_team {
   min-height: 80vh;
-  padding: 2rem 15rem;
+  padding: 2rem 1.5rem;
   background-image: linear-gradient(
       to right,
       rgba(4, 7, 36, 0.5),
@@ -506,7 +528,7 @@ a {
 .join_team > section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-column-gap: 4rem;
+  grid-gap: 4rem;
 }
 
 .team_card {
@@ -581,7 +603,7 @@ a {
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 40%;
+  width: 25%;
   height: 0.1rem;
   background: #c4c4c4;
 }
@@ -596,12 +618,13 @@ a {
 
 .insight_content {
   display: flex;
-  padding: 0 15rem;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
 }
 
 .insight .first_column,
 .insight .second_column {
-  height: 75vh;
+  min-height: 75vh;
 }
 
 .insight .first_column {
@@ -620,12 +643,12 @@ a {
   background: #1d1b1b;
   color: #ffffff;
   width: 100%;
-  max-width: 45%;
+  max-width: 50%;
   height: 100%;
-  max-height: 50%;
+  height: 45.5vh;
   display: grid;
   align-items: center;
-  padding: 0 3rem;
+  padding: 0 1.5rem;
   position: relative;
 }
 
@@ -679,7 +702,7 @@ a {
 
 .second_column div article {
   flex: 1 1 50%;
-  padding: 0 3rem;
+  padding: 0 1.5rem;
   display: grid;
   align-items: center;
 }
@@ -752,22 +775,26 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  height: 30vh;
+  min-height: 30vh;
   color: #fff;
-  padding: 2rem 12rem;
+  padding: 2rem 1.5rem;
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: 1fr;
+  grid-gap: 1.5rem;
   align-items: center;
 }
 
 .assurance_content {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .assurance_content header {
   flex-basis: 55%;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .assurance_content h3 {
@@ -812,18 +839,21 @@ a {
 /* Footer */
 
 .footer {
-  padding: 2rem 22rem;
+  padding: 2rem 1.5rem;
   min-height: 60vh;
   display: grid;
   grid-template-rows: 1fr auto;
+  grid-row-gap: 2rem;
   align-items: center;
+  text-align: center;
 }
 
 .footer h4 {
   font-size: calc(2rem * var(--type-scale));
   line-height: calc(3.2rem * var(--height-scale));
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
 }
 
 .footer p,
@@ -839,6 +869,7 @@ a {
 
 .main_footer-content {
   display: flex;
+  flex-direction: column;
 }
 
 .main_footer-content a {
@@ -854,6 +885,7 @@ a {
 .sub_footer-content {
   flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -861,12 +893,153 @@ a {
   padding: 2rem 0;
   border-top: 1px solid #14151f;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .social_list {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, 2.4rem);
   grid-column-gap: 1rem;
   align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .sub_footer-content {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 985px) {
+  .nav_bar {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .hero_content {
+    padding: 3rem 0 3rem 15rem;
+    text-align: left;
+  }
+
+  .hero_info {
+    width: 34%;
+  }
+
+  .hero_nav-list {
+    display: flex;
+  }
+
+  .goals {
+    padding: 0 0 0 15rem;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  div.balls {
+    justify-content: flex-start;
+  }
+
+  .reason {
+    padding: 3rem 15rem;
+  }
+
+  .reason_list {
+  flex-basis: 50%;
+  }
+
+  .reason_intro {
+    text-align: left;
+    flex-basis: 30%;
+  }
+
+  .reasons_option {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .testimonial_content {
+    padding: 2rem 7rem;
+  }
+
+  .testimonial h3::before,
+  .testimonial h3::after  {
+    width: 40%;
+  }
+  
+  .testify_card {
+    text-align: left;
+    margin: 0;
+  }
+
+  .first_test-row {
+    flex-direction: row;
+    margin-bottom: 2rem;
+  }
+
+  .second_test-row {
+    flex-direction: row;
+  }
+
+  .questions {
+    padding: 2rem 18rem;
+  }
+
+  .join_team {
+    padding: 2rem 15rem;
+  }
+
+  .insight_content {
+    padding: 0 15rem;
+    flex-direction: row;
+  }
+
+  .insight h3::before,
+  .insight h3::after {
+    width: 40%;
+  }
+
+  .disruption {
+    max-width: 45%;
+    height: 37.5vh;
+  }
+
+  .disruption, 
+  .second_column div article {
+    padding: 0 3rem;
+  }
+
+  .assurance {
+    grid-template-rows: 1fr auto;
+    padding: 2rem 12rem;
+  }
+
+  .assurance_content {
+    flex-direction: row;
+  }
+
+  .assurance_content header {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .footer {
+    padding: 2rem 22rem;
+    text-align: left;
+  }
+
+  .footer h4 {
+    margin-top: 0;
+  }
+
+  .main_footer-content {
+    flex-direction: row;
+  }
+
+  .bottom_footer {
+    flex-direction: row;
+  }
+
+  .social_list {
+    justify-content: flex-start;
+  }
 }
