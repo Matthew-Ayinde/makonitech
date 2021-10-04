@@ -1,0 +1,31 @@
+.industries_wrapper {
+  width: 100%;
+  padding: 3rem 4rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+
+  .industry_grid ul {
+
+    li {
+      margin-bottom: 2rem;
+    }
+
+
+    li a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 22px;
+      color: #040404;
+    }
+
+    li a:hover {
+      border-bottom: 2px solid #040404;
+    }
+  }
+
+  .industry_grid img {
+    width: 100%;
+  }
+}

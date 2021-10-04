@@ -1,6 +1,6 @@
 import React from "react";
 import { industryInfo } from "../data/landingPageData";
-import JoinCard from "./JoinCard";
+import JoinCard from "../components/Help/JoinCard";
 
 const Join = () => {
 

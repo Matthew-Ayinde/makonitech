@@ -1,0 +1,30 @@
+.public_wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 3rem 4rem 5rem;
+
+  .public-links .public-link {
+    li {
+      margin-bottom: 2rem;
+    }
+
+    li a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 22px;
+      color: #040404;
+    }
+
+    li a:hover {
+      border-bottom: 2px solid #040404;
+    }
+  }
+
+  .public-img {
+    img {
+      width: 100%;
+    }
+  }
+}

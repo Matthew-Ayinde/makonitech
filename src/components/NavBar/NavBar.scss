@@ -1,0 +1,168 @@
+.nav_bar_wrapper {
+  position: relative;
+  width: 100%;
+
+  .nav_bar_container {
+    position: absolute;
+    width: 100%;
+    padding: 1rem 4rem 1rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+
+    .nav_link_wrapper .nav_link_con {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 1rem;
+
+      .who_we_are_item,
+       .what_we_do_item, 
+       .industries_item,
+       .public_item,
+       .portfolio_item,
+       .insight_item,
+       .shoot_btn,
+       .search_link,
+       .en_link {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.2px;
+        color: #ffffff;
+        margin-left: 1.7rem;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .dropdown_icon {
+          margin-left: 0.3rem;
+          margin-top: 0.5rem;
+        }
+      }
+
+      .shoot_btn button {
+        padding: 1rem;
+        margin-top: -1rem;
+        cursor: pointer;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #494949;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+      }
+
+      .search_link {
+        margin-top: -0.8rem;
+      }
+
+      .en_link {
+        margin-top: -1rem;
+      }
+
+      .who_we_are_item {
+        position: relative;
+        .who_we_are_sub_navs {
+          display: none;
+          position: absolute;
+          top: 22px;
+          left: -100px;
+          z-index: 999;
+          width: 900px;
+          background: #ffffff;
+        }
+      }
+
+      .who_we_are_item:hover {
+        .who_we_are_sub_navs {
+          display: block;
+        }
+      }
+
+      .industries_item {
+        position: relative;
+        .industries_sub_navs {
+          display: none;
+          position: absolute;
+          top: 22px;
+          left: -250px;
+          z-index: 999;
+          width: 900px;
+          background: #ffffff;
+        }
+      }
+
+      .industries_item:hover {
+        .industries_sub_navs {
+          display: block;
+        }
+      }
+
+      .portfolio_item {
+        position: relative;
+        .portfolio_sub_navs {
+          display: none;
+          position: absolute;
+          top: 22px;
+          right: -250px;
+          z-index: 999;
+          width: 900px;
+          background: #ffffff;
+        }
+      }
+
+      .portfolio_item:hover {
+        .portfolio_sub_navs {
+          display: block;
+        }
+      }
+
+      .public_item {
+        position: relative;
+        .public_sub_navs {
+          display: none;
+          position: absolute;
+          top: 22px;
+          right: -250px;
+          z-index: 999;
+          width: 900px;
+          background: #ffffff;
+        }
+      }
+
+      .public_item:hover {
+        .public_sub_navs {
+          display: block;
+        }
+      }
+
+      .what_we_do_item {
+        position: relative;
+        .what_we_do_sub_navs {
+          display: none;
+          position: absolute;
+          top: 22px;
+          left: -150px;
+          z-index: 999;
+          width: 900px;
+          background: #ffffff;
+        }
+      }
+
+      .what_we_do_item:hover {
+        .what_we_do_sub_navs {
+          display: block;
+        }
+      }
+
+    }
+  }
+}

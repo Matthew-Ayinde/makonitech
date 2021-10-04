@@ -1,4 +1,4 @@
-import arrow from "../images/Arrow 1.svg"
+import arrow from "../images/Arrow 2.png"
 
 export const helpData = [
   {
@@ -36,5 +36,5 @@ export const helpData = [
     text: "We don’t want our brand associated with anything that isn’t of the higest quality. We make quality products, we give quality advice and we only hire. make quality products, we give quality advice and we only ",
     more: "LEARN MORE",
     icons: ["", `${arrow}`]
-  }
+  },
 ]

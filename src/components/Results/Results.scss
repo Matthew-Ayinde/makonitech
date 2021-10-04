@@ -1,0 +1,42 @@
+.results_wrapper {
+  text-align: center;
+
+  h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    color: #14151f;
+  }
+
+  //   .special-border {
+  //       border-bottom: 5px solid #C4C4C4;
+  //       width: 100%;
+  //       height: 5px;
+  //   }
+
+  .results_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5rem 0;
+
+    .count {
+      h2 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 87px;
+        text-align: center;
+        color: #1e2348;
+      }
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.advertone_wrapper {
+  mix-blend-mode: multiply;
+  height: 200px;
+  background: linear-gradient(
+      90deg,
+      rgba(4, 7, 36, 0.81) 114.86%,
+      rgba(4, 7, 36, 0.81) 114.81%
+    ),
+    url("../../images/advertOne\ \(2\).svg") 50% / cover no-repeat;
+}
+.advertone_wrapper {
+  width: 100%;
+  color: #ffffff;
+  // margin: 0 auto;
+
+  .advertOne_content {
+    max-width: 1000%;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding: 5rem 0;
+
+    h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+    }
+
+    p {
+      a {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        color: #14151f;
+        padding: 1rem 2.5rem;
+        background: #ffffff;
+        cursor: pointer;
+      }
+    }
+  }
+}

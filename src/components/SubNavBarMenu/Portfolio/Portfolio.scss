@@ -1,0 +1,31 @@
+.portfolio_wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 3rem 4rem 5rem;
+
+  .portfolio-links ul {
+    li {
+      margin-bottom: 1rem;
+    }
+
+    li a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 22px;
+      color: #040404;
+      margin-bottom: 2rem;
+    }
+
+    li a:hover {
+      border-bottom: 2px solid #040404;
+    }
+  }
+
+  .portfolio-img {
+    img {
+      width: 100%;
+    }
+  }
+}
