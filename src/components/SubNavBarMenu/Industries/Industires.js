@@ -9,29 +9,30 @@ const Industires = () => {
       <div className='industry_grid'>
         <ul>
           <li>
-            <Link to='/'>* Aerospace and Defense</Link>
+            <Link to='/industries'>* Industries</Link>
           </li>
           <li>
-            <Link to='/'>* Retail</Link>
+            <Link to='/aerospace'>* Aerospace and Defense</Link>
           </li>
           <li>
-            <Link to='/'>* Insurance</Link>
+            <Link to='/consumer-products'>* Consumer Products</Link>
           </li>
           <li>
-            <Link to='/'>* Non-Profit</Link>
+            <Link to='/energy-and-natural-resources'>* Energy And Natural Resources</Link>
           </li>
           <li>
-            <Link to='/'>* Offshore</Link>
+            <Link to='/financial-services'>* Financial Services</Link>
           </li>
+          
         </ul>
       </div>
       <div className='industry_grid'>
         <ul>
-          <li>
-            <Link to='/'>* Automotive</Link>
+        <li>
+            <Link to='/automobile-and-mobility'>* Automotive and Mobility</Link>
           </li>
           <li>
-            <Link to='/'>* Healthcare</Link>
+            <Link to='/forest-products'>* forest-products</Link>
           </li>
           <li>
             <Link to='/'>* Agriculture</Link>

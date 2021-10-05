@@ -26,9 +26,9 @@ body {
 }
 
 
-@media only screena and (min-width: 985px) {
+/* @media only screen and (min-width: 985px) {
   :root {
     --type-scale: 1;
     --height-scale: 1;
   }
-}
+} */

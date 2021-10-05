@@ -8,6 +8,7 @@ import Industires from "../SubNavBarMenu/Industries/Industires";
 import Portfolio from "../SubNavBarMenu/Portfolio/Portfolio";
 import PublicService from "../SubNavBarMenu/PublicService/PublicService";
 import WhatWeDo from "../SubNavBarMenu/WhatWeDo/WhatWeDo";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -16,7 +17,9 @@ const NavBar = () => {
         <div className=''>
           <ul>
             <li>
-              <img src={logo} alt='' />
+              <Link to='/'>
+                <img src={logo} alt='' />
+              </Link>
             </li>
           </ul>
         </div>

@@ -922,7 +922,8 @@ div.balls {
   }
 
   .hero_info {
-    width: 34%;
+    width: 100%;
+    max-width: 432px;
   }
 
   .hero_nav-list {
