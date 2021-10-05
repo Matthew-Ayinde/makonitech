@@ -1,5 +1,5 @@
 import React from "react";
-import JoinCard from "./JoinCard";
+// import JoinCard from "./JoinCard";
 import { helpData } from "../../data/servicesPageData";
 import "./Help.scss";
 
