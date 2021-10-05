@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
 
 /* Utils */
-
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +32,6 @@ a {
 }
 
 /* Nav section */
-
 .nav_bar {
   display: grid;
   grid-template-columns: 1fr;
@@ -89,7 +87,6 @@ a {
 }
 
 /* Hero section */
-
 .hero {
   background: linear-gradient(
     90deg,
@@ -139,7 +136,6 @@ a {
 }
 
 /* Sub navigation */
-
 .sub_nav {
   box-shadow: 0px 6px 34px rgba(116, 116, 116, 0.15);
   background: #fff;
@@ -164,7 +160,6 @@ a {
 }
 
 /* Goals Section */
-
 .goals {
   min-height: 80vh;
   display: flex;
@@ -187,7 +182,6 @@ div.balls {
   justify-content: center;
 }
 
-
 .goals_content h2 {
   font-size: calc(4rem * var(--type-scale, 1));
   line-height: calc(5.6rem * var(--height-scale, 1));
@@ -208,7 +202,6 @@ div.balls {
 /* Our Work section */
 
 /* Reason to join section */
-
 .reason {
   min-height: 100vh;
   display: flex;
