@@ -1,0 +1,32 @@
+.aero-about {
+  max-width: 1138px;
+  width: 100%;
+  font-family: Nunito Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  word-wrap: break-word;
+  padding: 0.7em;
+  margin: 5em auto;
+}
+
+/* wwd */
+.wwd-row1 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  max-width: 1300px;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.wwd-img {
+  max-width: 559px;
+  width: 100%;
+  height: 496px;
+}
+
+.wwd-img > img {
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,49 @@
+.who_we_are_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem 4rem 5rem;
+
+  .who_we_are_links {
+    .who_we_are_items {
+      h2 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 25px;
+        color: #484646;
+        margin: 1rem 0;
+      }
+      .first ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+
+        li {
+          margin-bottom: 2rem;
+        }
+
+        li a {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 22px;
+          color: #040404;
+          margin-bottom: 2rem;
+        }
+
+        li a:hover {
+          border-bottom: 2px solid #040404;
+        }
+      }
+    }
+  }
+
+  .who_we_are_img {
+    img {
+      margin-top: 40px;
+      width: 300px;
+    }
+  }
+}
