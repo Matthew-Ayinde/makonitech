@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
+.culture_section {
+  max-width: 1700px;
+  width: 100%;
+  padding: 10rem 1em;
+  font-family: Nunito Sans;
+  margin: 5em auto;
+  > :first-child {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #14151f;
+    text-align: center;
+  }
+  .culture_wrap {
+    max-width: 85%;
+    width: 100%;
+    height: 440px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
+    padding-top: 5rem;
+    margin: 0 auto;
+
+    .first_col {
+      max-width: 384px;
+      width: 100%;
+      :first-child {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #4f46e5;
+        max-width: 354px;
+        width: 100%;
+      }
+      :nth-child(2) {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 400;
+        color: #111827;
+        padding-top: 0.3em;
+      }
+      :nth-child(3) {
+        font-size: 18px;
+        line-height: 28px;
+        color: #6b7280;
+        padding: 1.5em 0;
+        padding-right: .6em;
+        word-wrap: break-word;
+      }
+      :last-child {
+        height: 50px;
+        margin-top: 2rem;
+        > button {
+          background: #1522af;
+          color: #ffffff;
+          width: 90%;
+          height: 100%;
+          border-radius: 5px;
+          border: 1px solid #1522af;
+        }
+      }
+    }
+    .second_col,
+    .third_col {
+      max-width: 384px;
+      width: 100%;
+      height: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      > * p {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #111827;
+        position: relative;
+        padding-left: 0.8em;
+      }
+      > * p:first-child:before {
+        content: url(../../../images/check-Icon.svg);
+        position: absolute;
+        top: 50%;
+        left: -2%;
+        transform: translate(2%, -50%);
+      }
+      > * p > small {
+        max-width: 348px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #6b7280;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .culture_section {
+    .culture_wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column-reverse;
+      height: fit-content;
+      max-width: 90%;
+
+      .first_col {
+        margin-bottom: 3em;
+      }
+      .second_col,
+      .third_col {
+        margin-bottom: 3em;
+        > * p {
+          padding-left: 1em;
+        }
+      }
+    }
+  }
+}

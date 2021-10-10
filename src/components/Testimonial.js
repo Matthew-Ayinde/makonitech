@@ -7,7 +7,7 @@ import presentation from "../images/presentation.png"
 const Testimonial = () => {
 
   return (
-    <section className="testimonial">
+    <div className="testimonial">
       <header>
         <h3>Testimonial</h3>
       </header>
@@ -39,7 +39,7 @@ const Testimonial = () => {
           }
         </div>  
       </section>
-    </section>
+    </div>
   )
 }
 

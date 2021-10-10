@@ -78,7 +78,14 @@ const MeetTeam = () => {
   return (
     <>
       <section className="team_wrap">
-        <h3>Meet The Team</h3>
+        <div className="header">
+          <h3>Meet The Team</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
         <div className="team_grid">
           {teamData.map((card) => (
             <div key={card.id} className="team_card">
@@ -110,7 +117,7 @@ const MeetTeam = () => {
           ))}
         </div>
         <div className="team_btn">
-            <button>See More</button>
+          <button>See More</button>
         </div>
       </section>
     </>

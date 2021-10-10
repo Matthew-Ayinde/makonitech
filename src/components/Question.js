@@ -5,7 +5,7 @@ import Box from "./Box";
 const Questions = () => {
 
   return (
-    <section className="questions">
+    <div className="questions">
       <header>
         <h3>What is your industry?</h3>
         <p>Answer two questions and put our thinking to work on your challenges.</p>
@@ -17,7 +17,7 @@ const Questions = () => {
           ))
         }
       </section>
-    </section>
+    </div>
   )
 }
 

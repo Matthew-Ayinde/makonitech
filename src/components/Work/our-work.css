@@ -1,6 +1,6 @@
 .work {
   padding: 2rem 1.5rem;
-  background-color: #14151F;
+  background-color: #14151f;
   min-height: 100vh;
   color: #fff;
 }
@@ -87,12 +87,11 @@ section.work .rec-dot .rec-dot_active {
 }
 
 @media only screen and (min-width: 768px) {
-  
 }
 
 @media only screen and (min-width: 985px) {
   .work {
-    padding: 2rem 0 2rem 10rem;
+    padding: 6rem 5rem 8rem 5rem;
   }
 
   .work_item {

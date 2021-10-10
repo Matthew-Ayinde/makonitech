@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 import "./Portfolio.scss";
 import IMG from "../../../images/portfolio-nav.svg";
 
-const Portfolio = () => {
+const Portfolio = ({handleCloseSubNav}) => {
   return (
     <div className='portfolio_wrapper'>
       <div className='portfolio-links'>
         <ul>
           <li>
-            <Link>Customers we Serve</Link>
+            <Link to="/" onClick={handleCloseSubNav}>Customers we Serve</Link>
           </li>
           <li>
-            <Link>Accomplishments</Link>
+            <Link to="/" onClick={handleCloseSubNav}>Accomplishments</Link>
           </li>
         </ul>
       </div>

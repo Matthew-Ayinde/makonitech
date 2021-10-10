@@ -3,22 +3,22 @@ import { Link } from "react-router-dom";
 import "./PublicService.scss";
 import IMG from "../../../images/public-nav.svg";
 
-const PublicService = () => {
+const PublicService = ({handleCloseSubNav}) => {
   return (
     <div className='public_wrapper'>
       <div className='public-links'>
         <ul className='public-link'>
           <li>
-            <Link>Africa</Link>
+            <Link to='/public-sector-africa' onClick={handleCloseSubNav}>Africa</Link>
           </li>
           <li>
-            <Link>Middle Esat</Link>
+            <Link to='/public-sector-middle-east' onClick={handleCloseSubNav}>Middle Esat</Link>
           </li>
           <li>
-            <Link>USA</Link>
+            <Link to='/public-sector-usa' onClick={handleCloseSubNav}>USA</Link>
           </li>
           <li>
-            <Link>Europe</Link>
+            <Link to='/public-sector-europe' onClick={handleCloseSubNav}>Europe</Link>
           </li>
         </ul>
       </div>
