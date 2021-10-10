@@ -570,6 +570,7 @@ div.balls {
 
 .team_card .card_footer p {
   margin-right: 1rem;
+  margin-bottom: 0!important;
 }
 
 /* Insight section */

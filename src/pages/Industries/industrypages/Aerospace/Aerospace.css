@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
 .aero-about {
-  max-width: 1138px;
-  width: 100%;
+  max-width: 100%;
+  width: 80%;
   font-family: Nunito Sans;
   font-weight: 400;
   font-size: 18px;
@@ -14,19 +16,60 @@
 .wwd-row1 {
   display: flex;
   flex-wrap: wrap-reverse;
-  max-width: 1300px;
+  max-width: 95%;
   width: 100%;
-  align-items: center;
+  justify-content: flex-start;
+  /* column-gap: 20px; */
+  align-items: flex-end;
   margin: 0 auto;
 }
 
 .wwd-img {
-  max-width: 559px;
+  /* align-self: flex-end; */
+  max-width: 520px;
   width: 100%;
-  height: 496px;
+  height: 456px;
+  margin-top: 5em;
+  /* margin: inherit auto; */
 }
 
 .wwd-img > img {
+  margin: 2em auto;
   height: 100%;
   width: 100%;
+}
+
+.sec {
+  margin: 10em auto;
+}
+
+.custom-header {
+  width: 100%;
+  text-align: center;
+  font-size: calc(4rem * var(--type-scale, 1));
+  line-height: calc(4.8rem * var(--height-scale, 1));
+  font-weight: 700;
+  color: #14151f;
+   position: relative;
+}
+
+ .custom-header h4::before,
+ .custom-header h4::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 33%;
+  height: 0.1rem;
+  background: #c4c4c4;
+}
+
+ .custom-header h4::before {
+  left: 0;
+}
+
+ .custom-header h4::after {
+  right: 0;
 }

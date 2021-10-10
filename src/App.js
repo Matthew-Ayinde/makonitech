@@ -30,6 +30,8 @@ import ConsumerProducts from "./pages/Industries/industrypages/ConsumerProducts/
 import EnergyAndNaturalResources from "./pages/Industries/industrypages/EnergyAndNaturalResources/EnergyAndNaturalResources";
 import FinancialServices from "./pages/Industries/industrypages/FinancialServices/FinancialServices";
 import ForestProducts from "./pages/Industries/industrypages/ForestProducts/ForestProducts";
+import Careers from "./pages/Careers/Careers";
+import ContactPage from "./pages/Contact";
 
 function App() {
   return (
@@ -118,6 +120,12 @@ function App() {
         </Route>
         <Route path='/big-data-analytics'>
           <BigDataAnalytics />
+        </Route>
+        <Route path='/careers'>
+          <Careers/>
+        </Route>
+        <Route path='/contact'>
+          <ContactPage />
         </Route>
         {/* <Route path="/security-protection">
           <SecurityProtectionPage />
