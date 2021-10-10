@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { footerData } from "../data/commonData";
 import FooterLink from "./FooterLink";
 import Cert from "../images/aws-cert-badge 1.svg";
@@ -39,22 +38,22 @@ const Footer = () => {
         <p>© 2021 Makonitech Inc. All rights reserved</p>
         <ul className="social_list">
           <li className="social_item">
-            <a href="" className="social_link">
+            <a href="/" className="social_link">
               <img src={instagram} alt="Instagram icon" />
             </a>
           </li>
           <li className="social_item">
-            <a href="" className="social_link">
+            <a href="/" className="social_link">
               <img src={dribbble} alt="Dribbble icon" />
             </a>
           </li>
           <li className="social_item">
-            <a href="" className="social_link">
+            <a href="/" className="social_link">
               <img src={twitter} alt="Twitter icon" />
             </a>
           </li>
           <li className="social_item">
-            <a href="" className="social_link">
+            <a href="/" className="social_link">
               <img src={youtube} alt="Youtube icon" />
             </a>
           </li>

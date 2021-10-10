@@ -1,0 +1,137 @@
+.contact-page {
+  width: 100%;
+
+  &__hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(4, 7, 36, 0.68), rgba(4, 7, 36, 0.68)),
+      url("../../images/contactHero.svg") no-repeat;
+    background-size: cover;
+    padding: 238px 16px;
+
+    @media (max-width: 600px) {
+      padding: 100px 16px;
+    }
+
+    h1 {
+      font-size: 70px;
+      color: #fff;
+
+      @media (max-width: 600px) {
+        font-size: 34px;
+      }
+    }
+  }
+
+  &__intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 57px 16px 130px;
+
+    .intro-lead {
+      position: relative;
+      width: fit-content;
+      text-align: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -60px;
+        width: 127px;
+        height: 127px;
+        background: url("../../images/blue-glow.svg") no-repeat;
+        background-size: cover;
+      }
+
+      > p {
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 5px;
+        color: #212121;
+      }
+
+      > h2 {
+        font-size: 48px;
+        color: #212121;
+
+        @media (max-width: 600px) {
+          font-size: 32px;
+        }
+      }
+    }
+
+    .intro-grid {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 63px;
+
+      @media (max-width: 903px) {
+        flex-direction: column;
+        max-width: fit-content;
+        margin: 63px auto 0;
+      }
+
+      .intro-grid-container {
+        flex: 1;
+        max-width: 266px;
+        position: relative;
+        margin-right: 83px;
+
+        @media (max-width: 903px) {
+          margin-right: 0;
+          margin-bottom: 54px;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        .intro-icon {
+          position: absolute;
+          top: -30px;
+          left: 25px;
+          background: #040724;
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          font-size: 32px;
+        }
+
+        .intro-card {
+          width: 100%;
+          border-radius: 20px;
+          background: #f6f6f6;
+          padding: 45px 28px 21px;
+          white-space: nowrap;
+
+          > h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #212121;
+          }
+
+          > p {
+            color: #040404;
+            font-size: 16px;
+            // margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

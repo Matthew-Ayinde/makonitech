@@ -8,7 +8,7 @@ import cart from "../images/cart.svg";
 const Reason = () => {
 
   return (
-    <article className="reason">
+    <div className="reason">
       <section className="reason_intro">
         <h3>Why Choose Us?</h3>
         <p>
@@ -55,7 +55,7 @@ const Reason = () => {
           })
         }
       </section>
-    </article>
+    </div>
   )
 }
 

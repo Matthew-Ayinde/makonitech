@@ -1,17 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
 .team_wrap {
   background-color: #f6f8fa;
-  /* max-width: 1500px; */
-  width: 100%;
+
   margin: 5em auto;
-  padding: 3em 0.5em;
+  padding: 13em 0.5em;
 }
-.team_wrap > h3 {
+.team_wrap .header > h3 {
   color: #14151f;
   font-family: Nunito Sans;
   font-style: Bold;
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
+  text-align: center;
+}
+
+.team_wrap .header > p {
+  font-family: inherit;
+  font-size: 19px;
+  line-height: 25.92px;
+  color: #878787;
+  font-weight: 600;
+  max-width: 685.29px;
+  width: 100%;
+  margin: 1em auto;
   text-align: center;
 }
 
@@ -22,6 +35,7 @@
   grid-auto-rows: 1fr 1fr 1fr;
   grid-gap: 4em 2em;
   margin: 5em auto;
+  max-width: 1500px;
   width: 80%;
   padding: 2em 0.5em;
 }
@@ -120,8 +134,8 @@
 }
 @media screen and (max-width: 600px) {
   .team_wrap {
-  margin: 15em auto;
-}
+    margin: 15em auto;
+  }
   .team_grid {
     display: block !important;
     /* grid-template-columns: 1fr; */

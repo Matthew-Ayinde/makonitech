@@ -1,7 +1,6 @@
 import React from "react";
 import IndustryHeroBanner from "../../../../components/Hero/IndustryHeroBanner";
 import MeetTeam from "../../../../components/Team/MeetTeam";
-import heroBg from "../../../../images/aerospace.png";
 import imgUrl from "../../../../images/tall-building.png";
 import airplane from "../../../../images/airplane.png";
 import AerospaceCard from "../../../../components/Cards/WhatWeDo";
@@ -16,7 +15,7 @@ const FinancialServices = () => {
       <IndustryHeroBanner
         title='Financial Services'
         desc="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.."
-        heroBg={heroBg}
+        heroBg={"fin-serv-hero"}
       />
       <div className='aero-about'>
         <p>

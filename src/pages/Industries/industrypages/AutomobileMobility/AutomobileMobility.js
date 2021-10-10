@@ -1,7 +1,6 @@
 import React from "react";
 import IndustryHeroBanner from "../../../../components/Hero/IndustryHeroBanner";
 import MeetTeam from "../../../../components/Team/MeetTeam";
-import heroBg from "../../../../images/aerospace.png";
 import imgUrl from "../../../../images/tall-building.png";
 import airplane from "../../../../images/airplane.png";
 import AerospaceCard from "../../../../components/Cards/WhatWeDo";
@@ -14,11 +13,11 @@ const AutomobileMobility = () => {
   return (
     <div>
       <IndustryHeroBanner
-        title='Automotive & Mobility'
+        title="Automotive & Mobility"
         desc="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.."
-        heroBg={heroBg}
+        heroBg={"automotive-hero"}
       />
-      <div className='aero-about'>
+      <div className="aero-about">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -48,17 +47,17 @@ const AutomobileMobility = () => {
       </div>
 
       {/* What_we_do section - "wwd" */}
-      <div className='wwd-section'>
-        <div className='wwd-row1'>
+      <div className="wwd-section">
+        <div className="wwd-row1">
           <CentralNav />
-          <div className='wwd-img'>
-            <img src={airplane} alt='' />
+          <div className="wwd-img">
+            <img src={airplane} alt="" />
           </div>
         </div>
 
         <AerospaceCard
           imgUrl={imgUrl}
-          text='Our networks are designed to provide specialist solutions and services to meet the peculiar needs of government and public services organisations in the following areas:'
+          text="Our networks are designed to provide specialist solutions and services to meet the peculiar needs of government and public services organisations in the following areas:"
         />
       </div>
 

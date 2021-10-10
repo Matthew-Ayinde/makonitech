@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
 .aero-about {
   max-width: 1138px;
   width: 100%;
@@ -16,17 +18,57 @@
   flex-wrap: wrap-reverse;
   max-width: 1300px;
   width: 100%;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
 
 .wwd-img {
+  /* align-self: flex-end; */
   max-width: 559px;
   width: 100%;
   height: 496px;
+  margin-top: 5em;
+  margin: inherit auto;
 }
 
 .wwd-img > img {
+  margin: 2em auto;
   height: 100%;
   width: 100%;
+}
+
+.sec {
+  margin: 10em auto;
+}
+
+.custom-header {
+  width: 100%;
+  text-align: center;
+  font-size: calc(4rem * var(--type-scale, 1));
+  line-height: calc(4.8rem * var(--height-scale, 1));
+  font-weight: 700;
+  color: #14151f;
+   position: relative;
+}
+
+ .custom-header h4::before,
+ .custom-header h4::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 15%;
+  height: 0.1rem;
+  background: #c4c4c4;
+}
+
+ .custom-header h4::before {
+  left: 0;
+}
+
+ .custom-header h4::after {
+  right: 0;
 }

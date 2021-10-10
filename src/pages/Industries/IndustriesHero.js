@@ -1,13 +1,16 @@
-import React from 'react'
-import heroBg from "../../images/ind-hero-bg.png";
-import './Industries.css'
+import React from "react";
+import { Container } from "react-bootstrap";
+// import heroBg from "../../images/ind-hero-bg.png";
+import "./Industries.css";
 
 function IndustriesHero() {
-    return (
-      <div className="ind_hero-bg">
-        <div className="bg_img">
-          <img src={heroBg} alt="" />
-          <div className="bg-overlay"></div>
+  return (
+    <div className="hero">
+
+      <Container>
+        {/* pass background image class as prop, so as to use different component hero images */}
+        <div className="ind_hero-new">
+          <div></div>
         </div>
 
         <div className="ind_hero-text">
@@ -23,8 +26,9 @@ function IndustriesHero() {
             <button>Contact Us</button>
           </div>
         </div>
-      </div>
-    );
+      </Container>
+    </div>
+  );
 }
 
-export default IndustriesHero
+export default IndustriesHero;

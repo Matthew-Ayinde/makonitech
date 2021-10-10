@@ -3,25 +3,25 @@ import { Link } from "react-router-dom";
 import IMG from "../../../images/industry-nav.svg";
 import "./Industires.scss";
 
-const Industires = () => {
+const Industires = ({handleCloseSubNav}) => {
   return (
     <div className='industries_wrapper'>
       <div className='industry_grid'>
         <ul>
           <li>
-            <Link to='/industries'>* Industries</Link>
+            <Link to='/industries' onClick={handleCloseSubNav}>* Industries</Link>
           </li>
           <li>
-            <Link to='/aerospace'>* Aerospace and Defense</Link>
+            <Link to='/aerospace' onClick={handleCloseSubNav}>* Aerospace and Defense</Link>
           </li>
           <li>
-            <Link to='/consumer-products'>* Consumer Products</Link>
+            <Link to='/consumer-products' onClick={handleCloseSubNav}>* Consumer Products</Link>
           </li>
           <li>
-            <Link to='/energy-and-natural-resources'>* Energy And Natural Resources</Link>
+            <Link to='/energy-and-natural-resources' onClick={handleCloseSubNav}>* Energy And Natural Resources</Link>
           </li>
           <li>
-            <Link to='/financial-services'>* Financial Services</Link>
+            <Link to='/financial-services' onClick={handleCloseSubNav}>* Financial Services</Link>
           </li>
           
         </ul>
@@ -29,35 +29,35 @@ const Industires = () => {
       <div className='industry_grid'>
         <ul>
         <li>
-            <Link to='/automobile-and-mobility'>* Automotive and Mobility</Link>
+            <Link to='/automobile-and-mobility' onClick={handleCloseSubNav}>* Automotive and Mobility</Link>
           </li>
           <li>
-            <Link to='/forest-products'>* forest-products</Link>
+            <Link to='/forest-products' onClick={handleCloseSubNav}>* forest-products</Link>
           </li>
           <li>
-            <Link to='/'>* Agriculture</Link>
+            <Link to='/' onClick={handleCloseSubNav}>* Agriculture</Link>
           </li>
           <li>
-            <Link to='/'>* Aerospace and Defense</Link>
+            <Link to='/' onClick={handleCloseSubNav}>* Aerospace and Defense</Link>
           </li>
           <li>
-            <Link to='/'>* Nearshore</Link>
+            <Link to='/' onClick={handleCloseSubNav}>* Nearshore</Link>
           </li>
         </ul>
       </div>
       <div className='industry_grid'>
         <ul>
           <li>
-            <Link to='/'>* Banking & Financial Services</Link>
+            <Link to='/' onClick={handleCloseSubNav}>* Banking & Financial Services</Link>
           </li>
           <li>
-            <Link to='/'>* Industrial & Logistics</Link>
+            <Link to='/' onClick={handleCloseSubNav}>* Industrial & Logistics</Link>
           </li>
           <li>
-            <Link to='/'>* Media & Entertainment</Link>
+            <Link to='/' onClick={handleCloseSubNav}>* Media & Entertainment</Link>
           </li>
           <li>
-            <Link to='/'>* Marketing</Link>
+            <Link to='/' onClick={handleCloseSubNav}>* Marketing</Link>
           </li>
         </ul>
       </div>

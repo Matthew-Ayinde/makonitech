@@ -1,0 +1,162 @@
+.contact-project {
+  width: 100%;
+  display: flex;
+
+  @media (max-width: 903px) {
+    flex-direction: column-reverse;
+  }
+
+  &__left {
+    width: 60%;
+    background: #040724;
+    color: #fff;
+    padding: 72px 100px 72px 83px;
+
+    @media (max-width: 903px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 72px 16px;
+    }
+
+    > h2 {
+      max-width: 582px;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 1.4;
+
+      @media (max-width: 903px) {
+        text-align: center;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 32px;
+      }
+    }
+
+    > form {
+      width: 100%;
+      margin-top: 92px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 37px 56px;
+
+      @media (max-width: 903px) {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 512px;
+        margin: 64px auto 0;
+        gap: 37px 0px;
+      }
+
+      .contact-form-group {
+        display: flex;
+        flex-direction: column;
+
+        > label {
+          font-size: 15px;
+          margin-bottom: 6px;
+        }
+
+        > input,
+        select {
+          border: 0;
+          border-bottom: 1px solid #ffffff;
+          font-size: 16px;
+          outline: 0;
+          padding: 0px 0px 3px;
+          font-family: inherit;
+          background: transparent;
+          color: #fff;
+          width: 100%;
+          -webkit-appearance: none;
+          appearance: none;
+          border-radius: 0;
+        }
+
+        select {
+          position: relative;
+          z-index: 2;
+          cursor: pointer;
+        }
+
+        .select-wrapper {
+          position: relative;
+          width: 100%;
+
+          &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 5px;
+            background: url("../../../images/arrow-downn.svg") no-repeat;
+            background-size: cover;
+            width: 12px;
+            height: 12px;
+            z-index: 1;
+          }
+        }
+
+        .submit-btn {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end;
+
+          > button {
+            width: 150px;
+            background: transparent;
+            border: 1px solid #fff;
+            outline: 0;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 15px;
+            height: 40px;
+            font-family: inherit;
+          }
+        }
+      }
+    }
+
+    .contact-form-info {
+      width: 100%;
+      margin-top: 66px;
+
+      @media (max-width: 903px) {
+        max-width: 512px;
+        margin: 66px auto 0;
+      }
+
+      > p {
+        color: #fff;
+        max-width: 710px;
+        font-size: 14px;
+        line-height: 21.5px;
+
+        a {
+          color: #fff;
+          font-weight: 600;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &__right {
+    flex: 1;
+    background: url("../../../images/contact-city.png") no-repeat;
+    background-size: cover;
+
+    @media (max-width: 903px) {
+      width: 100%;
+      flex: none;
+      display: none;
+    }
+  }
+}
