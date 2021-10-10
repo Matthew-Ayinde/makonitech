@@ -9,6 +9,7 @@ import Results from "../../components/Results/Results";
 import AdvertOne from "../../components/Adverts/AvertOne";
 import MakoniWay from "../../components/MakoniWay/MakoniWay";
 import Insight from "../../components/Insight";
+import OurWork from "../../components/Work/OurWork";
 
 const CloudAssessments = () => {
 
@@ -17,6 +18,7 @@ const CloudAssessments = () => {
       <ServicesHero title='Cloud Assessments' category='Security'/>
       <ServicesTab />
       <Results />
+      <OurWork />
       <Help />
       <AdvertOne />
       <MakoniWay />

@@ -3,20 +3,18 @@ import OurExpertise from "../../components/Expertise/OurExpertise";
 // import NavBar from "../../components/NavBar/NavBar";
 import "./Industries.css";
 import IndustriesHero from "./IndustriesHero";
-import img1 from "../../images/g-img1.png"
+import img1 from "../../images/g-img1.png";
 import img2 from "../../images/g-img2.png";
 
-import img3 from "../../images/g-img3.png"
-import img4 from "../../images/g-img4.png"
-import img5 from "../../images/g-img5.png"
-import img6 from "../../images/g-img6.png"
-import img7 from "../../images/g-img7.png"
-
+import img3 from "../../images/g-img3.png";
+import img4 from "../../images/g-img4.png";
+import img5 from "../../images/g-img5.png";
+import img6 from "../../images/g-img6.png";
+import img7 from "../../images/g-img7.png";
 
 const Industries = () => {
   return (
     <div className="industries-wrap">
-    
       <IndustriesHero />
       <IndSection />
 

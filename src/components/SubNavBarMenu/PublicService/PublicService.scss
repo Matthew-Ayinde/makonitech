@@ -2,7 +2,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  padding: 3rem 4rem 5rem;
+  padding: 4rem 3rem 2rem 8rem;
 
   .public-links .public-link {
     li {
@@ -11,10 +11,11 @@
 
     li a {
       font-style: normal;
-      font-weight: normal;
-      font-size: 13px;
+      font-weight: 600;
+      font-size: 16px;
       line-height: 22px;
-      color: #040404;
+      color: #1e2348;
+      margin-bottom: 3rem;
     }
 
     li a:hover {

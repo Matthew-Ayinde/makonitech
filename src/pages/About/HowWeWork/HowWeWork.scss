@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
+.sec_container2 {
+  width: 100%;
+  height: auto;
+  min-height: fit-content;
+  background: #1d1b1b;
+  color: #c4c4c4;
+  padding: 5em 1em 10em;
+  margin: 0 auto;
+  margin-bottom: 10em;
+  .sec-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1196px;
+    width: 100%;
+    height: 625px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+
+.carousel_wrap {
+  position: relative;
+  // padding-bottom: 10em;
+  max-width: 1100px;
+  width: 100%;
+  height: 751px;
+  min-height: fit-content;
+  background: #ffffff;
+  margin: 0 auto;
+  // margin-bottom: 5em;
+  display: flex;
+  justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
+
+  // .sec_content--2 {
+  //   min-height: fit-content;
+  //   margin: 0 auto;
+  //   margin-bottom: 5em;
+
+  .text_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background: #ffffff;
+    height: 80%;
+    min-height: fit-content;
+    max-width: 564px;
+    width: 100%;
+    padding: 0 76px;
+    :first-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 80%;
+      width: 100%;
+      margin: 3em 66px 1em 0;
+      img {
+        width: 100px;
+        height: 100px;
+
+        margin: 0;
+      }
+      h6 {
+        color: #1e2348;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: left;
+      }
+    }
+    > p {
+      color: #484646;
+      font-size: 18px;
+      line-height: 25.5px;
+      text-align: left;
+      font-weight: 400;
+      margin: 1em auto;
+    }
+  }
+  img {
+    max-width: 536px;
+    width: 100%;
+    // height: 100%;
+    min-height: fit-content;
+    object-fit: cover;
+  }
+  // }
+}
+
+.sec_container3 {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  align-items: flex-start;
+  max-width: 1500px;
+  width: 100%;
+  height: 777px;
+  margin: -10em auto 0;
+  min-height: fit-content;
+  :first-child {
+    max-width: 646px;
+    width: 100%;
+    height: 100%;
+  }
+  :nth-child(2) h3 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #484646;
+    margin: 2em auto 0.8em;
+  }
+  :last-child {
+    max-width: 614px;
+    width: 100%;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel_wrap {
+    flex-direction: column-reverse;
+    max-width: 100%;
+    width: 100%;
+    padding: unset;
+    padding-bottom: 0;
+    height: fit-content;
+    background: black;
+
+    .text_area {
+      text-align: justify;
+      margin: 0 auto;
+      margin-top: 1em;
+      width: 100%;
+      padding: 0 1.5em;
+      background: black;
+
+      :first-child {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        h6 {
+          text-align: center;
+        }
+      }
+      > p {
+        text-align: left;
+        padding: 5em auto;
+        margin: 1em auto;
+        width: 100%;
+        height: fit-content;
+        color: #cacaca;
+      }
+    }
+  }
+
+  .sec_container3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin: 10em auto;
+    :first-child {
+      height: fit-content;
+      padding: 0 0.5em;
+    }
+    :nth-child(2) h3 {
+      font-size: 30px;
+
+      padding: 0 0.5em;
+    }
+    :last-child {
+      margin: 2em auto;
+    }
+  }
+
+  .sec_header {
+    margin: 1em auto 1.5em;
+  }
+  .sec_header h4::before,
+  .sec_header h4::after {
+    display: none;
+  }
+  .sec_content-one {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.5em;
+    margin: 0 auto;
+  }
+  .sec_container2 {
+    height: fit-content !important;
+    justify-content: center;
+
+    .sec-content {
+      height: fit-content !important;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding-bottom: 3.8em;
+      }
+    }
+    .carousel_wrap {
+      padding-bottom: 0;
+    }
+  }
+}

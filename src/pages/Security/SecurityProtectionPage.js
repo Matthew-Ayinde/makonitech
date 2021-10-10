@@ -6,6 +6,7 @@ import ServicesHero from "../../components/Hero/ServicesHero";
 import MakoniWay from "../../components/MakoniWay/MakoniWay";
 import Results from "../../components/Results/Results";
 import ServicesTab from "../../components/Tab/ServicesTab";
+import OurWork from "../../components/Work/OurWork";
 
 const SecurityProtectionPage = () => {
   return (
@@ -13,6 +14,7 @@ const SecurityProtectionPage = () => {
       <ServicesHero title='Security Protection' category='Security'/>
       <ServicesTab />
       <Results />
+      <OurWork />
       <Help />
       <AdvertOne />
       <MakoniWay />

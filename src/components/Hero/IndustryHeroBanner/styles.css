@@ -1,11 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
+
+
+/* 
 .ind_banner {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.83) 33.86%,
+    rgba(0, 0, 0, 0) 114.81%
+  );
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: -1;
   width: 100%;
-  height: 563px;
+  height: 90vh;
   top: 0;
   margin-bottom: 3em;
 }
@@ -15,9 +25,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  background: rgba(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.8);
-  opacity: 0.7;
   top: 0;
   width: 100%;
   height: 100%;
@@ -26,6 +34,75 @@
 .ind_banner > img {
   width: 100%;
   height: 100%;
+} */
+
+/* Dynamic background images */
+
+.aero_bg-styles,
+.automotive-hero,
+.consumer-products-hero,
+.energy-res-hero,
+.fin-serv-hero,
+.forest-pro-hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 92vh;
+  min-height: fit-content;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+
+}
+
+.aero_bg-styles {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.83) 33.86%,
+      rgba(0, 0, 0, 0) 114.81%
+    ),
+    url("../../../images/aerospace.png") 50% / cover no-repeat !important;
+}
+.automotive-hero {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.83) 33.86%,
+      rgba(0, 0, 0, 0) 114.81%
+    ),
+    url("../../../images/automotive-hero.png") 50% / cover no-repeat !important;
+}
+.consumer-products-hero {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.83) 33.86%,
+      rgba(0, 0, 0, 0) 114.81%
+    ),
+    url("../../../images/consumer-products-hero.png") 50% / cover no-repeat !important;
+}
+.energy-res-hero{
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.83) 33.86%,
+      rgba(0, 0, 0, 0) 114.81%
+    ),
+    url("../../../images/energy-res-hero.png") 50% / cover no-repeat !important;
+}
+.fin-serv-hero{
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.83) 33.86%,
+      rgba(0, 0, 0, 0) 114.81%
+    ),
+    url("../../../images/fin-serv-hero.png") 50% / cover no-repeat !important;
+}
+.forest-pro-hero{
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.83) 33.86%,
+      rgba(0, 0, 0, 0) 114.81%
+    ),
+    url("../../../images/forest-pro-hero.png") 50% / cover no-repeat !important;
 }
 
 .ind_banner-text {
@@ -57,7 +134,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 .ind_banner-text > p {
   max-width: 632px;
@@ -70,8 +147,19 @@
 }
 
 @media screen and (max-width: 500px) {
+ 
+    .aero_bg-styles,
+    .automotive-hero,
+    .bg_styles--4,
+    .bg_styles--5 {
+      min-height: fit-content;
+      height: 65vh;
+    }
   .ind_banner-text {
     align-items: center;
     text-align: center;
+    top: 13%;
+    left: 9%;
+    transform: translate(-9%, -13%);
   }
 }

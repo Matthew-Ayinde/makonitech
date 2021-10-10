@@ -9,6 +9,7 @@ import Results from "../../components/Results/Results";
 import AdvertOne from "../../components/Adverts/AvertOne";
 import MakoniWay from "../../components/MakoniWay/MakoniWay";
 import Insight from "../../components/Insight";
+import OurWork from "../../components/Work/OurWork";
 
 const BigDataAnalytics = () => {
 
@@ -17,6 +18,7 @@ const BigDataAnalytics = () => {
       <ServicesHero title='Big Data Analytics' category='DevOps Consulting'/>
       <ServicesTab />
       <Results />
+      <OurWork />
       <Help />
       <AdvertOne />
       <MakoniWay />

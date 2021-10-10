@@ -30,20 +30,72 @@ import ConsumerProducts from "./pages/Industries/industrypages/ConsumerProducts/
 import EnergyAndNaturalResources from "./pages/Industries/industrypages/EnergyAndNaturalResources/EnergyAndNaturalResources";
 import FinancialServices from "./pages/Industries/industrypages/FinancialServices/FinancialServices";
 import ForestProducts from "./pages/Industries/industrypages/ForestProducts/ForestProducts";
+import About from "./pages/About/About";
+import PAL from "./pages/About/PAL/PAL";
+import Csr from "./pages/About/CSR/CSR";
+import HowWeWork from "./pages/About/HowWeWork/HowWeWork";
+
+import ContactPage from "./pages/Contact";
+import CareerSignup from "./pages/CareerSignup";
+import ProfilePage from "./pages/Profile";
+import OurCommitment from "./pages/About/OurCommitment/OurCommitment";
+import PublicSectorAfrica from "./pages/PublicSector/PublicSectorAfrica";
+import PublicSectorEurope from "./pages/PublicSector/PublicSectorEurope";
+import PublicSectorUsa from "./pages/PublicSector/PublicSectorUsa";
+import PublicSectorMiddleEast from "./pages/PublicSector/PublicSectorMiddleEast";
+import Careers from "./pages/Careers/Careers";
 
 function App() {
   return (
     <div className='App'>
-      {/* <Nav /> */}
       <NavBar />
-      {/* <WhoWeAre /> */}
+
       <Switch>
         <Route path='/' exact>
           <LandingPage />
         </Route>
+
+        <Route path='/public-sector-africa' exact>
+          <PublicSectorAfrica />
+        </Route>
+
+        <Route path='/public-sector-europe' exact>
+          <PublicSectorEurope />
+        </Route>
+
+        <Route path='/public-sector-usa' exact>
+          <PublicSectorUsa />
+        </Route>
+
+        <Route path='/public-sector-middle-east' exact>
+          <PublicSectorMiddleEast />
+        </Route>
+
         <Route path='/industries' exact>
           <Industries />
         </Route>
+
+        <Route path='/csr' exact>
+          {/* corporate_social_responsibility */}
+          <Csr />
+        </Route>
+
+        <Route path='/pal' exact>
+          <PAL />
+        </Route>
+
+        <Route path='/about' exact>
+          <About />
+        </Route>
+
+        <Route path='/how_we_work' exact>
+          <HowWeWork />
+        </Route>
+
+        <Route path='/our_commitment' exact>
+          <OurCommitment />
+        </Route>
+
         <Route path='/aerospace' exact>
           <Aerospace />
         </Route>
@@ -71,101 +123,90 @@ function App() {
         <Route path='/security-detection'>
           <CloudSecurityPage />
         </Route>
+
         <Route path='/security-protection'>
           <SecurityProtectionPage />
         </Route>
+
         <Route path='/cloud-assessments'>
           <CloudAssessments />
         </Route>
+
         <Route path='/zero-trust-network'>
           <ZeroTrustNetwork />
         </Route>
+
         <Route path='/firewall-managment'>
           <FirewallManagment />
         </Route>
+
         <Route path='/vulnerability-management'>
           <VulnerabilityManagement />
         </Route>
+
         <Route path='/data-migration'>
           <DataMigration />
         </Route>
+
         <Route path='/database-migration'>
           <DatabaseMigration />
         </Route>
+
         <Route path='/server-migration'>
           <ServerMigration />
         </Route>
+
         <Route path='/application-migration'>
           <ApplicationMigration />
         </Route>
+
         <Route path='/business-continuity-planning'>
           <BusinessContinuityPlanning />
         </Route>
+
         <Route path='/application-discovery'>
           <ApplicationDiscovery />
         </Route>
+
         <Route path='/data-backup'>
           <DataBackup />
         </Route>
+
         <Route path='/ongoing-maintenance'>
           <OngoingMaintenance />
         </Route>
+
         <Route path='/devops-buildout'>
           <DevOpsBuildout />
         </Route>
+
         <Route path='/devops-security-operations'>
           <DevOpsSecurityOperations />
         </Route>
+
         <Route path='/big-data-analytics'>
           <BigDataAnalytics />
         </Route>
-        {/* <Route path="/security-protection">
-          <SecurityProtectionPage />
+
+        <Route path='/contact'>
+          <ContactPage />
         </Route>
-        <Route path="/security-detection">
-          <CloudSecurityPage />
+
+        <Route path='/career/signup'>
+          <CareerSignup />
         </Route>
-        <Route path="/security-protection">
-          <SecurityProtectionPage />
+
+        <Route path='/careers'>
+          <Careers/>
         </Route>
-        <Route path="/security-detection">
-          <CloudSecurityPage />
+
+        <Route path='/profile'>
+          <ProfilePage />
         </Route>
-        <Route path="/security-protection">
-          <SecurityProtectionPage />
-        </Route>
-        <Route path="/security-detection">
-          <CloudSecurityPage />
-        </Route>
-        <Route path="/security-protection">
-          <SecurityProtectionPage />
-        </Route>
-        <Route path="/security-detection">
-          <CloudSecurityPage />
-        </Route>
-        <Route path="/security-protection">
-          <SecurityProtectionPage />
-        </Route>
-        <Route path="/security-detection">
-          <CloudSecurityPage />
-        </Route>
-        <Route path="/security-protection">
-          <SecurityProtectionPage />
-        </Route>
-        <Route path="/security-detection">
-          <CloudSecurityPage />
-        </Route>
-        <Route path="/security-protection">
-          <SecurityProtectionPage />
-        </Route>
-        <Route path="/security-detection">
-          <CloudSecurityPage />
-        </Route>
-        <Route path="/security-protection">
-          <SecurityProtectionPage />
-        </Route> */}
       </Switch>
+
       <Assurance />
+
       <Footer />
     </div>
   );

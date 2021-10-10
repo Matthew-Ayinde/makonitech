@@ -9,6 +9,7 @@ import Results from "../../components/Results/Results";
 import AdvertOne from "../../components/Adverts/AvertOne";
 import MakoniWay from "../../components/MakoniWay/MakoniWay";
 import Insight from "../../components/Insight";
+import OurWork from "../../components/Work/OurWork";
 
 const CloudSecurityPage = () => {
 
@@ -17,6 +18,7 @@ const CloudSecurityPage = () => {
       <ServicesHero title='Cloud Security' category='Security'/>
       <ServicesTab />
       <Results />
+      <OurWork />
       <Help />
       <AdvertOne />
       <MakoniWay />

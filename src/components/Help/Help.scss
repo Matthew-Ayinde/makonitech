@@ -75,3 +75,20 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .help_wrapper {
+    max-width: 1300px;
+    padding: 50px 0;
+    width: 100%;
+    .help_contents {
+      max-width: 1100px;
+      width: 100%;
+      margin-top: 50px;
+      display: block;
+    }
+    .team_cards {
+      margin: 2em 1em 5em;
+    }
+  }
+}

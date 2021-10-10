@@ -3,18 +3,20 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 3rem 4rem 5rem;
+  padding: 4rem 3rem 2rem 8rem;
 
   .who_we_are_links {
     .who_we_are_items {
+
       h2 {
         font-style: normal;
         font-weight: 800;
-        font-size: 14px;
+        font-size: 18px;
         line-height: 25px;
         color: #484646;
         margin: 1rem 0;
       }
+
       .first ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -26,10 +28,10 @@
 
         li a {
           font-style: normal;
-          font-weight: normal;
-          font-size: 13px;
+          font-weight: 600;
+          font-size: 16px;
           line-height: 22px;
-          color: #040404;
+          color: #1E2348;
           margin-bottom: 2rem;
         }
 
@@ -43,7 +45,7 @@
   .who_we_are_img {
     img {
       margin-top: 40px;
-      width: 300px;
+      width: 400px;
     }
   }
 }

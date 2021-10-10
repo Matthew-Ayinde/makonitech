@@ -1,7 +1,6 @@
 import React from "react";
 import IndustryHeroBanner from "../../../../components/Hero/IndustryHeroBanner";
 import MeetTeam from "../../../../components/Team/MeetTeam";
-import heroBg from "../../../../images/aerospace.png";
 import imgUrl from "../../../../images/tall-building.png";
 import airplane from "../../../../images/airplane.png";
 import AerospaceCard from "../../../../components/Cards/WhatWeDo";
@@ -9,6 +8,7 @@ import AerospaceCard from "../../../../components/Cards/WhatWeDo";
 import CentralNav from "../../../../components/NavBar/CentralNav/CentralNav";
 import Insight from "../../../../components/Insight";
 import Help from "../../../../components/Help/Help";
+import Results from "../../../../components/Results/Results";
 
 const FinancialServices = () => {
   return (
@@ -16,7 +16,7 @@ const FinancialServices = () => {
       <IndustryHeroBanner
         title='Financial Services'
         desc="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.."
-        heroBg={heroBg}
+        heroBg={"fin-serv-hero"}
       />
       <div className='aero-about'>
         <p>
@@ -45,6 +45,10 @@ const FinancialServices = () => {
           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
           fugiat nulla pariatur.
         </p>
+      </div>
+
+      <div className="sec">
+        <Results />
       </div>
 
       {/* What_we_do section - "wwd" */}

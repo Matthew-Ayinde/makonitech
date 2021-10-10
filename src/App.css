@@ -92,11 +92,11 @@ a {
 
 .hero {
   background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.83) 33.86%,
-    rgba(0, 0, 0, 0) 114.81%
-  ),
-  url("./images/hero-bg.png") 50% / cover no-repeat;
+      90deg,
+      rgba(0, 0, 0, 0.83) 33.86%,
+      rgba(0, 0, 0, 0) 114.81%
+    ),
+    url("./images/hero-bg.png") 50% / cover no-repeat;
 }
 
 .hero_content {
@@ -131,11 +131,27 @@ a {
 }
 
 .hero_nav-item {
-  flex-basis: 22%;
+  /* flex-basis: 22%; */
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #f6f7fe;
+  cursor: pointer;
+  padding-bottom: 10px;
 }
 
-.hero_nav-item a {
-  text-decoration: none;
+.hero_nav-item-active {
+  /* flex-basis: 22%; */
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #f6f7fe;
+  cursor: pointer;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #362ef8;
+  /* width: 100px; */
 }
 
 /* Sub navigation */
@@ -171,12 +187,12 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
 .goals_content {
-  flex-basis: 30.5%;
+  flex-basis: 34%;
 }
 
 div.balls {
@@ -186,7 +202,6 @@ div.balls {
   grid-column-gap: 1.5rem;
   justify-content: center;
 }
-
 
 .goals_content h2 {
   font-size: calc(4rem * var(--type-scale, 1));
@@ -201,8 +216,8 @@ div.balls {
 }
 
 .goals_img img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  /* height: auto; */
 }
 
 /* Our Work section */
@@ -413,6 +428,7 @@ div.balls {
 .first_test-row img,
 .second_test-row img {
   max-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -422,6 +438,10 @@ div.balls {
   line-height: calc(6.3rem * var(--height-scale, 1));
   font-weight: 400;
   text-align: center;
+  font-style: normal;
+  font-weight: 800;
+  text-align: center;
+  color: #070c25;
 }
 
 .first_test-row article {
@@ -516,13 +536,21 @@ div.balls {
   font-size: calc(4.6rem * var(--type-scale, 1));
   line-height: calc(6.274rem * var(--height-scale, 1));
   font-weight: 800;
+  letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 5rem;
+  /* font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 63px;
+  letter-spacing: 0.02em;
+  color: #ffffff; */
 }
 
 .join_team > header {
   text-align: center;
-  padding: 3rem 0;
-  margin-bottom: 2rem;
+  /* padding: 0 0 3rem; */
+  /* margin-bottom: 4rem; */
 }
 
 .join_team > section {
@@ -570,6 +598,7 @@ div.balls {
 
 .team_card .card_footer p {
   margin-right: 1rem;
+  margin-bottom: 0!important;
 }
 
 /* Insight section */
@@ -744,6 +773,10 @@ div.balls {
   border-color: transparent #2f356a transparent transparent;
 }
 
+/* .second_column_evolution {
+  padding: 4rem 0;
+} */
+
 .evolution p.more_info,
 .complexity p.more_info {
   font-size: calc(1.8rem * var(--type-scale, 1));
@@ -917,21 +950,35 @@ div.balls {
   }
 
   .hero_content {
-    padding: 3rem 0 3rem 15rem;
+    padding: 5rem 0 3rem 10rem;
     text-align: left;
+    height: 120vh;
+  }
+
+  .hero_info h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 75px;
+    letter-spacing: -0.03em;
+    color: #f6f7fe;
+    margin-bottom: 4rem;
   }
 
   .hero_info {
     width: 100%;
-    max-width: 432px;
+    max-width: 500px;
   }
 
   .hero_nav-list {
     display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    max-width: 100%;
   }
 
   .goals {
-    padding: 0 0 0 15rem;
+    padding: 10rem 0 10rem 10rem;
     flex-direction: row;
     text-align: left;
   }
@@ -941,11 +988,16 @@ div.balls {
   }
 
   .reason {
-    padding: 3rem 15rem;
+    /* padding: 3rem 15rem; */
+    padding: 8rem 15rem;
+    background: url("./images/bg-imgs.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .reason_list {
-  flex-basis: 50%;
+    flex-basis: 50%;
   }
 
   .reason_intro {
@@ -958,15 +1010,19 @@ div.balls {
     margin-bottom: 0;
   }
 
+  .testimonial {
+    padding: 5rem 0;
+  }
+
   .testimonial_content {
     padding: 2rem 7rem;
   }
 
   .testimonial h3::before,
-  .testimonial h3::after  {
+  .testimonial h3::after {
     width: 40%;
   }
-  
+
   .testify_card {
     text-align: left;
     margin: 0;
@@ -982,11 +1038,15 @@ div.balls {
   }
 
   .questions {
-    padding: 2rem 18rem;
+    padding: 8rem 18rem;
   }
 
   .join_team {
-    padding: 2rem 15rem;
+    padding: 5.5rem 15rem 8rem;
+  }
+
+  .insight {
+    padding: 8rem 0rem;
   }
 
   .insight_content {
@@ -1004,14 +1064,14 @@ div.balls {
     height: 37.5vh;
   }
 
-  .disruption, 
+  .disruption,
   .second_column div article {
-    padding: 0 3rem;
+    padding: 0.5rem 1.5rem;
   }
 
   .assurance {
     grid-template-rows: 1fr auto;
-    padding: 2rem 12rem;
+    padding: 5rem 12rem;
   }
 
   .assurance_content {
@@ -1024,12 +1084,20 @@ div.balls {
   }
 
   .footer {
-    padding: 2rem 22rem;
+    padding: 8rem 22rem;
     text-align: left;
   }
 
   .footer h4 {
     margin-top: 0;
+  }
+
+  .footer_link {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #33354d;
   }
 
   .main_footer-content {
