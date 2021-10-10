@@ -8,6 +8,7 @@ import AerospaceCard from "../../../../components/Cards/WhatWeDo";
 import CentralNav from "../../../../components/NavBar/CentralNav/CentralNav";
 import Insight from "../../../../components/Insight";
 import Help from "../../../../components/Help/Help";
+import Results from "../../../../components/Results/Results";
 
 const EnergyAndNaturalResources = () => {
   return (
@@ -44,6 +45,10 @@ const EnergyAndNaturalResources = () => {
           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
           fugiat nulla pariatur.
         </p>
+      </div>
+
+      <div className="sec">
+        <Results />
       </div>
 
       {/* What_we_do section - "wwd" */}

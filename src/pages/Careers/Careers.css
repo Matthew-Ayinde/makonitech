@@ -1,0 +1,174 @@
+.career--hero {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.83) 33.86%,
+      rgba(0, 0, 0, 0) 114.81%
+    ),
+    url("../../images/Rectangle-1787.svg") 50% / cover no-repeat;
+}
+
+.career--hero_content {
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* padding: 3rem; */
+  padding: 257px 16px 203px;
+}
+
+.career--hero_info h1 {
+  font-size: calc(7.2rem * var(--type-scale, 1));
+  line-height: calc(8rem * var(--height-scale, 1));
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  color: #f6f7fe;
+  margin-bottom: 2rem;
+}
+
+.career--hero_info p {
+  font-size: calc(2rem * var(--type-scale, 1));
+  line-height: calc(3.2rem * var(--height-scale, 1));
+  letter-spacing: 0.02em;
+  color: #f6f7fe;
+}
+
+.career--hero_btn > button {
+  cursor: pointer !important;
+  max-width: 170px;
+  width: 100%;
+  height: 50px;
+  color: white;
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.92px;
+  padding: 0.5em 1em;
+  margin: 20px 0;
+}
+
+.makoni--card,
+.makoni--container_sub--text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.makoni--container_sub {
+  padding: 100px 30px;
+  min-height: 100vh;
+}
+.makoni--container_sub h1 {
+  font-family: Nunito Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #484646;
+}
+.makoni_card {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  padding: 3rem;
+  border-radius: 4px;
+  color: #fff;
+  height: 400px;
+  width: 369px;
+  margin: 20px 40px;
+}
+.card--body {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+.makoni_card-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)),
+    url("../../images/Rectangle-1899.svg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.makoni_card-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)),
+    url("../../images/Rectangle-1729.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 200px;
+}
+.makoni_card-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)),
+    url("../../images/Rectangle-1898.svg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.makoni_card--header {
+  /* display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 1.5rem;
+    font-size: calc(2.4rem * var(--type-scale, 1));
+    line-height: calc(4rem * var(--height-scale, 1)); */
+  font-family: Nunito Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  align-items: left;
+  text-align: left;
+}
+
+.makoni_card--text {
+  /* font-size: calc(1.6rem * var(--type-scale, 1));
+  line-height: calc(2.5rem * var(--height-scale, 1)); */
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+@media only screen and (max-width: 1200px) {
+  .makoni--card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .makoni_card-2 {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 985px) {
+  /* .nav_bar {
+    grid-template-columns: auto 1fr auto;
+  } */
+  .career--hero_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .career--hero_info {
+    width: 100%;
+    max-width: 637px;
+  }
+}
+
+@media (max-width: 903px) {
+  .career--hero_content {
+    padding: 110px 16px;
+  }
+}

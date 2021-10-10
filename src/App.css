@@ -536,13 +536,21 @@ div.balls {
   font-size: calc(4.6rem * var(--type-scale, 1));
   line-height: calc(6.274rem * var(--height-scale, 1));
   font-weight: 800;
+  letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 5rem;
+  /* font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 63px;
+  letter-spacing: 0.02em;
+  color: #ffffff; */
 }
 
 .join_team > header {
   text-align: center;
-  padding: 3rem 0;
-  margin-bottom: 2rem;
+  /* padding: 0 0 3rem; */
+  /* margin-bottom: 4rem; */
 }
 
 .join_team > section {
@@ -590,6 +598,7 @@ div.balls {
 
 .team_card .card_footer p {
   margin-right: 1rem;
+  margin-bottom: 0!important;
 }
 
 /* Insight section */
@@ -1033,7 +1042,7 @@ div.balls {
   }
 
   .join_team {
-    padding: 8rem 15rem;
+    padding: 5.5rem 15rem 8rem;
   }
 
   .insight {
