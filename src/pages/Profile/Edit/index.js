@@ -126,7 +126,7 @@ const ProfileEdit = () => {
         </form>
       </div>
 
-      <div className="submit-btn">
+      <div className="submit-btn-profile">
         <button>UPDATE</button>
       </div>
     </>

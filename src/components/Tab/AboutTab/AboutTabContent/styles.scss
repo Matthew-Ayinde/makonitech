@@ -5,47 +5,49 @@
     font-style: normal;
     font-weight: 400;
     color: #040404;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 857px;
-    max-width: 1178px;
-    flex: 100%;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // height: 857px;
+    // max-width: 1178px;
+    // flex: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
+    padding-top: 100px;
+
     .atc-img_wrap {
       position: relative;
       height: 781px;
 
       .imgOne {
-        max-width: 515px;
+        // max-width: 515px;
         width: 100%;
-        height: 80%;
-        position: relative;
-        bottom: -8%;
-        right: 3%;
-        transform: translate(-3%, 8%);
+        // height: 562px;
       }
-      .imgTwo {
-        position: absolute;
-        top: 0;
-        bottom: -15%;
-        left: -69%;
-        transform: translate(39%, 15%);
-        z-index: -1;
+      // .imgTwo {
+      //   position: absolute;
+      //   bottom: -15%;
+      //   left: -69%;
+      //   transform: translate(39%, 15%);
+      //   z-index: -1;
 
-        max-width: 590px;
-        width: 100%;
-        height: 100%;
-      }
+      //   max-width: 590px;
+      //   width: 100%;
+      //   height: 731px;
+      // }
     }
     .atc-text_wrap {
-      max-width: 542px;
-      padding: inherit 20px;
+      // max-width: 542px;
+      padding: 20px 100px;
       width: 100%;
       .atc-h1 {
         color: #484646;
         font-size: 36px;
         line-height: 64px;
+      }
+      .bold {
+        font-weight: 600;
       }
       .atc-p {
         font-size: 16px;

@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import Assurance from "./components/Assurance";
 import NavBar from "./components/NavBar/NavBar";
 // import WhoWeAre from "./components/SubNavBarMenu/WhoWeAre/WhoWeAre";
-
 import Aerospace from "./pages/Industries/industrypages/Aerospace/Aerospace";
 import CloudSecurityPage from "./pages/Security/CloudSecurityPage";
 import SecurityProtectionPage from "./pages/Security/SecurityProtectionPage";
@@ -46,6 +45,7 @@ import PublicSectorAfrica from "./pages/PublicSector/PublicSectorAfrica";
 import PublicSectorEurope from "./pages/PublicSector/PublicSectorEurope";
 import PublicSectorUsa from "./pages/PublicSector/PublicSectorUsa";
 import PublicSectorMiddleEast from "./pages/PublicSector/PublicSectorMiddleEast";
+
 
 function App() {
   return (
@@ -238,6 +238,10 @@ function App() {
 
         <Route path='/career/signup'>
           <CareerSignup />
+        </Route>
+
+        <Route path='/careers'>
+          <Careers/>
         </Route>
 
         <Route path='/profile'>

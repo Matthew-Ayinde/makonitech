@@ -8,12 +8,13 @@
 }
 
 .career--hero_content {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 3rem;
+  /* padding: 3rem; */
+  padding: 257px 16px 203px;
 }
 
 .career--hero_info h1 {
@@ -68,7 +69,7 @@
   margin-bottom: 30px;
   color: #484646;
 }
-.makoni_card{
+.makoni_card {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -163,5 +164,11 @@
   .career--hero_info {
     width: 100%;
     max-width: 637px;
+  }
+}
+
+@media (max-width: 903px) {
+  .career--hero_content {
+    padding: 110px 16px;
   }
 }

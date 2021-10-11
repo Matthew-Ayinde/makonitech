@@ -72,10 +72,8 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="sec_content-two">
-            <div className="sec-one_img">
-              <img src={secImg3} alt="" />
-            </div>
+          <div className="sec_content-one">
+            
             <div className="sec-one_text">
               <div>
                 <h5>High quality and detailed deliverables</h5>
@@ -97,6 +95,9 @@ const About = () => {
                   consequat sunt
                 </p>
               </div>
+            </div>
+            <div className="sec-one_img">
+              <img src={secImg3} alt="" />
             </div>
           </div>
         </div>

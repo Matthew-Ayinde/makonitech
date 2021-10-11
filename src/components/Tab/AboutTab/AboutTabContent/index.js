@@ -1,7 +1,6 @@
 // About Tab content - atc
 import React from "react";
-import imgOne from "../../../../images/about-tab-img.png";
-import imgTwo from "../../../../images/about-tab-img2.png";
+import imgOne from "../../../../images/dorinda.png";
 import "./styles.scss";
 
 const TabContent = () => {
@@ -10,17 +9,14 @@ const TabContent = () => {
     <div className="atc_container">
       <div className="atc_inner-wrap">
         <div className="atc-img_wrap">
-          <img className="imgOne" src={imgOne} alt="" />
-          <img className="imgTwo" src={imgTwo} alt="" />
+          <img className="imgOne" src={imgOne} alt="img" />
         </div>
         <div className="atc-text_wrap">
           <h3 className="atc-h1">Who We Are</h3>
-          <p className="atc-p" style={{ color: "#1E2348" }}>
-            <strong>
-              We are in the business of solving problems. dolor do amet sint.
-              Velit officia consequat duis enim velit mollit. Exercitation
-              veniam consequat sunt{" "}
-            </strong>
+          <p className="atc-p bold">
+            We are in the business of solving problems. dolor do amet sint.
+            Velit officia consequat duis enim velit mollit. Exercitation veniam
+            consequat sunt{" "}
           </p>
           <p className="atc-p">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet

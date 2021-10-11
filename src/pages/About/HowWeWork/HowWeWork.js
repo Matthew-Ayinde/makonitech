@@ -5,9 +5,9 @@ import AboutTab from "../../../components/Tab/AboutTab/AboutTab";
 import TabComponent from "../../../components/Tab/AboutTab/AboutTabContent/HowWeWorkTabComponent";
 import treeImg from "../../../images/image 2.svg";
 import carouselImg from "../../../images/rectangle5.png";
-import Img3 from "../../../images/rectangle17.png";
+// import Img3 from "../../../images/rectangle17.png";
 import circleThree from "../../../images/circle-three.svg";
-import AccordionComponent from "../../../components/Accordion";
+// import AccordionComponent from "../../../components/Accordion";
 import Carousel from "react-elastic-carousel";
 
 import "./HowWeWork.scss";
@@ -32,9 +32,11 @@ const HowWeWork = () => {
           <img src={treeImg} alt="" />
         </div>
       </section>
-
+      {/* // background: #FFFFFF;
+// box-shadow: 0px 0px 5px 1px rgba(89, 89, 89, 0.1);
+// border-radius: 4px; */}
       {/* Section3: How we corporate */}
-      <section className="sec_container3">
+      {/* <section className="sec_container3">
         <div>
           <img src={Img3} alt="" />
         </div>
@@ -44,7 +46,7 @@ const HowWeWork = () => {
             <AccordionComponent />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Section4: What we do */}
       <section className="sec_container2">

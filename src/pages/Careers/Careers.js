@@ -2,7 +2,7 @@ import React from "react";
 import "../Careers/Careers.css";
 import { Container, Card } from "react-bootstrap";
 import Join from "../../components/Join";
-
+import Vacancy from "../../components/Vacancy/Vacancy";
 
 const Careers = () => {
   return (
@@ -39,7 +39,7 @@ const Careers = () => {
                 <Card className="makoni_card makoni_card-1">
                   <Card.Body className="card--body">
                     <Card.Title className="makoni_card--header">
-                      Positive Corporate Culture
+                      Positive Corporate Culture  
                     </Card.Title>
                     <Card.Text className="makoni_card--text">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -82,7 +82,7 @@ const Careers = () => {
           </div>
         </Container>
       </section>
-   
+    <Vacancy />
       <Join />
     </>
   );
