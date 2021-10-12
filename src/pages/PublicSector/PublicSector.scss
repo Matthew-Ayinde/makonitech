@@ -72,3 +72,87 @@
     color: #f6f7fe;
   }
 }
+
+
+@media screen and (max-width: 400px){
+  /* styles */
+  .public-sector {
+    .public-sector-africa-hero {
+      width: 100%;
+      height: 55vh;
+      color: aliceblue;
+      padding: 20px;
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.83) 33.86%,
+          rgba(0, 0, 0, 0) 114.81%
+        ),
+        url("../../images/africa.svg") 50% / cover no-repeat;
+    }
+  
+    .public-sector-middle-east-hero {
+      width: 100%;
+      height: 55vh;
+      color: aliceblue;
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.83) 33.86%,
+          rgba(0, 0, 0, 0) 114.81%
+        ),
+        url("../../images/middle-east.svg") 50% / cover no-repeat;
+    }
+  
+    .public-sector-usa-hero {
+      width: 100%;
+      height: 55vh;
+      color: aliceblue;
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.83) 33.86%,
+          rgba(0, 0, 0, 0) 114.81%
+        ),
+        url("../../images/usa.svg") 50% / cover no-repeat;
+    }
+  
+    .public-sector-europe-hero {
+      width: 100%;
+      height: 55vh;
+      color: aliceblue;
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.83) 33.86%,
+          rgba(0, 0, 0, 0) 114.81%
+        ),
+        url("../../images/europe.svg") 50% / cover no-repeat;
+    }
+  }
+  
+  .public-sector-content {
+    max-width: 100%;
+    // width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0px 0 20px 0px;
+    padding: 120px 0px 0px 0px;
+      width: 100%;
+  
+    h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 50px;
+      letter-spacing: -0.03em;
+      color: #f6f7fe;
+    }
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 0.02em;
+      color: #f6f7fe;
+    }
+  }
+  
+} 

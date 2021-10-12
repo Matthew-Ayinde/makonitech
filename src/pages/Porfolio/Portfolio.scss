@@ -1,0 +1,50 @@
+.portfolio_wrapper_page {
+  .portfolio_wrapper_hero {
+    width: 100%;
+    height: 100vh;
+    color: aliceblue;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.83) 33.86%,
+        rgba(0, 0, 0, 0) 114.81%
+      ),
+      url("../../images/port-hero.png") 50% / cover no-repeat;
+
+    .hero_contents {
+      max-width: 100%;
+      text-align: center;
+      width: 700px;
+      margin: 0 auto;
+      padding: 150px 0 0;
+      h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 68px;
+        line-height: 93px;
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 40px;
+      }
+      .port_cta_btn {
+        border: 2px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 25px;
+        color: #ffffff;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
