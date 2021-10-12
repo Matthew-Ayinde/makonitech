@@ -1,6 +1,6 @@
 .accordion__wrap {
   width: 100%;
-  max-width: 514px;
+  max-width: 614px;
   height: 530px;
   min-height: fit-content;
   margin: auto;
@@ -63,6 +63,7 @@
   .accordion__panel {
     height: fit-content !important;
   }
+
 }
 
 /* Custom Accordion styles */

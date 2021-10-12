@@ -17,8 +17,16 @@
       }
 
       .tab_active {
-          font-weight: bold;
+        font-weight: bold;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .service_tab_wrapper {
+    .service_tabs {
+      display: none;
     }
   }
 }

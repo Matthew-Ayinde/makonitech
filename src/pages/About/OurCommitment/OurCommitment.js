@@ -30,7 +30,7 @@ const OurCommitment = () => {
       <section className="comm-section2">
         <div className="comm_text-area">
           <small>INCLUSION & DIVERSITY</small>
-          <h6>In our managements’ words</h6>
+          <h6 >In our managements’ words</h6>
         </div>
         <div className="banner_area">
           <img src={commImgOne} alt="" />
@@ -66,9 +66,9 @@ const OurCommitment = () => {
           </p>
         </div>
         <div className="comm_gallery">
-          <figure className="figure">
+          <figure>
             <img src={commImgTwo} alt="" />
-            <figcaption className="fig-caption">
+            <figcaption>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               <br />
               <Link to="/" className="learn_more">
@@ -76,9 +76,9 @@ const OurCommitment = () => {
               </Link>
             </figcaption>
           </figure>
-          <figure className="figure">
+          <figure>
             <img src={commImgThree} alt="" />
-            <figcaption className="fig-caption">
+            <figcaption>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Ullamcorper euismod arcu e volutpat turpis bibendum.
               <br />
@@ -87,9 +87,9 @@ const OurCommitment = () => {
               </Link>
             </figcaption>
           </figure>
-          <figure className="figure">
+          <figure>
             <img src={commImgFour} alt="" />
-            <figcaption className="fig-caption">
+            <figcaption>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit
               Ullamcorper euismod arcu e volutpat turpis bibendum.
               <br />
@@ -98,9 +98,9 @@ const OurCommitment = () => {
               </Link>
             </figcaption>
           </figure>
-          <figure className="figure">
+          <figure>
             <img src={commImgFive} alt="" />
-            <figcaption className="fig-caption">
+            <figcaption>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               <br />
               <Link to="/" className="learn_more">
@@ -108,9 +108,9 @@ const OurCommitment = () => {
               </Link>
             </figcaption>
           </figure>
-          <figure className="figure">
+          <figure>
             <img src={commImgSix} alt="" />
-            <figcaption className="fig-caption">
+            <figcaption>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Ullamcorper euismod arcu e volutpat turpis bibendum.
               <br />
@@ -119,9 +119,9 @@ const OurCommitment = () => {
               </Link>
             </figcaption>
           </figure>
-          <figure className="figure">
+          <figure>
             <img src={commImgSeven} alt="" />
-            <figcaption className="fig-caption">
+            <figcaption>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit
               Ullamcorper euismod arcu e volutpat turpis bibendum.
               <br />

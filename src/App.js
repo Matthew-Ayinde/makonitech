@@ -42,6 +42,8 @@ import PublicSectorAfrica from "./pages/PublicSector/PublicSectorAfrica";
 import PublicSectorEurope from "./pages/PublicSector/PublicSectorEurope";
 import PublicSectorUsa from "./pages/PublicSector/PublicSectorUsa";
 import PublicSectorMiddleEast from "./pages/PublicSector/PublicSectorMiddleEast";
+import Portfolio from "./pages/Porfolio/Portfolio";
+
 import Careers from "./pages/Careers/Careers";
 
 function App() {
@@ -52,6 +54,10 @@ function App() {
       <Switch>
         <Route path='/' exact>
           <LandingPage />
+        </Route>
+
+        <Route path='/portfolio' exact>
+          <Portfolio />
         </Route>
 
         <Route path='/public-sector-africa' exact>
