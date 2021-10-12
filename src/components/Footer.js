@@ -1,4 +1,5 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 import { footerData } from "../data/commonData";
 import FooterLink from "./FooterLink";
 import Cert from "../images/aws-cert-badge 1.svg";
