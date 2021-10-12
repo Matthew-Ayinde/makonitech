@@ -54,7 +54,7 @@
     flex-direction: column;
     // justify-content: space-around;
     align-items: center;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     // padding-top: 5em;
 
@@ -62,20 +62,12 @@
       display: flex;
       gap: 50px;
       align-items: center;
-      max-width: 100%;
-
       width: 100%;
       margin: 30px auto;
       .sec-one_img > img {
-        max-width: 536px;
-        width: 100%;
-        height: 507px;
-
-        flex-wrap: wrap;
+        width: 500px;
       }
       .sec-one_text {
-        max-width: 405px;
-
         width: 100%;
         padding: 0 20px;
         h5 {
@@ -84,47 +76,7 @@
           letter-spacing: 1px;
           font-style: bold;
           line-height: 38.98px;
-          margin-bottom: 0.9em;
-        }
-        p {
-          font-family: Nunito Sans;
-          color: #040404;
-          font-size: 16px;
-          letter-spacing: 1px;
-          font-style: normal;
-          line-height: 25px;
-          margin-bottom: 2.7em;
-          text-align: justify;
-        }
-      }
-    }
-    .sec_content-two {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      // gap: -4em;
-      flex-wrap: wrap;
-      align-items: center;
-      max-width: 100%;
-      width: 100%;
-      margin: 2.5em auto;
-      .sec-one_img > img {
-        max-width: 536px;
-        width: 100%;
-        height: 507px;
-        // flex-wrap: wrap;
-      }
-      .sec-one_text {
-        max-width: 405px;
-        width: 100%;
-        h5 {
-          color: #212121;
-          font-size: 32px;
-          letter-spacing: 1px;
-          font-style: bold;
-          line-height: 38.98px;
-          margin-bottom: 0.9em;
-
+          margin-bottom: 10px;
         }
         p {
           color: #040404;
@@ -146,8 +98,8 @@
     grid-auto-columns: 293px;
     grid-template-rows: 1fr 1fr;
     grid-gap: 2em 3.5em;
-    max-width: 100%;
-    width: 80%;
+    max-width: 1197px;
+    width: 100%;
     margin: 0 auto;
     > * > h6 {
       font-size: 20px;
@@ -167,21 +119,14 @@
   .inner-sec {
     display: flex;
     align-items: center;
-    column-gap: 20px;
-    flex-wrap: wrap;
-    // min-width: 60%;
-    min-height: 615px;
-    max-width: 100%;
     width: 100%;
-    margin: 10em auto;
-    flex: 1 1 0;
+    gap: 20px;
+    margin: 8em 0 10em;
     img {
-      max-width: 570px;
-      width: 100%;
+      width: 700px;
     }
     .inner_sec-text {
-      max-width: 530px;
-
+      padding: 0 20px;
       width: 100%;
       h4 {
         font-size: 33px;
