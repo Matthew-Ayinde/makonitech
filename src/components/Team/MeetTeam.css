@@ -2,7 +2,7 @@
 
 .team_wrap {
   background-color: #f6f8fa;
-
+width: 100%;
   margin: 5em auto;
   padding: 13em 0.5em;
 }
@@ -35,7 +35,7 @@
   grid-auto-rows: 1fr 1fr 1fr;
   grid-gap: 4em 2em;
   margin: 5em auto;
-  max-width: 1500px;
+  max-width: 100%;
   width: 80%;
   padding: 2em 0.5em;
 }

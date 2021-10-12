@@ -9,7 +9,7 @@ const Portfolio = ({handleCloseSubNav}) => {
       <div className='portfolio-links'>
         <ul>
           <li>
-            <Link to="/portfolio" onClick={handleCloseSubNav}>Customers we Serve</Link>
+            <Link to="/" onClick={handleCloseSubNav}>Customers we Serve</Link>
           </li>
           <li>
             <Link to="/" onClick={handleCloseSubNav}>Accomplishments</Link>

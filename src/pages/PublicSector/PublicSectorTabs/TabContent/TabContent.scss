@@ -1,5 +1,5 @@
 .tab_container {
-  padding-bottom: 50px;
+    padding-bottom: 50px;
   .tab_wrapper {
     padding: 100px 0 100px 50px;
     .tab_content_wrapper {
@@ -81,6 +81,7 @@
           font-size: 16px;
           line-height: 28px;
           color: #333333;
+          
         }
         h3 {
           font-style: normal;
@@ -96,84 +97,6 @@
           font-size: 12px;
           line-height: 17px;
           color: #999999;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 400px) {
-  /* styles */
-  .tab_container {
-    padding: 0px 5px;
-    .tab_wrapper {
-      padding: 50px 0 30px 0px;
-      text-align: center;
-      .tab_content_wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-        .single_content {
-          width: 100%;
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-      }
-    }
-
-    .show_counts {
-      width: 100%;
-      padding: 0px 0 40px;
-
-      .single_count {
-        text-align: center;
-        h1 {
-          font-size: 42px;
-          line-height: 78px;
-        }
-        p {
-          font-size: 13px;
-          line-height: 18px;
-        }
-      }
-    }
-
-    .details {
-      width: 100%;
-      .details_img img {
-        width: 100%;
-      }
-      .details_contents {
-        display: grid;
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 20px;
-        padding: 50px 0;
-        .single_details {
-          p {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 28px;
-            color: #333333;
-          }
-          h3 {
-            font-style: normal;
-            font-weight: bold;
-            font-size: 20px;
-            line-height: 21px;
-            color: #333333;
-            margin: 10px 0;
-          }
-          span {
-            font-style: normal;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 17px;
-            color: #999999;
-          }
         }
       }
     }

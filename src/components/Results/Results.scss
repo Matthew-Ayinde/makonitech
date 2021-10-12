@@ -11,6 +11,12 @@
     color: #14151f;
   }
 
+  //   .special-border {
+  //       border-bottom: 5px solid #C4C4C4;
+  //       width: 100%;
+  //       height: 5px;
+  //   }
+
   .results_content {
     display: flex;
     flex-direction: row;
@@ -31,32 +37,6 @@
         font-weight: normal;
         font-size: 18px;
         line-height: 26px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .results_wrapper {
-    text-align: center;
-
-    h4 {
-      font-size: 25px;
-      line-height: 38px;
-    }
-
-    .results_content {
-      margin: 3rem 0;
-
-      .count {
-        h2 {
-          font-size: 42px;
-          line-height: 57px;
-        }
-        p {
-          font-size: 14px;
-          line-height: 22px;
-        }
       }
     }
   }
