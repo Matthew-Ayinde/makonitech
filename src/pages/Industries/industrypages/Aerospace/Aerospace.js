@@ -5,7 +5,6 @@ import imgUrl from "../../../../images/tall-building.png";
 import airplane from "../../../../images/airplane.png";
 
 import AerospaceCard from "../../../../components/Cards/WhatWeDo";
-// import InsightComponent from "../../../../components/Cards/Insights/Insight";
 
 import "./Aerospace.css";
 import CentralNav from "../../../../components/NavBar/CentralNav/CentralNav";
