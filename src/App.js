@@ -45,6 +45,10 @@ import PublicSectorAfrica from "./pages/PublicSector/PublicSectorAfrica";
 import PublicSectorEurope from "./pages/PublicSector/PublicSectorEurope";
 import PublicSectorUsa from "./pages/PublicSector/PublicSectorUsa";
 import PublicSectorMiddleEast from "./pages/PublicSector/PublicSectorMiddleEast";
+import SavedJobs from "./pages/SavedJobs/SavedJobs";
+import CareerSignin from "./pages/CareerSignin";
+import RecommendedJobs from "./pages/RecommendedJobs/RecommendedJobs";
+import MeetOurTeam from "./pages/MeetOurTeam/MeetOurTeam";
 
 
 function App() {
@@ -246,6 +250,22 @@ function App() {
 
         <Route path='/profile'>
           <ProfilePage />
+        </Route>
+
+        <Route path='/career/savedjobs'>
+          <SavedJobs />
+        </Route>
+
+        <Route path='/career/signin'>
+          <CareerSignin />
+        </Route>
+
+        <Route path='/career/recommendedjobs'>
+          <RecommendedJobs />
+        </Route>
+
+        <Route path='/career/meet-our-team'>
+          <MeetOurTeam />
         </Route>
       </Switch>
 
