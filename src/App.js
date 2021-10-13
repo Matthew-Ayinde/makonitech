@@ -49,6 +49,8 @@ import CareerSignin from "./pages/CareerSignin";
 import RecommendedJobs from "./pages/RecommendedJobs/RecommendedJobs";
 import MeetOurTeam from "./pages/MeetOurTeam/MeetOurTeam";
 import Portfolio from "./pages/Porfolio/Portfolio";
+import PartnersAffiliation from "./pages/PartnersAffiliation/PartnersAffiliation";
+import InsightDetails from "./pages/InsightDetails/InsightDetails";
 
 
 
@@ -271,6 +273,14 @@ function App() {
 
         <Route path='/career/meet-our-team'>
           <MeetOurTeam />
+        </Route>
+
+        <Route path='/partners-affiliation'>
+          <PartnersAffiliation />
+        </Route>
+
+        <Route path='/insight/insight-details'>
+          <InsightDetails />
         </Route>
       </Switch>
 

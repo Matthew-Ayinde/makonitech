@@ -124,9 +124,7 @@
 #root > div > section:nth-child(2) > div > div.saved_jobs_tabs_contents > div > div > div > div.vacancy-grid.saved_jobs_vacancy_grid{
   margin-bottom:200px!important;
 }
-/* .saved_jobs_vacancy_grid{
-  margin-bottom:200px!important;
-} */
+
 .vacancy-card {
   padding: 13px 21px 24px;
   background: linear-gradient(rgb(4, 7, 36, 0.9), rgb(4, 7, 36, 0.9)),

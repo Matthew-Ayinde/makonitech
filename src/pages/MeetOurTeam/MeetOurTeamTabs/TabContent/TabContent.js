@@ -17,7 +17,7 @@ const TabContent = () => {
               Your can connect with some Cloudfift people here
             </p>
           </div>
-          <div className="vacancy-grid ">
+          <div className="vacancy-grid">
             <Card
               className="d-flex justify-content-center flex-column align-items-center text-center "
               style={{ width: "350.47px", borderRadius: "4px", border:"none"}}
