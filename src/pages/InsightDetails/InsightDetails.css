@@ -30,8 +30,8 @@
   letter-spacing: 0.02em;
   color: #f6f7fe;
 }
-.insight_details_image{
-  margin:0 3rem;
+.insight_details_image {
+  margin: 0 3rem;
 }
 .insight_sub {
   padding: 120px 250px;
@@ -224,7 +224,67 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
+  #root
+    > div
+    > section.insight_details_main_sub
+    > section.insight_sub_sub_section
+    > div.d-flex.justify-content-between.gap-3.align-items-center.text-start.tester,
+  #root
+    > div
+    > section.insight_details_main_sub
+    > section.insight_sub_sub_section
+    > div:nth-child(4) {
+    flex-direction: column;
+  }
+  .text_section {
+    width: 100%;
+  }
+  .img_section {
+    width: 100%;
+  }
+  .insight_sub_sub_section h1 {
+    margin: 100px 0 30px;
+  }
+  .insight_sub_section,
+  .insight_sub_sub_section {
+    padding: 0 200px;
+  }
+  .insight_details-grid {
+    gap: 38.3px;
+  }
+  .insight_sub {
+    padding: 100px 170px;
+  }
+  #root
+    > div
+    > section.insight_details_main_sub
+    > section.d-flex.justify-content-between.insight_sub
+    > div.d-flex.justify-content-end.flex-column
+    > div.d-flex.justify-content-end.flex-row.gap-5 {
+    gap: 1rem !important;
+  }
+  .insight_details--hero_content {
+    padding: 257px 150px 203px;
+  }
+}
+@media (max-width: 768px) {
+  .insight_sub_section,
+  .insight_sub_sub_section {
+    padding: 0 50px;
+  }
+  .insight_details_btn {
+    justify-content: space-between !important;
+  }
+  .card_body {
+    padding: 20px 10px;
+  }
+  .insight_details-grid {
+    gap: 28.3px;
+  }
+  .insight_sub {
+    padding: 100px 10px;
+  }
 }
 @media (max-width: 903px) {
   .insight_details--hero_content {
@@ -273,7 +333,7 @@
     /* margin:0 20px; */
   }
   .insight_details-card {
-    width: 320px !important;
+    width: 350px !important;
   }
   .insight_details_btn > button {
     max-width: 150px;
@@ -285,11 +345,11 @@
 
   .insight_sub_section h1 {
     margin: 20px;
-    line-height:35px;
+    line-height: 35px;
   }
-  .insight_sub_sub_section h1{
+  .insight_sub_sub_section h1 {
     margin: 50px 20px;
-    line-height:35px;
+    line-height: 35px;
   }
   .bullet_section {
     margin: 0 20px;
@@ -304,21 +364,33 @@
   .insight_sub_section_p {
     margin: 0 25px;
   }
-  .insight_sub_sub_section_p{
+  .insight_sub_sub_section_p {
     margin-top: 20px;
   }
-  .insight_details_image{
-    margin-left:0.8rem;
+  .insight_details_image {
+    margin-left: 0.8rem;
   }
-  .insight_sub_p, .insight_span_p, .insight_sub span  {
+  .insight_sub_p,
+  .insight_span_p,
+  .insight_sub span {
     font-family: Nunito Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
+  }
+  #root
+    > div
+    > section.insight_details_main_sub
+    > section.d-flex.justify-content-between.insight_sub
+    > div.d-flex.justify-content-end.flex-column
+    > div.d-flex.justify-content-end.flex-row.gap-5 {
+    gap: 1rem !important;
+    margin-top: 20px;
+  }
 }
-#root > div > section.insight_details_main_sub > section.d-flex.justify-content-between.insight_sub > div.d-flex.justify-content-end.flex-column > div.d-flex.justify-content-end.flex-row.gap-5{
-  gap: 1rem !important;
-  margin-top:20px;
-}
+@media (max-width: 400px) {
+  .insight_details-card {
+    width: 320px !important;
+  }
 }
