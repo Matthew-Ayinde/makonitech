@@ -10,12 +10,13 @@ import "./styles.scss";
 
 const TabComponent = () => {
   return (
-    <div className="tab-component-wrap">
-      <section className="sec_container1">
+
+    <div className=" tab-component-wrap">
+      <section className="  sec_container1">
         <div className="sec_header">
           <h4>What you get with cloudfift</h4>
         </div>
-        <div className="sec_content--one">
+        <div className="container sec_content--one">
           <div className='bg-white-ff'>
             <img src={icon1} alt="" />
             <p>Top Talent</p>

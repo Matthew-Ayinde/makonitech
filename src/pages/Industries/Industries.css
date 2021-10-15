@@ -8,12 +8,12 @@
 }
 
 .ind_hero-new {
-  /* background: linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.65) 100.86%,
       rgba(0, 0, 0, 0) 114.81%
     ),
-    url("../../images/ind-hero-bg.png") 50% / cover no-repeat !important; */
+    url("../../images/ind-hero-bg.png") 50% / cover no-repeat !important;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,7 +125,7 @@
   grid-template-rows: minmax(auto-fit, repeat(3, 1fr));
   grid-gap: 6px;
   /* max-width: 402px; */
-  width: 100%;
+  /* width: 100%; */
   margin: 0 auto;
   padding: 1em 1em 1em;
 }

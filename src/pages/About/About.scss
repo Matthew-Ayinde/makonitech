@@ -211,20 +211,25 @@
   }
 
   .inner-sec {
-    display: flex;
-    align-items: center;
-    column-gap: 80px;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // column-gap: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     padding: 50px 0 100px;
     img {
-      max-width: 570px;
+      // max-width: 570px;
       width: 100%;
     }
     .inner_sec-text {
       position: relative;
-      max-width: 530px;
+      align-items: center;
+      // max-width: 530px;
+      padding: 0px 100px;
 
-      width: 45%;
+      width: 100%;
       h4 {
         font-size: 33px;
         font-weight: 400;
@@ -258,7 +263,7 @@
 .inner_sec-aside p::before {
   content: "";
   position: absolute;
-  left: -3%;
+  left: 12%;
   transform: translateX(3%);
   height: 60px;
   background: #030377;
@@ -357,6 +362,7 @@
         display: none;
       }
       .inner_sec-text {
+        position: relative;
         width: 100% !important;
         h4 {
           font-size: 33px;

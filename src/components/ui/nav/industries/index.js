@@ -8,7 +8,7 @@ const industries = () => {
       <div className={styles.left}>
         <ul>
           <li>
-            <a href="/industries">Industries</a>
+            <a href="/">Industries</a>
           </li>
           <li>
             <a href="/aerospace">Aerospace and Defense</a>

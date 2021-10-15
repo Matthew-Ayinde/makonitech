@@ -22,8 +22,9 @@ const About = () => {
       />
       <AboutTab TabComponent={TabContent} />
       <TabContent />
+      
       <section className='sec_containerTwo'>
-        <div className='sec_content'>
+        <div className='container sec_content'>
           <div className='sec_text'>
             <h2>Ready to realise your product vision?</h2>
             <p>

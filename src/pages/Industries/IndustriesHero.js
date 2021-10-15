@@ -6,7 +6,7 @@ import "./Industries.css";
 function IndustriesHero() {
   return (
     <div className="hero_ind">
-      <Container>
+      {/* <Container> */}
         {/* pass background image class as prop, so as to use different component hero images */}
         <div className="ind_hero-new">
           <div className="ind_hero-text">
@@ -23,7 +23,7 @@ function IndustriesHero() {
             </div>
           </div>
         </div>
-      </Container>
+      {/* </Container> */}
     </div>
   );
 }
