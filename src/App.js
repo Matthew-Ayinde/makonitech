@@ -5,7 +5,7 @@ import LandingPage from "./pages/LandingPage";
 import Industries from "./pages/Industries/Industries";
 import Footer from "./components/Footer";
 import Assurance from "./components/Assurance";
-import NavBar from "./components/NavBar/NavBar";
+// import NavBar from "./components/NavBar/NavBar";
 
 import Aerospace from "./pages/Industries/industrypages/Aerospace/Aerospace";
 import CloudSecurityPage from "./pages/Security/CloudSecurityPage";
