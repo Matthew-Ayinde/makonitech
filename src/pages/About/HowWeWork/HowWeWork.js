@@ -5,9 +5,9 @@ import AboutTab from "../../../components/Tab/AboutTab/AboutTab";
 import TabComponent from "../../../components/Tab/AboutTab/AboutTabContent/HowWeWorkTabComponent";
 import treeImg from "../../../images/image 2.svg";
 import carouselImg from "../../../images/rectangle5.png";
-// import Img3 from "../../../images/rectangle17.png";
+import Img3 from "../../../images/rectangle17.png";
 import circleThree from "../../../images/circle-three.svg";
-// import AccordionComponent from "../../../components/Accordion";
+import AccordionComponent from "../../../components/Accordion";
 import Carousel from "react-elastic-carousel";
 
 import "./HowWeWork.scss";
@@ -62,7 +62,7 @@ const HowWeWork = () => {
           itemsToShow={1}
         >
           <div className="carousel_wrap">
-            <div className="text_area">
+            <div className="carousel-text_area">
               <div>
                 <img src={circleThree} alt="" />
                 <h6>Discovery</h6>

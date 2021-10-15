@@ -2,7 +2,7 @@
 
 .section_one {
   width: 100%;
-  padding: 5rem 0;
+  // padding: 5rem 0;
   margin: 26rem 0 13rem;
   .dark_bg {
     position: relative;
@@ -22,11 +22,11 @@
       transform: translate(-0%, 18%);
     }
     .sec_one-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
       height: 500px;
-      max-width: 1500px;
+      max-width: 100%;
       width: 85%;
       margin: 4em auto !important;
       > div {
@@ -49,9 +49,9 @@
   }
 }
 .project_carousel {
-  max-width: 1500px;
+  max-width: 100%;
   width: 100%;
-  margin: 5em auto 10em;
+  margin: 0em auto 5em;
   padding: 3rem 2.5rem;
   .card {
     max-width: 407px;
@@ -87,7 +87,15 @@
   font-weight: 700;
   color: #14151f;
   position: relative;
-  margin: 3.5em auto 2.5em;
+  margin: 0em auto 1em;
+}
+
+.project_header h4 {
+  font-size: calc(4rem * var(--type-scale, 1));
+  line-height: calc(4.8rem * var(--height-scale, 1));
+  font-weight: 700;
+  color: #14151f;
+  position: relative;
 }
 
 .project_header h4::before,
@@ -140,7 +148,7 @@
         align-items: center;
         flex-wrap: wrap;
         height: 500px;
-        max-width: 1500px;
+        max-width: 100%;
         width: 85%;
         margin: 4em auto;
         height: fit-content;

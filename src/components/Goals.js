@@ -1,5 +1,5 @@
 import React from "react";
-import goalsImg from "../images/goals.png";
+import goalsImg from "../images/bg-land-img.png";
 
 const Goals = () => {
   return (

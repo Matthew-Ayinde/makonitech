@@ -2,8 +2,8 @@
 
 .team_wrap {
   background-color: #f6f8fa;
-
-  margin: 5em auto;
+width: 100%;
+  /* margin: 5em auto; */
   padding: 13em 0.5em;
 }
 .team_wrap .header > h3 {
@@ -35,7 +35,7 @@
   grid-auto-rows: 1fr 1fr 1fr;
   grid-gap: 4em 2em;
   margin: 5em auto;
-  max-width: 1500px;
+  max-width: 100%;
   width: 80%;
   padding: 2em 0.5em;
 }
@@ -133,9 +133,9 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .team_wrap {
-    margin: 15em auto;
-  }
+  /* .team_wrap {
+    margin: 0;
+  } */
   .team_grid {
     display: block !important;
     /* grid-template-columns: 1fr; */

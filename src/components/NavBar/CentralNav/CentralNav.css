@@ -3,9 +3,9 @@
   position: relative;
   font-family: Nunito Sans;
   color: #333333;
-  padding: 0 1.5em;
+  /* padding: 0 1.5em; */
   position: relative;
-  max-width: 582px;
+  max-width: 512px;
   min-height: 426px;
   width: 100%;
   margin: 7em auto;
@@ -105,10 +105,10 @@ ol {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  max-width: 500px;
+  max-width: 430px;
   width: 100%;
   word-wrap: break-word;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: normal;
   height: 230px;

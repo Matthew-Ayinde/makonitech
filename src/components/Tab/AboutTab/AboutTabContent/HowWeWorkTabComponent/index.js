@@ -16,7 +16,7 @@ const TabComponent = () => {
           <h4>What you get with cloudfift</h4>
         </div>
         <div className="sec_content--one">
-          <div>
+          <div className='bg-white-ff'>
             <img src={icon1} alt="" />
             <p>Top Talent</p>
           </div>
