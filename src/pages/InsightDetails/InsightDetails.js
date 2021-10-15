@@ -1,12 +1,11 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container,  Card } from "react-bootstrap";
 import "../InsightDetails/InsightDetails.css";
 import profile from "../../images/Ellipse-39.svg";
 import man from "../../images/Rectangle-1809.svg";
 import group from "../../images/Rectangle-2023.svg";
 import next from "../../images/next-icon.svg";
 import prev from "../../images/prev-icon.svg";
-import { Card } from "react-bootstrap";
 import img1 from "../../images/image-1.png";
 import img2 from "../../images/image-2.png";
 import img3 from "../../images/image-3.png";
