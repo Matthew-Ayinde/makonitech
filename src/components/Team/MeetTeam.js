@@ -77,7 +77,7 @@ const teamData = [
 const MeetTeam = () => {
   return (
     <>
-      <section className="team_wrap">
+      <section className="container team_wrap">
         <div className="header">
           <h3>Meet The Team</h3>
           <p>

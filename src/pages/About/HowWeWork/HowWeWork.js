@@ -62,7 +62,7 @@ const HowWeWork = () => {
           itemsToShow={1}
         >
           <div className="carousel_wrap">
-            <div className="text_area">
+            <div className="carousel-text_area">
               <div>
                 <img src={circleThree} alt="" />
                 <h6>Discovery</h6>

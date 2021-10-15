@@ -4,6 +4,15 @@
     padding: 60px 0;
   }
   .sort_clients_contents {
+    .vacancy-wrapper-head {
+      .vacancy-wrapper-head-group {
+        button {
+          background: #1e2348;
+          border-radius: 3px;
+          color: white;
+        }
+      }
+    }
     .unique {
       .content_img_bg {
         background: url("../../../images/Frame\ 168.png");
@@ -40,14 +49,14 @@
     .learn_more_cta {
       text-align: center;
       padding: 40px 0 60px;
-      
+
       .learn_more_cta_btn {
         font-style: normal;
         font-weight: 600;
         font-size: 13px;
         line-height: 20px;
-        color: #1522AF;
-        border: 1px solid #1522AF;
+        color: #1522af;
+        border: 1px solid #1522af;
         border-radius: 4px;
         padding: 10px 20px;
         background: none;

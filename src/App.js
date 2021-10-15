@@ -1,10 +1,11 @@
-import { Route, Switch } from "react-router-dom";
+import { useEffect, useState  } from "react";
+import { Route, Switch, useLocation } from "react-router-dom";
 import "./App.css";
 import LandingPage from "./pages/LandingPage";
 import Industries from "./pages/Industries/Industries";
 import Footer from "./components/Footer";
 import Assurance from "./components/Assurance";
-import NavBar from "./components/NavBar/NavBar";
+// import NavBar from "./components/NavBar/NavBar";
 
 import Aerospace from "./pages/Industries/industrypages/Aerospace/Aerospace";
 import CloudSecurityPage from "./pages/Security/CloudSecurityPage";
@@ -43,21 +44,53 @@ import PublicSectorEurope from "./pages/PublicSector/PublicSectorEurope";
 import PublicSectorUsa from "./pages/PublicSector/PublicSectorUsa";
 import PublicSectorMiddleEast from "./pages/PublicSector/PublicSectorMiddleEast";
 import Portfolio from "./pages/Porfolio/Portfolio";
+import Insight from "./pages/Insight/Insight";
 
 import Careers from "./pages/Careers/Careers";
+import PortfolioDetails from "./pages/Porfolio/PortfolioDetails";
+import Header from "./components/ui/header";
 
 function App() {
+
+  const [open, setOpen] = useState(false);
+
+  const router = useLocation();
+
+  useEffect(() => {
+    setOpen(false);
+
+    document.documentElement.classList.remove("_fixed");
+    document.body.classList.remove("_fixed");
+  }, [router.pathname]);
+
   return (
     <div className='App'>
-      <NavBar />
+      {/* <NavBar /> */}
+      <Header
+        isOpen={open}
+        clicked={() => {
+          setOpen(!open);
+
+          document.documentElement.classList.toggle("_fixed");
+          document.body.classList.toggle("_fixed");
+        }}
+      />
 
       <Switch>
         <Route path='/' exact>
           <LandingPage />
         </Route>
 
+        <Route path='/insight' exact>
+          <Insight />
+        </Route>
+
         <Route path='/portfolio' exact>
           <Portfolio />
+        </Route>
+
+        <Route path='/portfolio-details' exact>
+          <PortfolioDetails />
         </Route>
 
         <Route path='/public-sector-africa' exact>
@@ -202,7 +235,7 @@ function App() {
         </Route>
 
         <Route path='/careers'>
-          <Careers/>
+          <Careers />
         </Route>
 
         <Route path='/profile'>

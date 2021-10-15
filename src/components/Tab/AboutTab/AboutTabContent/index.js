@@ -9,7 +9,7 @@ const TabContent = () => {
     <div className="atc_container">
       <div className="atc_inner-wrap">
         <div className="atc-img_wrap">
-          <img className="imgOne" src={imgOne} alt="img" />
+          <img className="img-fluid" src={imgOne} alt="img"  />
         </div>
         <div className="atc-text_wrap">
           <h3 className="atc-h1">Who We Are</h3>

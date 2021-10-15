@@ -4,8 +4,8 @@
   max-width: 1700px;
   width: 100%;
   padding: 10rem 1em;
-  font-family: Nunito Sans;
-  margin: 5em auto;
+  // margin: 5em auto;
+
   > :first-child {
     font-size: 40px;
     line-height: 40px;
@@ -46,7 +46,7 @@
         line-height: 28px;
         color: #6b7280;
         padding: 1.5em 0;
-        padding-right: .6em;
+        padding-right: 0.6em;
         word-wrap: break-word;
       }
       :last-child {
@@ -99,6 +99,9 @@
 
 @media screen and (max-width: 600px) {
   .culture_section {
+    // max-width: 1700px;
+    width: 100%;
+    padding: 10rem 1em 0rem;
     .culture_wrap {
       display: flex;
       justify-content: space-between;

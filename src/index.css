@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +19,7 @@ body {
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Nunito Sans", sans-serif !important;
 }
 
 :root {
@@ -48,7 +51,7 @@ body {
 .pagination li > a {
   height: var(--full);
   width: var(--full);
-  font-family: inherit;
+  font-family: "Nunito Sans", sans-serif;
   color: #2f356a;
   font-weight: 600;
   outline: none;

@@ -17,8 +17,14 @@
       }
 
       .tab_active {
-          font-weight: bold;
+        font-weight: bold;
       }
     }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about_tab_wrapper {
+    display: none;
   }
 }
