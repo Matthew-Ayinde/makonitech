@@ -1,4 +1,4 @@
-import { useEffect, useState  } from "react";
+import { useEffect, useState } from "react";
 import { Route, Switch, useLocation } from "react-router-dom";
 import "./App.css";
 import LandingPage from "./pages/LandingPage";
@@ -30,12 +30,13 @@ import ConsumerProducts from "./pages/Industries/industrypages/ConsumerProducts/
 import EnergyAndNaturalResources from "./pages/Industries/industrypages/EnergyAndNaturalResources/EnergyAndNaturalResources";
 import FinancialServices from "./pages/Industries/industrypages/FinancialServices/FinancialServices";
 import ForestProducts from "./pages/Industries/industrypages/ForestProducts/ForestProducts";
+import Careers from "./pages/Careers/Careers";
+import ContactPage from "./pages/Contact";
 import About from "./pages/About/About";
 import PAL from "./pages/About/PAL/PAL";
 import Csr from "./pages/About/CSR/CSR";
 import HowWeWork from "./pages/About/HowWeWork/HowWeWork";
 
-import ContactPage from "./pages/Contact";
 import CareerSignup from "./pages/CareerSignup";
 import ProfilePage from "./pages/Profile";
 import OurCommitment from "./pages/About/OurCommitment/OurCommitment";
@@ -43,15 +44,21 @@ import PublicSectorAfrica from "./pages/PublicSector/PublicSectorAfrica";
 import PublicSectorEurope from "./pages/PublicSector/PublicSectorEurope";
 import PublicSectorUsa from "./pages/PublicSector/PublicSectorUsa";
 import PublicSectorMiddleEast from "./pages/PublicSector/PublicSectorMiddleEast";
+import SavedJobs from "./pages/SavedJobs/SavedJobs";
+import CareerSignin from "./pages/CareerSignin";
+import RecommendedJobs from "./pages/RecommendedJobs/RecommendedJobs";
+import MeetOurTeam from "./pages/MeetOurTeam/MeetOurTeam";
 import Portfolio from "./pages/Porfolio/Portfolio";
 import Insight from "./pages/Insight/Insight";
 
-import Careers from "./pages/Careers/Careers";
+// import Careers from "./pages/Careers/Careers";
 import PortfolioDetails from "./pages/Porfolio/PortfolioDetails";
 import Header from "./components/ui/header";
+import PartnersAffiliation from "./pages/PartnersAffiliation/PartnersAffiliation";
+import InsightDetails from "./pages/InsightDetails/InsightDetails";
+import CareerDetails from "./pages/CareerDetails/CareerDetails";
 
 function App() {
-
   const [open, setOpen] = useState(false);
 
   const router = useLocation();
@@ -225,6 +232,48 @@ function App() {
         <Route path='/big-data-analytics'>
           <BigDataAnalytics />
         </Route>
+        <Route path='/careers'>
+          <Careers />
+        </Route>
+        <Route path='/contact'>
+          <ContactPage />
+        </Route>
+        <Route path='/security-protection'>
+          <SecurityProtectionPage />
+        </Route>
+        <Route path='/security-detection'>
+          <CloudSecurityPage />
+        </Route>
+        <Route path='/security-protection'>
+          <SecurityProtectionPage />
+        </Route>
+        <Route path='/security-detection'>
+          <CloudSecurityPage />
+        </Route>
+        <Route path='/security-protection'>
+          <SecurityProtectionPage />
+        </Route>
+        <Route path='/security-detection'>
+          <CloudSecurityPage />
+        </Route>
+        <Route path='/security-protection'>
+          <SecurityProtectionPage />
+        </Route>
+        <Route path='/security-detection'>
+          <CloudSecurityPage />
+        </Route>
+        <Route path='/security-protection'>
+          <SecurityProtectionPage />
+        </Route>
+        <Route path='/security-detection'>
+          <CloudSecurityPage />
+        </Route>
+        <Route path='/security-protection'>
+          <SecurityProtectionPage />
+        </Route>
+        <Route path='/security-detection'>
+          <CloudSecurityPage />
+        </Route>
 
         <Route path='/contact'>
           <ContactPage />
@@ -240,6 +289,34 @@ function App() {
 
         <Route path='/profile'>
           <ProfilePage />
+        </Route>
+
+        <Route path='/career/savedjobs'>
+          <SavedJobs />
+        </Route>
+
+        <Route path='/career/signin'>
+          <CareerSignin />
+        </Route>
+
+        <Route path='/career/recommendedjobs'>
+          <RecommendedJobs />
+        </Route>
+
+        <Route path='/career/meet-our-team'>
+          <MeetOurTeam />
+        </Route>
+
+        <Route path='/partners-affiliation'>
+          <PartnersAffiliation />
+        </Route>
+
+        <Route path='/insight/insight-details'>
+          <InsightDetails />
+        </Route>
+
+        <Route path='/career/career-details'>
+          <CareerDetails />
         </Route>
       </Switch>
 

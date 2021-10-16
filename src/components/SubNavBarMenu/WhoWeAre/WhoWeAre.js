@@ -51,7 +51,7 @@ const WhoWeAre = ({handleCloseSubNav}) => {
                 <Link to="/" onClick={handleCloseSubNav}>Inclusion & Diversity</Link>
               </li>
               <li>
-                <Link to="/" onClick={handleCloseSubNav}>Careers</Link>
+                <Link to="/careers" onClick={handleCloseSubNav}>Careers</Link>
               </li>
             </ul>
           </div>

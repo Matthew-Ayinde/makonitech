@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
+.saved_jobs_tab_content {
+  max-width: 100%;
+  width: 900px;
+  margin: 7rem auto;
+
+  .saved_jobs_tab_info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+    padding: 0 3.5rem;
+
+    .tab_info_h3 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 41px;
+      line-height: 55px;
+      color: #333333;
+      margin-bottom: 0;
+    }
+
+    .tab_info_p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+      color: #333333;
+      margin-bottom: 3.5rem;
+    }
+
+    .read__more {
+      margin: 1rem 0;
+      cursor: pointer;
+    }
+  }
+
+}

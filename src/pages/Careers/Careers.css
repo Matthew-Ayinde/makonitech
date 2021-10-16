@@ -172,3 +172,12 @@
     padding: 110px 16px;
   }
 }
+@media (max-width: 600px) {
+  .makoni_card {
+    width: 300px;
+    margin: 20px 40px;
+  }
+.pagination{
+  font-size: 14px!important;
+}
+}
