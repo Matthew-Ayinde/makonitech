@@ -91,6 +91,18 @@ function App() {
           <CareerSignup />
         </Route>
 
+        <Route path='/career/savedjobs'>
+          <SavedJobs />
+        </Route>
+
+        <Route path='/career/recommendedjobs'>
+          <RecommendedJobs />
+        </Route>
+
+        <Route path='/career/meet-our-team'>
+          <MeetOurTeam />
+        </Route>
+
         <Layout>
         <Route path='/' exact>
           <LandingPage />
@@ -290,21 +302,15 @@ function App() {
           <Careers />
         </Route>
 
-        <Route path='/profile'>
+        {/* <Route path='/profile'>
           <ProfilePage />
-        </Route>
+        </Route> */}
 
-        <Route path='/career/savedjobs'>
-          <SavedJobs />
-        </Route>
+        
 
-        <Route path='/career/recommendedjobs'>
-          <RecommendedJobs />
-        </Route>
+        
 
-        <Route path='/career/meet-our-team'>
-          <MeetOurTeam />
-        </Route>
+        
 
         <Route path='/partners-affiliation'>
           <PartnersAffiliation />
