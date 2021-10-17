@@ -64,10 +64,55 @@
 
   .sort_clients_contents {
     padding: 100px 0;
+    background: #f4f4f4;
     .vacancy-wrapper-head-group {
       button {
-        background: #1E2348;
+        background: #1e2348;
         color: #ffffff;
+      }
+    }
+
+    .insight_contents_wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 50px;
+      margin-top: 60px;
+      width: 100%;
+
+      .insight_card_contents {
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 0px 0px 4px 4px;
+        img {
+          width: 100%;
+        }
+        .insight_card_text_wrapper {
+          padding: 20px;
+          .insight_card_text {
+            h3 {
+              font-style: normal;
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 26px;
+              color: #1a1a1a;
+            }
+            .plain-text {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 20px;
+              color: #040404;
+            }
+            .plain-text-link a {
+              font-style: normal;
+              font-weight: bold;
+              font-size: 15px;
+              line-height: 15px;
+              color: #1e2348;
+            }
+          }
+        }
       }
     }
   }

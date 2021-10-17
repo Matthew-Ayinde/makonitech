@@ -55,24 +55,24 @@ import CareerDetails from "./pages/CareerDetails/CareerDetails";
 import Header from "./components/ui/header";
 import Assurance from "./components/Assurance";
 import Footer from "./components/Footer";
-// import Layout from "./Layout/Layout";
+import Layout from "./Layout/Layout";
 
 function App() {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
-  const router = useLocation();
+  // const router = useLocation();
 
-  useEffect(() => {
-    setOpen(false);
+  // useEffect(() => {
+  //   setOpen(false);
 
-    document.documentElement.classList.remove("_fixed");
-    document.body.classList.remove("_fixed");
-  }, [router.pathname]);
+  //   document.documentElement.classList.remove("_fixed");
+  //   document.body.classList.remove("_fixed");
+  // }, [router.pathname]);
 
   return (
     <div className='App'>
 
-      <Header
+      {/* <Header
         isOpen={open}
         clicked={() => {
           setOpen(!open);
@@ -80,14 +80,18 @@ function App() {
           document.documentElement.classList.toggle("_fixed");
           document.body.classList.toggle("_fixed");
         }}
-      />
+      /> */}
 
       <Switch>
         <Route path='/career/signin'>
           <CareerSignin />
         </Route>
 
-        {/* <Layout> */}
+        <Route path='/career/signup'>
+          <CareerSignup />
+        </Route>
+
+        <Layout>
         <Route path='/' exact>
           <LandingPage />
         </Route>
@@ -282,10 +286,6 @@ function App() {
           <ContactPage />
         </Route>
 
-        <Route path='/career/signup'>
-          <CareerSignup />
-        </Route>
-
         <Route path='/careers'>
           <Careers />
         </Route>
@@ -317,12 +317,12 @@ function App() {
         <Route path='/career/career-details'>
           <CareerDetails />
         </Route>
-        {/* </Layout> */}
+        </Layout>
       </Switch>
 
-      <Assurance />
+      {/* <Assurance />
 
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

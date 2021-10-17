@@ -1,5 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Insight.scss";
+import img from "../../images/insight1.png";
+import img1 from "../../images/insight2.png";
+import img2 from "../../images/insight3.png";
+import img3 from "../../images/insight4.png";
+import img4 from "../../images/insight5.png";
+import img5 from "../../images/insight6.png";
 
 const Insight = () => {
   return (
@@ -17,27 +24,192 @@ const Insight = () => {
         </div>
       </div>
 
-      <div className='container sort_clients_contents'>
-        <div className='vacancy-wrapper-head add_padding'>
-          <div className='vacancy-wrapper-head-group'>
-            <label htmlFor='vacancies-filter'>Categories</label>
-            <div className='select-wrapper'>
-              <select id='vacancies-filter'></select>
+      <div className='sort_clients_contents'>
+        <div className='container'>
+          <div className='vacancy-wrapper-head add_padding'>
+            <div className='vacancy-wrapper-head-group'>
+              <label htmlFor='vacancies-filter'>Categories</label>
+              <div className='select-wrapper'>
+                <select id='vacancies-filter'></select>
+              </div>
+            </div>
+            <div className='vacancy-wrapper-head-group'>
+              <label htmlFor='location'>Month</label>
+              <div className='select-wrapper'>
+                <select id='location'></select>
+              </div>
+            </div>
+            <div className='vacancy-wrapper-head-group'>
+              <button>Show All</button>
             </div>
           </div>
-          <div className='vacancy-wrapper-head-group'>
-            <label htmlFor='location'>Month</label>
-            <div className='select-wrapper'>
-              <select id='location'></select>
+
+          <div className='insight_contents_wrapper'>
+            <div className='insight_card_contents'>
+              <img src={img} alt='img' />
+              <div className='insight_card_text_wrapper'>
+                <div className='insight_card_text'>
+                  <h3>Website Content: A Potent Weapon</h3>
+                  <p className='plain-text'>
+                    Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+                    amet,consectetur adipiscing elit, sed do e
+                  </p>
+                  <p className='plain-text-link'>
+                    <Link to='/'>Read more</Link>
+                  </p>
+                </div>
+                <div className='insight_card_footer'>
+                  <p>Posted on August 3,2018</p>
+                  <p>By Earnest</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className='vacancy-wrapper-head-group'>
-            <button>Show All</button>
+
+            <div className='insight_card_contents'>
+              <img src={img1} alt='img' />
+              <div className='insight_card_text'>
+                <h3>Website Content: A Potent Weapon</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+                  amet,consectetur adipiscing elit, sed do e
+                </p>
+                <p>
+                  <Link to='/'>Read more</Link>
+                </p>
+              </div>
+              <div className='insight_card_footer'>
+                <p>Posted on August 3,2018</p>
+                <p>By Earnest</p>
+              </div>
+            </div>
+
+            <div className='insight_card_contents'>
+              <img src={img2} alt='img' />
+              <div className='insight_card_text'>
+                <h3>Website Content: A Potent Weapon</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+                  amet,consectetur adipiscing elit, sed do e
+                </p>
+                <p>
+                  <Link to='/'>Read more</Link>
+                </p>
+              </div>
+              <div className='insight_card_footer'>
+                <p>Posted on August 3,2018</p>
+                <p>By Earnest</p>
+              </div>
+            </div>
+
+            <div className='insight_card_contents'>
+              <img src={img3} alt='img' />
+              <div className='insight_card_text'>
+                <h3>Website Content: A Potent Weapon</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+                  amet,consectetur adipiscing elit, sed do e
+                </p>
+                <p>
+                  <Link to='/'>Read more</Link>
+                </p>
+              </div>
+              <div className='insight_card_footer'>
+                <p>Posted on August 3,2018</p>
+                <p>By Earnest</p>
+              </div>
+            </div>
+
+            <div className='insight_card_contents'>
+              <img src={img4} alt='img' />
+              <div className='insight_card_text'>
+                <h3>Website Content: A Potent Weapon</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+                  amet,consectetur adipiscing elit, sed do e
+                </p>
+                <p>
+                  <Link to='/'>Read more</Link>
+                </p>
+              </div>
+              <div className='insight_card_footer'>
+                <p>Posted on August 3,2018</p>
+                <p>By Earnest</p>
+              </div>
+            </div>
+
+            <div className='insight_card_contents'>
+              <img src={img5} alt='img' />
+              <div className='insight_card_text'>
+                <h3>Website Content: A Potent Weapon</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+                  amet,consectetur adipiscing elit, sed do e
+                </p>
+                <p>
+                  <Link to='/'>Read more</Link>
+                </p>
+              </div>
+              <div className='insight_card_footer'>
+                <p>Posted on August 3,2018</p>
+                <p>By Earnest</p>
+              </div>
+            </div>
+
+            <div className='insight_card_contents'>
+              <img src={img3} alt='img' />
+              <div className='insight_card_text'>
+                <h3>Website Content: A Potent Weapon</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+                  amet,consectetur adipiscing elit, sed do e
+                </p>
+                <p>
+                  <Link to='/'>Read more</Link>
+                </p>
+              </div>
+              <div className='insight_card_footer'>
+                <p>Posted on August 3,2018</p>
+                <p>By Earnest</p>
+              </div>
+            </div>
+
+            <div className='insight_card_contents'>
+              <img src={img} alt='img' />
+              <div className='insight_card_text'>
+                <h3>Website Content: A Potent Weapon</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+                  amet,consectetur adipiscing elit, sed do e
+                </p>
+                <p>
+                  <Link to='/'>Read more</Link>
+                </p>
+              </div>
+              <div className='insight_card_footer'>
+                <p>Posted on August 3,2018</p>
+                <p>By Earnest</p>
+              </div>
+            </div>
+
+            <div className='insight_card_contents'>
+              <img src={img2} alt='img' />
+              <div className='insight_card_text'>
+                <h3>Website Content: A Potent Weapon</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+                  amet,consectetur adipiscing elit, sed do e
+                </p>
+                <p>
+                  <Link to='/'>Read more</Link>
+                </p>
+              </div>
+              <div className='insight_card_footer'>
+                <p>Posted on August 3,2018</p>
+                <p>By Earnest</p>
+              </div>
+            </div>
           </div>
         </div>
-
-       
-
       </div>
     </div>
   );
