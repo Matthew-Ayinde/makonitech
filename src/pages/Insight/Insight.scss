@@ -76,7 +76,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 50px;
-      margin-top: 60px;
+      margin: 60px 0 50px;
       width: 100%;
 
       .insight_card_contents {
@@ -112,7 +112,51 @@
               color: #1e2348;
             }
           }
+
+          .insight_card_footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-top: 1px solid #E7E0E0;
+            padding-top: 10px;
+
+            .special-insight {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 15px;
+              line-height: 15px;
+              color: #505050;
+            }
+            .special-insight2 {
+              font-style: normal;
+              font-weight: bold;
+              font-size: 15px;
+              line-height: 18px;
+              color: #505050;
+            }
+          }
         }
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      .insight_contents_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .insight_contents_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .insight_contents_wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
       }
     }
   }
