@@ -4,13 +4,13 @@ import "./styles.css";
 
 const IndustryHero = ({ title, desc, heroBg }) => {
   return (
-    <div className="hero">
+    <div className={heroBg}>
 
       <Container>
         {/* pass background image class as prop, so as to use different component hero images */}
-        <div className={heroBg}>
+        {/* <div >
           <div></div>
-        </div>
+        </div> */}
 
       <div className="ind_banner-text">
         <h5>INDUSTRY</h5>

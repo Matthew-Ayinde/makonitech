@@ -4,12 +4,9 @@ import "./AboutHero.scss";
 
 const AboutHero = ({ title, desc, heroImageIndex }) => {
   return (
-    <div className="hero">
+    <div className={heroImageIndex}>
       <Container>
-        {/* pass background image class as prop, so as to use different component hero images */}
-        <div className={heroImageIndex}>
-          <div></div>
-        </div>
+        
         <div className="about_text">
           <h1>{title}</h1>
           <p>{desc}</p>

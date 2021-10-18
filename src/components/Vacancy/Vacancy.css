@@ -121,6 +121,9 @@
   gap: 32px 21px;
   justify-content: center;
 }
+#root > div > section:nth-child(2) > div > div.saved_jobs_tabs_contents > div > div > div > div.vacancy-grid.saved_jobs_vacancy_grid{
+  margin-bottom:200px!important;
+}
 
 .vacancy-card {
   padding: 13px 21px 24px;

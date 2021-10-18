@@ -1,0 +1,42 @@
+.career-signup {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+  
+    &__left {
+      width: 48%;
+      height: 100vh;
+      background: linear-gradient(rgba(30, 35, 72, 0.68), rgba(30, 35, 72, 0.68)),
+        url("../../images/career-auth.png") no-repeat center;
+      background-size: cover;
+  
+      @media (max-width: 903px) {
+        display: none;
+      }
+    }
+  
+    &__right {
+      flex: 1;
+      padding: 64px 83px;
+      height: 100vh;
+      overflow-y: auto;
+  
+      @media (max-width: 1200px) {
+        padding: 64px 32px;
+      }
+  
+      @media (max-width: 903px) {
+        width: 100%;
+      }
+  
+      @media (max-width: 600px) {
+        padding: 64px 16px;
+      }
+    }
+  }
+  .career-signup__right{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
