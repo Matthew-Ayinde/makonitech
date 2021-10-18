@@ -67,7 +67,87 @@ const Insight = () => {
             </div>
 
             <div className='insight_card_contents'>
-              <img src={img} alt='img' />
+              <img src={img1} alt='img' />
+              <div className='insight_card_text_wrapper'>
+                <div className='insight_card_text'>
+                  <h3>Website Content: A Potent Weapon</h3>
+                  <p className='plain-text'>
+                    Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+                    amet,consectetur adipiscing elit, sed do e
+                  </p>
+                  <p className='plain-text-link'>
+                    <Link to='/'>Read more</Link>
+                  </p>
+                </div>
+                <div className='insight_card_footer'>
+                  <p className='special-insight'>Posted on August 3,2018</p>
+                  <p className='special-insight2'>By Earnest</p>
+                </div>
+              </div>
+            </div>
+
+            <div className='insight_card_contents'>
+              <img src={img2} alt='img' />
+              <div className='insight_card_text_wrapper'>
+                <div className='insight_card_text'>
+                  <h3>Website Content: A Potent Weapon</h3>
+                  <p className='plain-text'>
+                    Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+                    amet,consectetur adipiscing elit, sed do e
+                  </p>
+                  <p className='plain-text-link'>
+                    <Link to='/'>Read more</Link>
+                  </p>
+                </div>
+                <div className='insight_card_footer'>
+                  <p className='special-insight'>Posted on August 3,2018</p>
+                  <p className='special-insight2'>By Earnest</p>
+                </div>
+              </div>
+            </div>
+
+            <div className='insight_card_contents'>
+              <img src={img3} alt='img' />
+              <div className='insight_card_text_wrapper'>
+                <div className='insight_card_text'>
+                  <h3>Website Content: A Potent Weapon</h3>
+                  <p className='plain-text'>
+                    Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+                    amet,consectetur adipiscing elit, sed do e
+                  </p>
+                  <p className='plain-text-link'>
+                    <Link to='/'>Read more</Link>
+                  </p>
+                </div>
+                <div className='insight_card_footer'>
+                  <p className='special-insight'>Posted on August 3,2018</p>
+                  <p className='special-insight2'>By Earnest</p>
+                </div>
+              </div>
+            </div>
+
+            <div className='insight_card_contents'>
+              <img src={img4} alt='img' />
+              <div className='insight_card_text_wrapper'>
+                <div className='insight_card_text'>
+                  <h3>Website Content: A Potent Weapon</h3>
+                  <p className='plain-text'>
+                    Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+                    amet,consectetur adipiscing elit, sed do e
+                  </p>
+                  <p className='plain-text-link'>
+                    <Link to='/'>Read more</Link>
+                  </p>
+                </div>
+                <div className='insight_card_footer'>
+                  <p className='special-insight'>Posted on August 3,2018</p>
+                  <p className='special-insight2'>By Earnest</p>
+                </div>
+              </div>
+            </div>
+
+            <div className='insight_card_contents'>
+              <img src={img5} alt='img' />
               <div className='insight_card_text_wrapper'>
                 <div className='insight_card_text'>
                   <h3>Website Content: A Potent Weapon</h3>
@@ -107,7 +187,7 @@ const Insight = () => {
             </div>
 
             <div className='insight_card_contents'>
-              <img src={img} alt='img' />
+              <img src={img1} alt='img' />
               <div className='insight_card_text_wrapper'>
                 <div className='insight_card_text'>
                   <h3>Website Content: A Potent Weapon</h3>
@@ -127,87 +207,7 @@ const Insight = () => {
             </div>
 
             <div className='insight_card_contents'>
-              <img src={img} alt='img' />
-              <div className='insight_card_text_wrapper'>
-                <div className='insight_card_text'>
-                  <h3>Website Content: A Potent Weapon</h3>
-                  <p className='plain-text'>
-                    Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
-                    amet,consectetur adipiscing elit, sed do e
-                  </p>
-                  <p className='plain-text-link'>
-                    <Link to='/'>Read more</Link>
-                  </p>
-                </div>
-                <div className='insight_card_footer'>
-                  <p className='special-insight'>Posted on August 3,2018</p>
-                  <p className='special-insight2'>By Earnest</p>
-                </div>
-              </div>
-            </div>
-
-            <div className='insight_card_contents'>
-              <img src={img} alt='img' />
-              <div className='insight_card_text_wrapper'>
-                <div className='insight_card_text'>
-                  <h3>Website Content: A Potent Weapon</h3>
-                  <p className='plain-text'>
-                    Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
-                    amet,consectetur adipiscing elit, sed do e
-                  </p>
-                  <p className='plain-text-link'>
-                    <Link to='/'>Read more</Link>
-                  </p>
-                </div>
-                <div className='insight_card_footer'>
-                  <p className='special-insight'>Posted on August 3,2018</p>
-                  <p className='special-insight2'>By Earnest</p>
-                </div>
-              </div>
-            </div>
-
-            <div className='insight_card_contents'>
-              <img src={img} alt='img' />
-              <div className='insight_card_text_wrapper'>
-                <div className='insight_card_text'>
-                  <h3>Website Content: A Potent Weapon</h3>
-                  <p className='plain-text'>
-                    Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
-                    amet,consectetur adipiscing elit, sed do e
-                  </p>
-                  <p className='plain-text-link'>
-                    <Link to='/'>Read more</Link>
-                  </p>
-                </div>
-                <div className='insight_card_footer'>
-                  <p className='special-insight'>Posted on August 3,2018</p>
-                  <p className='special-insight2'>By Earnest</p>
-                </div>
-              </div>
-            </div>
-
-            <div className='insight_card_contents'>
-              <img src={img} alt='img' />
-              <div className='insight_card_text_wrapper'>
-                <div className='insight_card_text'>
-                  <h3>Website Content: A Potent Weapon</h3>
-                  <p className='plain-text'>
-                    Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
-                    amet,consectetur adipiscing elit, sed do e
-                  </p>
-                  <p className='plain-text-link'>
-                    <Link to='/'>Read more</Link>
-                  </p>
-                </div>
-                <div className='insight_card_footer'>
-                  <p className='special-insight'>Posted on August 3,2018</p>
-                  <p className='special-insight2'>By Earnest</p>
-                </div>
-              </div>
-            </div>
-
-            <div className='insight_card_contents'>
-              <img src={img} alt='img' />
+              <img src={img2} alt='img' />
               <div className='insight_card_text_wrapper'>
                 <div className='insight_card_text'>
                   <h3>Website Content: A Potent Weapon</h3>

@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { Route, Switch, useLocation } from "react-router-dom";
+import React from "react";
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import LandingPage from "./pages/LandingPage";
 import Industries from "./pages/Industries/Industries";
@@ -35,7 +35,7 @@ import Csr from "./pages/About/CSR/CSR";
 import HowWeWork from "./pages/About/HowWeWork/HowWeWork";
 
 import CareerSignup from "./pages/CareerSignup";
-import ProfilePage from "./pages/Profile";
+// import ProfilePage from "./pages/Profile";
 import OurCommitment from "./pages/About/OurCommitment/OurCommitment";
 import PublicSectorAfrica from "./pages/PublicSector/PublicSectorAfrica";
 import PublicSectorEurope from "./pages/PublicSector/PublicSectorEurope";
@@ -52,9 +52,9 @@ import PortfolioDetails from "./pages/Porfolio/PortfolioDetails";
 import PartnersAffiliation from "./pages/PartnersAffiliation/PartnersAffiliation";
 import InsightDetails from "./pages/InsightDetails/InsightDetails";
 import CareerDetails from "./pages/CareerDetails/CareerDetails";
-import Header from "./components/ui/header";
-import Assurance from "./components/Assurance";
-import Footer from "./components/Footer";
+// import Header from "./components/ui/header";
+// import Assurance from "./components/Assurance";
+// import Footer from "./components/Footer";
 import Layout from "./Layout/Layout";
 
 function App() {
