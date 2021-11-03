@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Route, Switch, useLocation } from "react-router-dom";
 import "./App.css";
 import LandingPage from "./pages/LandingPage";
 import Industries from "./pages/Industries/Industries";
@@ -52,27 +52,27 @@ import PortfolioDetails from "./pages/Porfolio/PortfolioDetails";
 import PartnersAffiliation from "./pages/PartnersAffiliation/PartnersAffiliation";
 import InsightDetails from "./pages/InsightDetails/InsightDetails";
 import CareerDetails from "./pages/CareerDetails/CareerDetails";
-// import Header from "./components/ui/header";
-// import Assurance from "./components/Assurance";
-// import Footer from "./components/Footer";
-import Layout from "./Layout/Layout";
+import Header from "./components/ui/header";
+import Assurance from "./components/Assurance";
+import Footer from "./components/Footer";
+// import Layout from "./Layout/Layout";
 
 function App() {
-  // const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-  // const router = useLocation();
+  const router = useLocation();
 
-  // useEffect(() => {
-  //   setOpen(false);
+  useEffect(() => {
+    setOpen(false);
 
-  //   document.documentElement.classList.remove("_fixed");
-  //   document.body.classList.remove("_fixed");
-  // }, [router.pathname]);
+    document.documentElement.classList.remove("_fixed");
+    document.body.classList.remove("_fixed");
+  }, [router.pathname]);
 
   return (
     <div className='App'>
 
-      {/* <Header
+      <Header
         isOpen={open}
         clicked={() => {
           setOpen(!open);
@@ -80,7 +80,7 @@ function App() {
           document.documentElement.classList.toggle("_fixed");
           document.body.classList.toggle("_fixed");
         }}
-      /> */}
+      />
 
       <Switch>
         <Route path='/career/signin'>
@@ -103,7 +103,7 @@ function App() {
           <MeetOurTeam />
         </Route>
 
-        <Layout>
+        {/* <Layout> */}
         <Route path='/' exact>
           <LandingPage />
         </Route>
@@ -323,12 +323,12 @@ function App() {
         <Route path='/career/career-details'>
           <CareerDetails />
         </Route>
-        </Layout>
+        {/* </Layout> */}
       </Switch>
 
-      {/* <Assurance />
+      <Assurance />
 
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
