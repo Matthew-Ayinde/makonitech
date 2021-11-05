@@ -8,7 +8,7 @@ const industries = () => {
       <div className={styles.left}>
         <ul>
           <li>
-            <a href="/industries">Industries</a>
+            <a href="/industries">All Industries</a>
           </li>
           <li>
             <a href="/aerospace">Aerospace and Defense</a>
@@ -35,7 +35,7 @@ const industries = () => {
             <a href="/">Agriculture</a>
           </li>
           <li>
-            <a href="/">Aerospace and Defense</a>
+            <a href="/">Fintech</a>
           </li>
           <li>
             <a href="/">Nearshore</a>
@@ -53,7 +53,7 @@ const industries = () => {
             <a href="/">Media & Entertainment</a>
           </li>
           <li>
-            <a href="/">Marketing</a>
+            <a href="/">Manufacturing Offshore</a>
           </li>
         </ul>
       </div>
