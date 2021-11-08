@@ -1,6 +1,5 @@
 .security_hero {
   width: 100%;
-  // height: 85vh;
   color: aliceblue;
   background: linear-gradient(
       90deg,
@@ -10,7 +9,7 @@
     url("../../images/security-hero.png") 50% / cover no-repeat;
 
   .security_hero_content {
-    padding: 200px 50px 150px 110px;
+    padding: 220px 50px 50px 130px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -20,8 +19,8 @@
       h1 {
         font-style: normal;
         font-weight: bold;
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 22px;
+        line-height: 30px;
         color: #ffffff;
         text-transform: uppercase;
       }
@@ -29,9 +28,9 @@
       h2 {
         font-style: normal;
         font-weight: bold;
-        font-size: 50px;
+        font-size: 65px;
         line-height: 80px;
-        letter-spacing: -0.01em;
+        letter-spacing: -0.03em;
         color: #f6f7fe;
       }
 
@@ -39,7 +38,7 @@
         margin: 16px 0px;
         font-style: normal;
         font-weight: normal;
-        font-size: 20px;
+        font-size: 22px;
         line-height: 32px;
         letter-spacing: 0.02em;
         color: #f6f7fe;
@@ -49,40 +48,47 @@
 
   .security_hero_extra {
     .related_services {
-      margin-top: 40px;
+      margin-top: 70px;
       background: rgba(239, 243, 255, 0.18);
       opacity: 1;
       border-radius: 4px;
-      padding: 2rem 2rem;
+      padding: 3rem;
 
       h3 {
         font-style: normal;
         font-weight: bold;
-        font-size: 23px;
+        font-size: 30px;
         line-height: 40px;
         color: #ffffff;
+      }
+
+      ul {
+        padding-left: 0;
+
+        li {
+          margin: 8px 0px;
+        }
       }
 
       ul > li > a {
         font-style: normal;
         font-weight: normal;
-        font-size: 17px;
+        font-size: 20px;
         line-height: 28px;
         color: #ebebeb;
+        
       }
     }
   }
 }
 
 @media screen and (max-width: 850px) {
-  /* styles */
   .security_hero_extra {
     display: none;
   }
 
   .security_hero {
     width: 100%;
-    // height: 70vh;
     .security_hero_content {
       padding: 120px 20px 100px 20px;
       width: 100%;
@@ -110,14 +116,12 @@
 
 
 @media screen and (max-width: 400px) {
-  /* styles */
   .security_hero_extra {
     display: none;
   }
 
   .security_hero {
     width: 100%;
-    // height: 60vh;
     .security_hero_content {
       padding: 140px 20px 100px 20px;
       width: 100%;

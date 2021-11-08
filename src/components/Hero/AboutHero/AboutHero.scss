@@ -72,25 +72,50 @@
 .about_text {
   text-align: left;
   color: white;
-  padding: 190px 20px 160px;
+  padding: 300px 20px 180px 120px;
 
   h1 {
     width: 700px;
     max-width: 100%;
     font-weight: 700;
-    font-size: 50px;
-    line-height: 70px;
+    font-size: 56px;
+    line-height: 80px;
   }
 
   p {
     width: 700px;
     max-width: 100%;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 23px;
+    line-height: 34px;
   }
 }
 // }
+
+@media screen and (max-width: 1024px) {
+
+  .about_text {
+    text-align: left;
+    color: white;
+    padding: 150px 80px 120px;
+  
+    h1 {
+      width: 700px;
+      max-width: 100%;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 80px;
+    }
+  
+    p {
+      width: 700px;
+      max-width: 100%;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 34px;
+    }
+  }
+}
 
 @media screen and (max-width: 600px) {
   .hero {
@@ -105,6 +130,28 @@
       p {
         font-size: 18px;
       }
+    }
+  }
+
+  .about_text {
+    text-align: left;
+    color: white;
+    padding: 150px 20px 100px;
+  
+    h1 {
+      width: 700px;
+      max-width: 100%;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 80px;
+    }
+  
+    p {
+      width: 700px;
+      max-width: 100%;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 34px;
     }
   }
 }
