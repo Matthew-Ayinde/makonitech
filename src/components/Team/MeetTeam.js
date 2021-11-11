@@ -76,8 +76,8 @@ const teamData = [
 
 const MeetTeam = () => {
   return (
-    <>
-      <section className="team_wrap">
+    <div className="team_wrap">
+      <section className="container ">
         <div className="header">
           <h3>Meet The Team</h3>
           <p>
@@ -120,7 +120,7 @@ const MeetTeam = () => {
           <button>See More</button>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

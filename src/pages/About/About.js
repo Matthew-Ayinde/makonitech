@@ -13,43 +13,44 @@ import "./About.scss";
 
 const About = () => {
   return (
-    <div className="wrap-about_page">
+    <div className='wrap-about_page'>
       <AboutHero
-        title="Who We Are"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim purus tristique tincidunt sem ac dictum nam."
-        heroImageIndex="
-  bg_styles--1"
+        title='Who We Are'
+        desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim purus tristique tincidunt sem ac dictum nam.'
+        heroImageIndex='
+  bg_styles--1'
       />
       <AboutTab TabComponent={TabContent} />
       <TabContent />
-      <section className="sec_containerTwo">
-        <div className="sec_content">
-          <div className="sec_text">
+      
+      <section className='sec_containerTwo'>
+        <div className='container sec_content'>
+          <div className='sec_text'>
             <h2>Ready to realise your product vision?</h2>
             <p>
               Partner with Us
-              <span className="partner-icon">
-                <img src={partnerIcon} alt="" />
+              <span className='partner-icon'>
+                <img src={partnerIcon} alt='' />
               </span>
             </p>
           </div>
-          <div className="sec_img">
-            <img src={secImg} alt="" />
+          <div className='sec_img'>
+            <img src={secImg} alt='' />
           </div>
         </div>
       </section>
 
       {/* What we do section */}
-      <section className="sec-containerThree">
-        <div className="sec_header">
-          <h4>What we do</h4>
+      <section className='sec-containerThree'>
+        <div className='sec_header'>
+          <h3>What we do</h3>
         </div>
-        <div className="sec_content">
-          <div className="sec_content-one">
-            <div className="sec-one_img">
-              <img src={secImg2} alt="" />
+        <div className='sec_content'>
+          <div className='container sec_content-one'>
+            <div className='sec-one_img'>
+              <img src={secImg2} alt='' />
             </div>
-            <div className="sec-one_text">
+            <div className='sec-one_text'>
               <div>
                 <h5>Superior quality of work</h5>
                 <p>
@@ -72,9 +73,8 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="sec_content-one">
-            
-            <div className="sec-one_text">
+          <div className='container sec_content-two'>
+            <div className='sec-one_text'>
               <div>
                 <h5>High quality and detailed deliverables</h5>
                 <p>
@@ -96,19 +96,19 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="sec-one_img">
-              <img src={secImg3} alt="" />
+            <div className='sec-one_img'>
+              <img src={secImg3} alt='' />
             </div>
           </div>
         </div>
       </section>
 
       {/* Why Cloud Fift Section */}
-      <section className="sec_container4">
-        <div className="sec_header">
-          <h4>Why Cloudfift</h4>
+      <section className='sec_container4'>
+        <div className='sec_header'>
+          <h3>Why Cloudfift</h3>
         </div>
-        <div className="sec_content">
+        <div className='sec_content'>
           <div>
             <h6>Technology Pragmatists</h6>
             <p>
@@ -159,11 +159,11 @@ const About = () => {
             </p>
           </div>
         </div>
-        <section className="inner-sec">
+        <section className='inner-sec'>
           <div>
-            <img src={secImg4} alt="" />
+            <img src={secImg4} alt='' />
           </div>
-          <div className="inner_sec-text">
+          <div className='inner_sec-text'>
             <h4>Our Nearshore & Offshore Teams</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -177,14 +177,15 @@ const About = () => {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <div className="inner_sec-aside">
+            <div className='inner_sec-aside'>
               <p>
                 We offer flexible cooperation models that fit your goals,
                 resources and timeline.
-                <span>
-                  <a href="/">Learn More</a>
-                </span>
+                <br />
               </p>
+                <h5>
+                  <a href='/'>Learn More</a>
+                </h5>
             </div>
           </div>
         </section>

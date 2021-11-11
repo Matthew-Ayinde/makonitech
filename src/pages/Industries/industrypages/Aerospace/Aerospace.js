@@ -59,7 +59,9 @@ const Aerospace = () => {
           <h4>What we do</h4>
         </header>
         <div className="wwd-row1">
+          <div>
           <CentralNav />
+          </div>
           <div className="wwd-img">
             <img src={airplane} alt="" />
           </div>

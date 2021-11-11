@@ -11,14 +11,14 @@ import "./Insight.css";
 const Insight = () => {
   return (
     <>
-      <div className="insight_wrap">
-        <div className="grid_wrap--1">
-          <div className="insight_grid--1">
-            <img src={img1} alt="" />
+      <div className='insight_wrap'>
+        <div className='grid_wrap--1'>
+          <div className='insight_grid--1'>
+            <img src={img1} alt='' />
           </div>
-          <div className="insight_grid--2">
-            <img src={img2} alt="" />
-            <div className="insight_text-area">
+          <div className='insight_grid--2'>
+            <img src={img2} alt='' />
+            <div className='insight_text-area'>
               <h5>Tech Disruption</h5>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
@@ -29,43 +29,43 @@ const Insight = () => {
           </div>
         </div>
 
-        <div className="grid_wrap--2">
-          <div className="insight_grid--3">
-            <img src={img3} alt="" />
+        <div className='grid_wrap--2'>
+          <div className='insight_grid--3'>
+            <img src={img3} alt='' />
           </div>
-          <div className="insight_grid--5">
-            <img src={img5} alt="" />
-            <div className="text--2">
+          <div className='insight_grid--5'>
+            <img src={img5} alt='' />
+            <div className='text--2'>
               <h5>Digital Evolution</h5>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
                 cras nunc, ut sapien sapien, pretium aenean. A odio enim sed dui
                 nisi ac. Aliquam dolor volutpat urna nibh orci fermentum.
               </p>
-              <a href="/">Read More</a>
+              <a href='/'>Read More</a>
             </div>
           </div>
         </div>
 
-        <div className="grid_wrap--3">
-          <div className="insight_grid--4">
-            <img src={img4} alt="" />
+        <div className='grid_wrap--3'>
+          <div className='insight_grid--4'>
+            <img src={img4} alt='' />
           </div>
-          <div className="insight_grid--6">
-            <img src={img6} alt="" />
-            <div className="insight_text-area text--3">
+          <div className='insight_grid--6'>
+            <img src={img6} alt='' />
+            <div className='insight_text-area text--3'>
               <h5>Simplifying Complexity</h5>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
                 cras nunc, ut sapien sapien, pretium aenean. A odio enim sed dui
                 nisi ac. Aliquam dolor volutpat urna nibh orci fermentum.
               </p>
-              <a href="/">Read More</a>
+              <a href='/'>Read More</a>
             </div>
           </div>
         </div>
       </div>
-      <div className="insight_btn">
+      <div className='insight_btn'>
         <button>See All Insight</button>
       </div>
     </>

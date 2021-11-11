@@ -47,7 +47,7 @@ const TabContent = () => {
 
       <div className='details'>
         <div className='details_img'>
-          <img src={img4} alt='' />
+          <img src={img4} alt='img' className='img-fluid' />
         </div>
         <div className='details_contents'>
           <div className='single_details'>

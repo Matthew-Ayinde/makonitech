@@ -2,9 +2,9 @@
 
 .tab-component-wrap {
   width: 100%;
-  // height: fit-content;
-  margin-bottom: 15em;
-  // background: #E5E5E5;
+  margin: 0 auto;
+  padding: 20px 0;
+  background: #e5e5e5;
   .sec_container1 {
     width: 100%;
     margin: 0 auto;
@@ -12,26 +12,32 @@
     .sec_content--one {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-auto-columns: 371px;
-      grid-template-rows: 1fr 1fr;
-      grid-gap: 44px;
-      max-width: 1206px;
+      grid-auto-columns: 350px;
+      // grid-template-rows: 1fr;
+      gap: 5em;
+      // max-width: 100%;
       width: 100%;
       margin: 5em auto;
+      padding: 2em;
 
-      > * {
+      // .bg-white-ff {
+      //   background: #ffffff !important;
+      // }
+
+      > div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: #ffffff;
+        background: #ffffff !important;
         box-shadow: 0px 0px 5px 1px rgba(89, 89, 89, 0.1);
         border-radius: 4px;
         border-radius: 8px;
-        max-width: 371px;
-        height: 226px;
+        padding: 80px 20px;
+        // max-width: 331px;
+        // height: 226px;
         width: 100%;
-        margin: 1em;
+        // margin: 1em;
       }
 
       > * > img {
@@ -40,12 +46,15 @@
         width: 100%;
       }
       > * > p {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 26px;
-        color: #696969;
-        margin: 1em auto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 32px;
         text-align: center;
+        letter-spacing: 0.02em;
+        color: #010101;
+        margin-top: 10px;
+        padding: 0 15px;
       }
     }
   }
@@ -61,6 +70,14 @@
   color: #c4c4c4;
   position: relative;
   margin: 2em auto 50px;
+}
+
+.sec_header h4 {
+  font-size: calc(4rem * var(--type-scale, 1));
+  line-height: calc(4.8rem * var(--height-scale, 1));
+  font-weight: 700;
+  color: #14151f;
+  position: relative;
 }
 
 .sec_header h4::before,
@@ -84,7 +101,7 @@
   right: 0;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .tab-component-wrap {
     width: 100%;
     height: fit-content;

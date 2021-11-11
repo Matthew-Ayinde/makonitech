@@ -14,7 +14,7 @@ const ReasonList  = ({label, heading, content}) => {
         <h4 className="reason_item-header">{heading}</h4>
       </header>
       <div className="item_content">
-        <span className="placeholder"></span>
+        <span className="placeholders"></span>
         <p>{content}</p>
       </div>
     </div>

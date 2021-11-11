@@ -1,12 +1,12 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 // import heroBg from "../../images/ind-hero-bg.png";
 import "./Industries.css";
 
 function IndustriesHero() {
   return (
-    <div className="hero-industry hero">
-      <Container>
+    <div className="hero_ind">
+      {/* <Container> */}
         {/* pass background image class as prop, so as to use different component hero images */}
         <div className="ind_hero-new">
           <div className="ind_hero-text">
@@ -23,7 +23,7 @@ function IndustriesHero() {
             </div>
           </div>
         </div>
-      </Container>
+      {/* </Container> */}
     </div>
   );
 }

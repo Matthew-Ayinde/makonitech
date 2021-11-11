@@ -1,10 +1,8 @@
-import { Route, Switch } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Route, Switch, useLocation } from "react-router-dom";
 import "./App.css";
 import LandingPage from "./pages/LandingPage";
 import Industries from "./pages/Industries/Industries";
-import Footer from "./components/Footer";
-import Assurance from "./components/Assurance";
-import NavBar from "./components/NavBar/NavBar";
 
 import Aerospace from "./pages/Industries/industrypages/Aerospace/Aerospace";
 import CloudSecurityPage from "./pages/Security/CloudSecurityPage";
@@ -36,9 +34,8 @@ import PAL from "./pages/About/PAL/PAL";
 import Csr from "./pages/About/CSR/CSR";
 import HowWeWork from "./pages/About/HowWeWork/HowWeWork";
 
-
 import CareerSignup from "./pages/CareerSignup";
-import ProfilePage from "./pages/Profile";
+// import ProfilePage from "./pages/Profile";
 import OurCommitment from "./pages/About/OurCommitment/OurCommitment";
 import PublicSectorAfrica from "./pages/PublicSector/PublicSectorAfrica";
 import PublicSectorEurope from "./pages/PublicSector/PublicSectorEurope";
@@ -49,24 +46,78 @@ import CareerSignin from "./pages/CareerSignin";
 import RecommendedJobs from "./pages/RecommendedJobs/RecommendedJobs";
 import MeetOurTeam from "./pages/MeetOurTeam/MeetOurTeam";
 import Portfolio from "./pages/Porfolio/Portfolio";
+import Insight from "./pages/Insight/Insight";
+
+import PortfolioDetails from "./pages/Porfolio/PortfolioDetails";
 import PartnersAffiliation from "./pages/PartnersAffiliation/PartnersAffiliation";
 import InsightDetails from "./pages/InsightDetails/InsightDetails";
 import CareerDetails from "./pages/CareerDetails/CareerDetails";
-
-
+import Header from "./components/ui/header";
+import Assurance from "./components/Assurance";
+import Footer from "./components/Footer";
+// import Layout from "./Layout/Layout";
 
 function App() {
+  const [open, setOpen] = useState(false);
+
+  const router = useLocation();
+
+  useEffect(() => {
+    setOpen(false);
+
+    document.documentElement.classList.remove("_fixed");
+    document.body.classList.remove("_fixed");
+  }, [router.pathname]);
+
   return (
     <div className='App'>
-      <NavBar />
+
+      <Header
+        isOpen={open}
+        clicked={() => {
+          setOpen(!open);
+
+          document.documentElement.classList.toggle("_fixed");
+          document.body.classList.toggle("_fixed");
+        }}
+      />
 
       <Switch>
+        <Route path='/career/signin'>
+          <CareerSignin />
+        </Route>
+
+        <Route path='/career/signup'>
+          <CareerSignup />
+        </Route>
+
+        <Route path='/career/savedjobs'>
+          <SavedJobs />
+        </Route>
+
+        <Route path='/career/recommendedjobs'>
+          <RecommendedJobs />
+        </Route>
+
+        <Route path='/career/meet-our-team'>
+          <MeetOurTeam />
+        </Route>
+
+        {/* <Layout> */}
         <Route path='/' exact>
           <LandingPage />
         </Route>
 
+        <Route path='/insight' exact>
+          <Insight />
+        </Route>
+
         <Route path='/portfolio' exact>
           <Portfolio />
+        </Route>
+
+        <Route path='/portfolio-details' exact>
+          <PortfolioDetails />
         </Route>
 
         <Route path='/public-sector-africa' exact>
@@ -90,7 +141,6 @@ function App() {
         </Route>
 
         <Route path='/csr' exact>
-          {/* corporate_social_responsibility */}
           <Csr />
         </Route>
 
@@ -202,79 +252,65 @@ function App() {
           <BigDataAnalytics />
         </Route>
         <Route path='/careers'>
-          <Careers/>
+          <Careers />
         </Route>
         <Route path='/contact'>
           <ContactPage />
         </Route>
-         <Route path="/security-protection">
+        <Route path='/security-protection'>
           <SecurityProtectionPage />
         </Route>
-        <Route path="/security-detection">
+        <Route path='/security-detection'>
           <CloudSecurityPage />
         </Route>
-        <Route path="/security-protection">
+        <Route path='/security-protection'>
           <SecurityProtectionPage />
         </Route>
-        <Route path="/security-detection">
+        <Route path='/security-detection'>
           <CloudSecurityPage />
         </Route>
-        <Route path="/security-protection">
+        <Route path='/security-protection'>
           <SecurityProtectionPage />
         </Route>
-        <Route path="/security-detection">
+        <Route path='/security-detection'>
           <CloudSecurityPage />
         </Route>
-        <Route path="/security-protection">
+        <Route path='/security-protection'>
           <SecurityProtectionPage />
         </Route>
-        <Route path="/security-detection">
+        <Route path='/security-detection'>
           <CloudSecurityPage />
         </Route>
-        <Route path="/security-protection">
+        <Route path='/security-protection'>
           <SecurityProtectionPage />
         </Route>
-        <Route path="/security-detection">
+        <Route path='/security-detection'>
           <CloudSecurityPage />
         </Route>
-        <Route path="/security-protection">
+        <Route path='/security-protection'>
           <SecurityProtectionPage />
         </Route>
-        <Route path="/security-detection">
+        <Route path='/security-detection'>
           <CloudSecurityPage />
-          </Route>
+        </Route>
 
         <Route path='/contact'>
           <ContactPage />
-        </Route>
-
-        <Route path='/career/signup'>
-          <CareerSignup />
         </Route>
 
         <Route path='/careers'>
-          <Careers/>
+          <Careers />
         </Route>
 
-        <Route path='/profile'>
+        {/* <Route path='/profile'>
           <ProfilePage />
-        </Route>
+        </Route> */}
 
-        <Route path='/career/savedjobs'>
-          <SavedJobs />
-        </Route>
+        
 
-        <Route path='/career/signin'>
-          <CareerSignin />
-        </Route>
+        
 
-        <Route path='/career/recommendedjobs'>
-          <RecommendedJobs />
-        </Route>
-
-        <Route path='/career/meet-our-team'>
-          <MeetOurTeam />
-        </Route>
+        
 
         <Route path='/partners-affiliation'>
           <PartnersAffiliation />
@@ -287,7 +323,7 @@ function App() {
         <Route path='/career/career-details'>
           <CareerDetails />
         </Route>
-
+        {/* </Layout> */}
       </Switch>
 
       <Assurance />

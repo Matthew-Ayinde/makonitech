@@ -3,7 +3,7 @@ import "./MakoniWay.scss";
 import IMG from "../../images/makoniway.svg";
 const MakoniWay = () => {
   return (
-    <div className='makoniway_wrapper'>
+    <div className='container makoniway_wrapper'>
       <div className='makoniway_img'>
         <img src={IMG} alt='IMG' />
         <div className='makoni_header'>

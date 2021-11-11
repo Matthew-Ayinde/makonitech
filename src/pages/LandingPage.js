@@ -6,6 +6,7 @@ import Questions from "../components/Question";
 import Join from "../components/Join";
 import Insight from "../components/Insight";
 import OurWork from "../components/Work/OurWork";
+// import HomeInsight from "../components/homeInsight";
 
 const LandingPage = () => {
 
@@ -18,6 +19,7 @@ const LandingPage = () => {
       <Questions />
       <Join />
       <Insight />
+      {/* <HomeInsight /> */}
     </>
   )
 }

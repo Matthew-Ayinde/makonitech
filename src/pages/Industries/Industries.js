@@ -27,7 +27,7 @@ export default Industries;
 
 const IndSection = () => {
   return (
-    <section className="ind_section">
+    <section className="container ind_section">
       <h3>Ambitiously growing people together across different industries</h3>
       <div className="image_grid">
         <img className="grid_item--1" src={img1} alt="" />
