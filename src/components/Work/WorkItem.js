@@ -11,7 +11,10 @@ const WorkItem = () => {
       </div>
 
       <article>
+        <div className="big__title">
+          <h1>01</h1>
         <h4>INSURANCE STARTUP</h4>
+        </div>
         <h5>Cloud Security & Compliance</h5>
         <p>
           Protect your cloud infrastructure from security threats, data loss and compliance risks with real time monitoring, auditing, and automated remedition

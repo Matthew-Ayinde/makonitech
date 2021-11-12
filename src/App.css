@@ -260,6 +260,9 @@ button:disabled {
   /* min-height: 92vh; */
   /* display: grid;
   grid-template-rows: 1fr auto; */
+  /* display: flex;
+  flex-direction: column; */
+  /* background: gold; */
   align-items: center;
   padding: 3rem 1.5rem 3rem 1.5rem;
   text-align: center;
@@ -339,7 +342,6 @@ button:disabled {
 /* Goals Section */
 
 .goals {
-  /* min-height: 80vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -348,14 +350,12 @@ button:disabled {
   text-align: center;
   gap: 30px 50px;
   background: url("./images/bg-land.png");
-  /* background-color: #6e6c6c; */
   background-position: right;
   background-repeat: no-repeat;
-  /* background-size: cover; */
 }
 
 .goals_content {
-  flex-basis: 34%;
+  flex-basis: 40%;
 }
 
 div.balls {
@@ -367,8 +367,8 @@ div.balls {
 }
 
 .goals_content h2 {
-  font-size: calc(4rem * var(--type-scale, 1));
-  line-height: calc(5.6rem * var(--height-scale, 1));
+  font-size: 40px;
+  line-height: 56px;
   font-weight: 700;
 }
 
@@ -1297,34 +1297,40 @@ padding: 10px 40px;
   }
 
   .hero_content {
-    padding: 16rem 0 3rem 5rem;
+    padding: 17rem 0 5rem 5rem;
     text-align: left;
-    /* height: 120vh; */
   }
 
   .hero_info h1 {
     font-style: normal;
     font-weight: bold;
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 80px;
+    line-height: 84px;
     letter-spacing: -0.03em;
     color: #f6f7fe;
-    margin-bottom: 4.5rem;
+    margin-bottom: 4rem;
   }
 
   .hero_info p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 32px;
-    letter-spacing: 0.02em;
-    color: #f6f7fe;
-    margin-bottom: 7rem;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 15rem;
   }
 
   .hero_info {
     max-width: 100%;
     width: 600px;
+  }
+
+  .hero_nav-item {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+  }
+  
+  .hero_nav-item-active {
+    font-size: 24px;
+    line-height: 32px;
   }
 
   .hero_nav-list {
@@ -1335,9 +1341,15 @@ padding: 10px 40px;
   }
 
   .goals {
-    padding: 10rem 0 10rem 10rem;
+    padding: 12rem 0 12rem 10rem;
     flex-direction: row;
     text-align: left;
+  }
+
+  .goals_content h2 {
+    font-size: 42px;
+    line-height: 56px;
+    font-weight: 700;
   }
 
   div.balls {
@@ -1478,4 +1490,6 @@ padding: 10px 40px;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  
 }

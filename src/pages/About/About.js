@@ -182,10 +182,10 @@ const About = () => {
                 We offer flexible cooperation models that fit your goals,
                 resources and timeline.
                 <br />
-                <span>
-                  <a href='/'>Learn More</a>
-                </span>
               </p>
+                <h5>
+                  <a href='/'>Learn More</a>
+                </h5>
             </div>
           </div>
         </section>
