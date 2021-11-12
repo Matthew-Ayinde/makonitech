@@ -79,10 +79,12 @@
   }
 
   .sec_content {
+    flex-direction: column;
     // width: 100%;
     .sec_content-one {
       display: flex;
       justify-content: space-between;
+   
       gap: 30px;
       align-items: center;
       // margin: 40px 0;
