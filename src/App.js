@@ -33,6 +33,7 @@ import About from "./pages/About/About";
 import PAL from "./pages/About/PAL/PAL";
 import Csr from "./pages/About/CSR/CSR";
 import HowWeWork from "./pages/About/HowWeWork/HowWeWork";
+import WhatWeBelieve from "./pages/About/WhatWeBelieve/WhatWeBelieve";
 
 import CareerSignup from "./pages/CareerSignup";
 // import ProfilePage from "./pages/Profile";
@@ -323,6 +324,11 @@ function App() {
         <Route path='/career/career-details'>
           <CareerDetails />
         </Route>
+
+        <Route path='/What_We_Believe' exact>
+          < WhatWeBelieve  />
+        </Route>
+
         {/* </Layout> */}
       </Switch>
 
