@@ -56,6 +56,7 @@ import CareerDetails from "./pages/CareerDetails/CareerDetails";
 import Header from "./components/ui/header";
 import Assurance from "./components/Assurance";
 import Footer from "./components/Footer";
+import AwsCloudServices from "./pages/Security/AwsCloudServices";
 // import Layout from "./Layout/Layout";
 
 function App() {
@@ -301,6 +302,10 @@ function App() {
 
         <Route path='/careers'>
           <Careers />
+        </Route>
+
+        <Route path='/cloud-services'>
+          <AwsCloudServices />
         </Route>
 
         {/* <Route path='/profile'>

@@ -12,7 +12,7 @@ const WhatWeDo = ({ handleCloseSubNav }) => {
           <h2>Cloud Services</h2>
           <ul className='what-we-do-link'>
             <li>
-              <Link to='/' onClick={handleCloseSubNav}>
+              <Link to='/cloud-services' onClick={handleCloseSubNav}>
                 <span>
                   <GoPrimitiveDot />
                 </span>
