@@ -12,7 +12,7 @@ const Portfolio = ({handleCloseSubNav}) => {
             <Link to="/portfolio" onClick={handleCloseSubNav}>Customers we Serve</Link>
           </li>
           <li>
-            <Link to="/" onClick={handleCloseSubNav}>Accomplishments</Link>
+            <Link to="/portfolio" onClick={handleCloseSubNav}>Accomplishments</Link>
           </li>
         </ul>
       </div>

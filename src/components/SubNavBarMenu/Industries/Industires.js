@@ -35,29 +35,29 @@ const Industires = ({handleCloseSubNav}) => {
             <Link to='/forest-products' onClick={handleCloseSubNav}>* forest-products</Link>
           </li>
           <li>
-            <Link to='/' onClick={handleCloseSubNav}>* Agriculture</Link>
+            <Link to='/agriculture' onClick={handleCloseSubNav}>* Agriculture</Link>
           </li>
           <li>
-            <Link to='/' onClick={handleCloseSubNav}>* Aerospace and Defense</Link>
+            <Link to='/automobile-and-mobility' onClick={handleCloseSubNav}>* Aerospace and Defense</Link>
           </li>
           <li>
-            <Link to='/' onClick={handleCloseSubNav}>* Nearshore</Link>
+            <Link to='/nearshore' onClick={handleCloseSubNav}>* Nearshore</Link>
           </li>
         </ul>
       </div>
       <div className='industry_grid'>
         <ul>
           <li>
-            <Link to='/' onClick={handleCloseSubNav}>* Banking & Financial Services</Link>
+            <Link to='/fintech' onClick={handleCloseSubNav}>* Banking & Financial Services</Link>
           </li>
           <li>
-            <Link to='/' onClick={handleCloseSubNav}>* Industrial & Logistics</Link>
+            <Link to='/logistics' onClick={handleCloseSubNav}>* Industrial & Logistics</Link>
           </li>
           <li>
-            <Link to='/' onClick={handleCloseSubNav}>* Media & Entertainment</Link>
+            <Link to='/entertainment' onClick={handleCloseSubNav}>* Media & Entertainment</Link>
           </li>
           <li>
-            <Link to='/' onClick={handleCloseSubNav}>* Marketing</Link>
+            <Link to='/entertainment' onClick={handleCloseSubNav}>* Marketing</Link>
           </li>
         </ul>
       </div>

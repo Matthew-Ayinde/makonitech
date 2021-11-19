@@ -12,7 +12,7 @@ const servicesDrop = () => {
 
           <ul className={styles.what_we_do_link}>
             <li>
-              <a href='/'>
+              <a href='/aws-cloud-services'>
                 {/* <span>
                   <GoPrimitiveDot />
                 </span> */}
@@ -20,7 +20,7 @@ const servicesDrop = () => {
               </a>
             </li>
             <li>
-              <a href='/'>
+              <a href='/azure-cloud-services'>
                 {/* <span>
                   <GoPrimitiveDot />
                 </span> */}
@@ -28,7 +28,7 @@ const servicesDrop = () => {
               </a>
             </li>
             <li>
-              <a href='/'>
+              <a href='/cloud-adoption'>
                 {/* <span>
                   <GoPrimitiveDot />
                 </span> */}
@@ -128,7 +128,7 @@ const servicesDrop = () => {
               </a>
             </li>
             <li>
-              <a href='/'>
+              <a href='/disaster-recovery'>
                 {/* <span>
                   <GoPrimitiveDot />
                 </span> */}
@@ -136,7 +136,7 @@ const servicesDrop = () => {
               </a>
             </li>
             <li>
-              <a href='/'>
+              <a href='/implementation-deployment'>
                 {/* <span>
                   <GoPrimitiveDot />
                 </span> */}

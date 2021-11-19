@@ -32,28 +32,28 @@ const industries = () => {
             <a href="/forest-products">Healthcare</a>
           </li>
           <li>
-            <a href="/">Agriculture</a>
+            <a href="/agriculture">Agriculture</a>
           </li>
           <li>
-            <a href="/">Fintech</a>
+            <a href="/fintech">Fintech</a>
           </li>
           <li>
-            <a href="/">Nearshore</a>
+            <a href="/nearshore">Nearshore</a>
           </li>
         </ul>
 
         <ul>
           <li>
-            <a href="/">Banking & Financial Services</a>
+            <a href="/financial-services">Banking & Financial Services</a>
           </li>
           <li>
-            <a href="/">Industrial & Logistics</a>
+            <a href="/logistics">Industrial & Logistics</a>
           </li>
           <li>
-            <a href="/">Media & Entertainment</a>
+            <a href="/entertainment">Media & Entertainment</a>
           </li>
           <li>
-            <a href="/">Manufacturing Offshore</a>
+            <a href="/manufacturing-offshore">Manufacturing Offshore</a>
           </li>
         </ul>
       </div>
