@@ -56,6 +56,21 @@ import CareerDetails from "./pages/CareerDetails/CareerDetails";
 import Header from "./components/ui/header";
 import Assurance from "./components/Assurance";
 import Footer from "./components/Footer";
+import AwsCloudServices from "./pages/Security/AwsCloudServices";
+import AzureCloudServices from "./pages/Security/AwsCloudServices";
+import CloudAdoption from "./pages/Security/CloudAdoption";
+import DisasterRecovery from "./pages/Security/DisasterRecovery";
+import ImplementationDeployment from "./pages/Security/ImplementationDeployment";
+import Agriculture from "./pages/Industries/industrypages/Agriculture/Agriculture";
+import Fintech from "./pages/Industries/industrypages/Fintech/Fintech";
+import NearShore from "./pages/Industries/industrypages/NearShore/NearShore";
+import Logistics from "./pages/Industries/industrypages/Logistics/Logistics";
+import Entertainment from "./pages/Industries/industrypages/Entertainment/Entertainment";
+import ManufacturingOffshore from "./pages/Industries/industrypages/ManufacturingOffshore/ManufacturingOffshore";
+import BusinessAffiliation from "./pages/About/BusinessAffiliation/BusinessAffiliation";
+import CorporateResponsibility from "./pages/About/CorporateResponsibility/CorporateResponsibility";
+import BuildYourTeam from "./pages/About/BuildYourTeam/BuildYourTeam";
+import InclusionDiversity from "./pages/About/InclusionDiversity/InclusionDiversity";
 // import Layout from "./Layout/Layout";
 
 function App() {
@@ -71,8 +86,7 @@ function App() {
   }, [router.pathname]);
 
   return (
-    <div className='App'>
-
+    <div className="App">
       <Header
         isOpen={open}
         clicked={() => {
@@ -84,249 +98,300 @@ function App() {
       />
 
       <Switch>
-        <Route path='/career/signin'>
+        <Route path="/career/signin">
           <CareerSignin />
         </Route>
 
-        <Route path='/career/signup'>
+        <Route path="/career/signup">
           <CareerSignup />
         </Route>
 
-        <Route path='/career/savedjobs'>
+        <Route path="/career/savedjobs">
           <SavedJobs />
         </Route>
 
-        <Route path='/career/recommendedjobs'>
+        <Route path="/career/recommendedjobs">
           <RecommendedJobs />
         </Route>
 
-        <Route path='/career/meet-our-team'>
+        <Route path="/career/meet-our-team">
           <MeetOurTeam />
         </Route>
 
         {/* <Layout> */}
-        <Route path='/' exact>
+        <Route path="/" exact>
           <LandingPage />
         </Route>
 
-        <Route path='/insight' exact>
+        <Route path="/insight" exact>
           <Insight />
         </Route>
 
-        <Route path='/portfolio' exact>
+        <Route path="/portfolio" exact>
           <Portfolio />
         </Route>
 
-        <Route path='/portfolio-details' exact>
+        <Route path="/portfolio-details" exact>
           <PortfolioDetails />
         </Route>
 
-        <Route path='/public-sector-africa' exact>
+        <Route path="/public-sector-africa" exact>
           <PublicSectorAfrica />
         </Route>
 
-        <Route path='/public-sector-europe' exact>
+        <Route path="/public-sector-europe" exact>
           <PublicSectorEurope />
         </Route>
 
-        <Route path='/public-sector-usa' exact>
+        <Route path="/public-sector-usa" exact>
           <PublicSectorUsa />
         </Route>
 
-        <Route path='/public-sector-middle-east' exact>
+        <Route path="/public-sector-middle-east" exact>
           <PublicSectorMiddleEast />
         </Route>
 
-        <Route path='/industries' exact>
+        <Route path="/industries" exact>
           <Industries />
         </Route>
 
-        <Route path='/csr' exact>
+        <Route path="/csr" exact>
           <Csr />
         </Route>
 
-        <Route path='/pal' exact>
+        <Route path="/pal" exact>
           <PAL />
         </Route>
 
-        <Route path='/about' exact>
+        <Route path="/about" exact>
           <About />
         </Route>
 
-        <Route path='/how_we_work' exact>
+        <Route path="/how_we_work" exact>
           <HowWeWork />
         </Route>
 
-        <Route path='/our_commitment' exact>
+        <Route path="/our_commitment" exact>
           <OurCommitment />
         </Route>
 
-        <Route path='/aerospace' exact>
+        <Route path="/aerospace" exact>
           <Aerospace />
         </Route>
 
-        <Route path='/consumer-products' exact>
+        <Route path="/consumer-products" exact>
           <ConsumerProducts />
         </Route>
 
-        <Route path='/energy-and-natural-resources' exact>
+        <Route path="/energy-and-natural-resources" exact>
           <EnergyAndNaturalResources />
         </Route>
 
-        <Route path='/financial-services' exact>
+        <Route path="/financial-services" exact>
           <FinancialServices />
         </Route>
 
-        <Route path='/automobile-and-mobility' exact>
+        <Route path="/automobile-and-mobility" exact>
           <AutomobileMobility />
         </Route>
 
-        <Route path='/forest-products' exact>
+        <Route path="/forest-products" exact>
           <ForestProducts />
         </Route>
 
-        <Route path='/security-detection'>
+        <Route path="/security-detection">
           <CloudSecurityPage />
         </Route>
 
-        <Route path='/security-protection'>
+        <Route path="/security-protection">
           <SecurityProtectionPage />
         </Route>
 
-        <Route path='/cloud-assessments'>
+        <Route path="/cloud-assessments">
           <CloudAssessments />
         </Route>
 
-        <Route path='/zero-trust-network'>
+        <Route path="/zero-trust-network">
           <ZeroTrustNetwork />
         </Route>
 
-        <Route path='/firewall-managment'>
+        <Route path="/firewall-managment">
           <FirewallManagment />
         </Route>
 
-        <Route path='/vulnerability-management'>
+        <Route path="/vulnerability-management">
           <VulnerabilityManagement />
         </Route>
 
-        <Route path='/data-migration'>
+        <Route path="/data-migration">
           <DataMigration />
         </Route>
 
-        <Route path='/database-migration'>
+        <Route path="/database-migration">
           <DatabaseMigration />
         </Route>
 
-        <Route path='/server-migration'>
+        <Route path="/server-migration">
           <ServerMigration />
         </Route>
 
-        <Route path='/application-migration'>
+        <Route path="/application-migration">
           <ApplicationMigration />
         </Route>
 
-        <Route path='/business-continuity-planning'>
+        <Route path="/business-continuity-planning">
           <BusinessContinuityPlanning />
         </Route>
 
-        <Route path='/application-discovery'>
+        <Route path="/application-discovery">
           <ApplicationDiscovery />
         </Route>
 
-        <Route path='/data-backup'>
+        <Route path="/data-backup">
           <DataBackup />
         </Route>
 
-        <Route path='/ongoing-maintenance'>
+        <Route path="/ongoing-maintenance">
           <OngoingMaintenance />
         </Route>
 
-        <Route path='/devops-buildout'>
+        <Route path="/devops-buildout">
           <DevOpsBuildout />
         </Route>
 
-        <Route path='/devops-security-operations'>
+        <Route path="/devops-security-operations">
           <DevOpsSecurityOperations />
         </Route>
 
-        <Route path='/big-data-analytics'>
+        <Route path="/big-data-analytics">
           <BigDataAnalytics />
         </Route>
-        <Route path='/careers'>
+        <Route path="/careers">
           <Careers />
         </Route>
-        <Route path='/contact'>
+        <Route path="/contact">
           <ContactPage />
         </Route>
-        <Route path='/security-protection'>
+        <Route path="/security-protection">
           <SecurityProtectionPage />
         </Route>
-        <Route path='/security-detection'>
+        <Route path="/security-detection">
           <CloudSecurityPage />
         </Route>
-        <Route path='/security-protection'>
+        <Route path="/security-protection">
           <SecurityProtectionPage />
         </Route>
-        <Route path='/security-detection'>
+        <Route path="/security-detection">
           <CloudSecurityPage />
         </Route>
-        <Route path='/security-protection'>
+        <Route path="/security-protection">
           <SecurityProtectionPage />
         </Route>
-        <Route path='/security-detection'>
+        <Route path="/security-detection">
           <CloudSecurityPage />
         </Route>
-        <Route path='/security-protection'>
+        <Route path="/security-protection">
           <SecurityProtectionPage />
         </Route>
-        <Route path='/security-detection'>
+        <Route path="/security-detection">
           <CloudSecurityPage />
         </Route>
-        <Route path='/security-protection'>
+        <Route path="/security-protection">
           <SecurityProtectionPage />
         </Route>
-        <Route path='/security-detection'>
+        <Route path="/security-detection">
           <CloudSecurityPage />
         </Route>
-        <Route path='/security-protection'>
+        <Route path="/security-protection">
           <SecurityProtectionPage />
         </Route>
-        <Route path='/security-detection'>
+        <Route path="/security-detection">
           <CloudSecurityPage />
         </Route>
 
-        <Route path='/contact'>
+        <Route path="/contact">
           <ContactPage />
         </Route>
 
-        <Route path='/careers'>
+        <Route path="/careers">
           <Careers />
         </Route>
 
-        {/* <Route path='/profile'>
-          <ProfilePage />
-        </Route> */}
+        <Route path="/aws-cloud-services">
+          <AwsCloudServices />
+        </Route>
 
+        <Route path="/azure-cloud-services">
+          <AzureCloudServices />
+        </Route>
+
+        <Route path="/cloud-adoption">
+          <CloudAdoption />
+        </Route>
+
+        <Route path="/disaster-recovery">
+          <DisasterRecovery />
+        </Route>
+
+        <Route path="/implementation-deployment">
+          <ImplementationDeployment />
+        </Route>
+
+        <Route path="/agriculture">
+          <Agriculture />
+        </Route>
+
+        <Route path="/fintech">
+          <Fintech />
+        </Route>
+
+        <Route path="/nearshore">
+          <NearShore />
+        </Route>
+
+        <Route path="/logistics" exact>
+          <Logistics />
+        </Route>
+
+        <Route path="/entertainment" exact>
+          <Entertainment/>
+        </Route>
         
+        <Route path="/manufacturing-offshore" exact>
+          <ManufacturingOffshore/>
+        </Route>
 
+        <Route path="/business-affiliation" exact>
+          <BusinessAffiliation/>
+        </Route>
+
+        <Route path="/corporate-responsibility" exact>
+          <CorporateResponsibility/>
+        </Route>
+
+        <Route path="/build-your-team" exact>
+          <BuildYourTeam/>
+        </Route>
         
-
-        
-
-        <Route path='/partners-affiliation'>
+        <Route path="/inclusion-diversity" exact>
+          <InclusionDiversity/>
+        </Route>
+       
+       
+        <Route path="/partners-affiliation">
           <PartnersAffiliation />
         </Route>
 
-        <Route path='/insight/insight-details'>
+        <Route path="/insight/insight-details">
           <InsightDetails />
         </Route>
 
-        <Route path='/career/career-details'>
+        <Route path="/career/career-details">
           <CareerDetails />
         </Route>
 
-        <Route path='/What_We_Believe' exact>
-          < WhatWeBelieve  />
+        <Route path="/What_We_Believe" exact>
+          <WhatWeBelieve />
         </Route>
 
         {/* </Layout> */}

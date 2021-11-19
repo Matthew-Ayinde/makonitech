@@ -12,7 +12,7 @@ const WhatWeDo = ({ handleCloseSubNav }) => {
           <h2>Cloud Services</h2>
           <ul className='what-we-do-link'>
             <li>
-              <Link to='/' onClick={handleCloseSubNav}>
+              <Link to='/aws-cloud-services' onClick={handleCloseSubNav}>
                 <span>
                   <GoPrimitiveDot />
                 </span>
@@ -20,7 +20,7 @@ const WhatWeDo = ({ handleCloseSubNav }) => {
               </Link>
             </li>
             <li>
-              <Link to='/' onClick={handleCloseSubNav}>
+              <Link to='/azure-cloud-services' onClick={handleCloseSubNav}>
                 <span>
                   <GoPrimitiveDot />
                 </span>
@@ -28,7 +28,7 @@ const WhatWeDo = ({ handleCloseSubNav }) => {
               </Link>
             </li>
             <li>
-              <Link to='/' onClick={handleCloseSubNav}>
+              <Link to='/cloud-adoption' onClick={handleCloseSubNav}>
                 <span>
                   <GoPrimitiveDot />
                 </span>
@@ -126,7 +126,7 @@ const WhatWeDo = ({ handleCloseSubNav }) => {
               </Link>
             </li>
             <li>
-              <Link to='/' onClick={handleCloseSubNav}>
+              <Link to='/disaster-recovery' onClick={handleCloseSubNav}>
                 <span>
                   <GoPrimitiveDot />
                 </span>
@@ -134,7 +134,7 @@ const WhatWeDo = ({ handleCloseSubNav }) => {
               </Link>
             </li>
             <li>
-              <Link to='/' onClick={handleCloseSubNav}>
+              <Link to='implementation-deployment' onClick={handleCloseSubNav}>
                 <span>
                   <GoPrimitiveDot />
                 </span>

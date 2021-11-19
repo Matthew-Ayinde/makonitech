@@ -25,7 +25,7 @@ const aboutDrop = () => {
               <a href="/csr">Investor Relations</a>
             </li>
             <li>
-              <a href="/">Our Process</a>
+              <a href="/how_we_work">Our Process</a>
             </li>
           </ul>
         </div>
@@ -34,16 +34,16 @@ const aboutDrop = () => {
           <h3>WHAT WE BELIEVE</h3>
           <ul>
             <li>
-              <a href="/">Business Affiliation</a>
+              <a href="/business-affiliation">Business Affiliation</a>
             </li>
             <li>
-              <a href="/">Corporate Responsibility</a>
+              <a href="/corporate-responsibility">Corporate Responsibility</a>
             </li>
             <li>
-              <a href="/">Build your team</a>
+              <a href="/build-your-team">Build your team</a>
             </li>
             <li>
-              <a href="/">Inclusion & Diversity</a>
+              <a href="/inclusion-diversity">Inclusion & Diversity</a>
             </li>
             <li>
               <a href="/careers">Careers</a>

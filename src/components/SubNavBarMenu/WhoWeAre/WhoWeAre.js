@@ -27,7 +27,7 @@ const WhoWeAre = ({handleCloseSubNav}) => {
                 <Link to="/csr" onClick={handleCloseSubNav}>Invesor Relations</Link>
               </li>
               <li>
-                <Link to="/" onClick={handleCloseSubNav}>Our Process</Link>
+                <Link to="/how_we_work" onClick={handleCloseSubNav}>Our Process</Link>
               </li>
             </ul>
           </div>
@@ -37,7 +37,7 @@ const WhoWeAre = ({handleCloseSubNav}) => {
           <div className="first">
             <ul>
               <li>
-                <Link to="/" onClick={handleCloseSubNav}>Business Affiliation</Link>
+                <Link to="/business-affiliation" onClick={handleCloseSubNav}>Business Affiliation</Link>
               </li>
               <li>
                 <Link to="/corporate_responsibility" onClick={handleCloseSubNav}>
@@ -45,10 +45,10 @@ const WhoWeAre = ({handleCloseSubNav}) => {
                 </Link>
               </li>
               <li>
-                <Link to="/" onClick={handleCloseSubNav}>Build your team</Link>
+                <Link to="/build-your-team" onClick={handleCloseSubNav}>Build your team</Link>
               </li>
               <li>
-                <Link to="/" onClick={handleCloseSubNav}>Inclusion & Diversity</Link>
+                <Link to="/inclusion-diversity" onClick={handleCloseSubNav}>Inclusion & Diversity</Link>
               </li>
               <li>
                 <Link to="/careers" onClick={handleCloseSubNav}>Careers</Link>
