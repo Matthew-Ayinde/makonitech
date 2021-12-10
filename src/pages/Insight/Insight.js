@@ -90,7 +90,7 @@ const Insight = () => {
                         amet,consectetur adipiscing elit, sed do e */}
                       </p>
                       <p className="plain-text-link">
-                        <Link to="/">Read more</Link>
+                        <Link to={`/insight/${post.id}`}>Read more</Link>
                       </p>
                     </div>
                     <div className="insight_card_footer">

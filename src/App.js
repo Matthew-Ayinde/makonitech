@@ -382,7 +382,7 @@ function App() {
           <PartnersAffiliation />
         </Route>
 
-        <Route path="/insight/insight-details">
+        <Route path="/insight/:id">
           <InsightDetails />
         </Route>
 
