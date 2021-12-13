@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.scss";
 
-const project = () => {
+const Project = () => {
   return (
     <section className="contact-project">
       <div className="contact-project__left">
@@ -72,4 +72,4 @@ const project = () => {
   );
 };
 
-export default project;
+export default Project;
