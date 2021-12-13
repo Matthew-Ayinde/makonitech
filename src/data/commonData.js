@@ -41,7 +41,7 @@ export const footerData = [
       }, 
       {
         page: "Contact",
-        url: "./"
+        url: "/contact"
       }, 
       {
         page: "Partners",
