@@ -96,8 +96,9 @@ function App() {
         autoClose={3000}
         hideProgressBar={false}
         closeOnClick
+        pauseOnHover={false}
         draggable
-        toastClassName="toast"
+        className="makoni-toastify"
       />
 
       <Header
