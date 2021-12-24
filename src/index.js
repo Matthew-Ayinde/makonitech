@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { store, persistor } from "./redux/store";
 import { PersistGate } from "redux-persist/integration/react";
+import "react-toastify/dist/ReactToastify.css";
 
 ReactDOM.render(
   <Provider store={store}>
@@ -20,7 +21,6 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root")
 );
-
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -73,6 +73,8 @@ import BuildYourTeam from "./pages/About/BuildYourTeam/BuildYourTeam";
 import InclusionDiversity from "./pages/About/InclusionDiversity/InclusionDiversity";
 // import Layout from "./Layout/Layout";
 
+import { ToastContainer } from "react-toastify";
+
 function App() {
   const [open, setOpen] = useState(false);
 
@@ -83,10 +85,22 @@ function App() {
 
     document.documentElement.classList.remove("_fixed");
     document.body.classList.remove("_fixed");
+
+    window.scrollTo(0, 0);
   }, [router.pathname]);
 
   return (
     <div className="App">
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover={false}
+        draggable
+        className="makoni-toastify"
+      />
+
       <Header
         isOpen={open}
         clicked={() => {
@@ -354,30 +368,29 @@ function App() {
         </Route>
 
         <Route path="/entertainment" exact>
-          <Entertainment/>
+          <Entertainment />
         </Route>
-        
+
         <Route path="/manufacturing-offshore" exact>
-          <ManufacturingOffshore/>
+          <ManufacturingOffshore />
         </Route>
 
         <Route path="/business-affiliation" exact>
-          <BusinessAffiliation/>
+          <BusinessAffiliation />
         </Route>
 
         <Route path="/corporate-responsibility" exact>
-          <CorporateResponsibility/>
+          <CorporateResponsibility />
         </Route>
 
         <Route path="/build-your-team" exact>
-          <BuildYourTeam/>
+          <BuildYourTeam />
         </Route>
-        
+
         <Route path="/inclusion-diversity" exact>
-          <InclusionDiversity/>
+          <InclusionDiversity />
         </Route>
-       
-       
+
         <Route path="/partners-affiliation">
           <PartnersAffiliation />
         </Route>
