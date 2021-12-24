@@ -9,6 +9,7 @@ const pagination = ({
   nextClassName,
   disabledClassName,
   marginPagesDisplayed,
+  onPageChange,
 }) => {
   return (
     <ReactPaginate
@@ -24,6 +25,7 @@ const pagination = ({
       containerClassName={containerClassName}
       activeClassName={activeClassName}
       disabledClassName={disabledClassName}
+      onPageChange={onPageChange}
     />
   );
 };

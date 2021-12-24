@@ -8,9 +8,8 @@ import instagram from "../images/instagram.svg";
 import youtube from "../images/youtube.svg";
 
 const Footer = () => {
-
   return (
-    <footer class="footer">
+    <footer className="footer">
       <div className="main_footer-content">
         <div className="footer_header">
           <header>
@@ -18,20 +17,16 @@ const Footer = () => {
           </header>
           <p>
             <span>Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-            <br /> 
-            <span>elit. Venenatis ultrices amet, velit at.</span>    
+            <br />
+            <span>elit. Venenatis ultrices amet, velit at.</span>
           </p>
         </div>
         <div className="sub_footer-content">
-          {
-            footerData.map(data => {
-              const {header, links} = data;
+          {footerData.map((data, index) => {
+            const { header, links } = data;
 
-              return (
-                <FooterLink title={header} links={links} />
-              )
-            })
-          }
+            return <FooterLink key={index} title={header} links={links} />;
+          })}
         </div>
       </div>
       <div className="bottom_footer">
@@ -60,7 +55,7 @@ const Footer = () => {
         </ul>
       </div>
     </footer>
-  )
-}
+  );
+};
 
 export default Footer;

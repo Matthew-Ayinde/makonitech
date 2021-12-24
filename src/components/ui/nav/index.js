@@ -6,6 +6,7 @@ import ServicesDrop from "./services";
 import IndustriesDrop from "./industries";
 import PublicServiceDrop from "./publicService";
 import PortfolioDrop from "./portfolio";
+import { Link } from "react-router-dom";
 
 const Nav = ({ clicked, isDrop, isOpen }) => {
   const [showLang, setShowLang] = useState(false);
@@ -194,9 +195,9 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
 
       <div className={styles.navEnd}>
         <div className={styles.contactLink}>
-          <a href="/" className="btn-light btn-medium">
+          <Link to="/contact" className="btn-light btn-medium">
             Shoot Us A Message
-          </a>
+          </Link>
         </div>
         <div className={styles.searchBtn}>
           <button className={`${isDrop ? styles.darkText : ""}`}>

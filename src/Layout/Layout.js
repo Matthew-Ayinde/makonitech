@@ -14,11 +14,12 @@ const Layout = ({ children }) => {
 
     document.documentElement.classList.remove("_fixed");
     document.body.classList.remove("_fixed");
+
+    window.scrollTo(0, 0);
   }, [router.pathname]);
 
   return (
     <React.Fragment>
-
       <Header
         isOpen={open}
         clicked={() => {
@@ -29,14 +30,13 @@ const Layout = ({ children }) => {
         }}
       />
 
-      <div className='navigationWrapper'>
+      <div className="navigationWrapper">
         <main>{children}</main>
       </div>
 
       <Assurance />
 
-      <Footer /> 
-
+      <Footer />
     </React.Fragment>
   );
 };
