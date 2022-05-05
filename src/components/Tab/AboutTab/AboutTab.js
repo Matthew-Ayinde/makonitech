@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./AboutTab.scss";
+import ScrollAnimation from 'react-animate-on-scroll';
+import { Link } from "react-router-dom";
 
 const AboutTab = ({ TabComponent }) => {
   const [selectedTabOne, setSelectedTabOne] = useState(true);
@@ -36,55 +38,57 @@ const AboutTab = ({ TabComponent }) => {
   };
 
   return (
-    <div className="about_tab_wrapper">
-      <div className="about_tabs">
-        <ul>
-          <li className={selectedTabOne && "tab_active"} onClick={handleTabOne}>
-            Overview
-          </li>
-          <li className={selectedTabTwo && "tab_active"} onClick={handleTabTwo}>
-            Client Result
-          </li>
-          <li
-            className={selectedTabThree && "tab_active"}
-            onClick={handleTabThree}
-          >
-            How we can help
-          </li>
-          <li
-            className={selectedTabFour && "tab_active"}
-            onClick={handleTabFour}
-          >
-            Insights
-          </li>
-        </ul>
-      </div>
+    <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+      <div className="about_tab_wrapper">
+        {/* <div className="about_tabs">
+          <ul>
+            <li className={selectedTabOne && "tab_active"} onClick={handleTabOne}>
+              <Link to="/how_we_work#clientresult">Overview</Link>
+            </li>
+            <li className={selectedTabTwo && "tab_active"} onClick={handleTabTwo}>
+              Client Result
+            </li>
+            <li
+              className={selectedTabThree && "tab_active"}
+              onClick={handleTabThree}
+            >
+              How we can help
+            </li>
+            <li
+              className={selectedTabFour && "tab_active"}
+              onClick={handleTabFour}
+            >
+              Insights
+            </li>
+          </ul>
+        </div> */}
 
-      {selectedTabOne && (
-        <div className="about_tab_contents">
-          {/* <TabContent /> */}
-          {TabComponent}
-        </div>
-      )}
-      {selectedTabTwo && (
-        <div className="about_tab_contents">
-          {/* <TabContent /> */}
-          {TabComponent}
-        </div>
-      )}
-      {selectedTabThree && (
-        <div className="about_tab_contents">
-          {/* <TabContent /> */}
-          {TabComponent}
-        </div>
-      )}
-      {selectedTabFour && (
-        <div className="about_tab_contents">
-          {/* <TabContent /> */}
-          {TabComponent}
-        </div>
-      )}
-    </div>
+        {selectedTabOne && (
+          <div className="about_tab_contents">
+            {/* <TabContent /> */}
+            {TabComponent}
+          </div>
+        )}
+        {selectedTabTwo && (
+          <div className="about_tab_contents">
+            {/* <TabContent /> */}
+            {TabComponent}
+          </div>
+        )}
+        {selectedTabThree && (
+          <div className="about_tab_contents">
+            {/* <TabContent /> */}
+            {TabComponent}
+          </div>
+        )}
+        {selectedTabFour && (
+          <div className="about_tab_contents">
+            {/* <TabContent /> */}
+            {TabComponent}
+          </div>
+        )}
+      </div>
+    </ScrollAnimation>
   );
 };
 

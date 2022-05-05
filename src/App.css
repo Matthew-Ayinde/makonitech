@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
 
 @import "../node_modules/hamburgers/dist/hamburgers";
-
+/* @import 'animate.css'; */
 /* Utils */
 
 * {
@@ -178,6 +178,7 @@ button:disabled {
   font-family: "Nunito Sans", sans-serif !important;
   padding: 10px;
   margin-top: -3px;
+  font-weight: 700;
 }
 
 .btn-block {
@@ -448,6 +449,11 @@ div.balls {
   grid-column-gap: 5rem;
   align-items: flex-start;
 }
+@media (max-width: 360px) {
+  .reason_item header {
+    grid-column-gap: 3rem;
+  }
+}
 
 .label h4 {
   font-size: calc(2rem * var(--type-scale, 1));
@@ -615,7 +621,14 @@ div.balls {
   font-weight: 800;
   text-align: center;
   color: #070c25;
+  
 }
+@media screen and (max-width: 767px) {
+  .first_test-row h4 {
+    line-height: normal;
+  }
+}
+
 
 .first_test-row article {
   flex-basis: 29.333%;
@@ -641,11 +654,16 @@ div.balls {
 }
 
 .questions section {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
   grid-column-gap: 1.5rem;
   grid-row-gap: 2.5rem;
-  justify-items: center;
+  justify-items: center; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2.5rem;
 }
 
 .questions h3 {
@@ -672,9 +690,9 @@ div.balls {
 }
 
 .questions .box {
-  padding: 2rem;
-  width: 11.6rem;
-  height: 6.1rem;
+  padding: 1rem;
+  width: 12.6rem;
+  height: 7.1rem;
   font-size: calc(1.5rem * var(--type-scale, 1));
   line-height: calc(1.65rem * var(--height-scale, 1));
   font-weight: 600;
@@ -684,8 +702,24 @@ div.balls {
   align-items: center;
   justify-content: center;
   text-align: center;
+  transition: .3s;
 }
-
+.questions .box a{
+  color:#212529;
+  transition: .3s;
+  }
+.questions .box a h4 {
+  white-space: break-spaces;
+  margin-bottom: 0;
+}
+.questions .box:hover{
+  background-color: #14151f;
+  transition: .3s;
+}
+.questions .box:hover a{
+  color: #fff;
+  transition: .3s;
+}
 /* Join Team section */
 
 .join_team {
@@ -754,7 +788,10 @@ div.balls {
   line-height: calc(4rem * var(--height-scale, 1));
   font-weight: 700;
 }
-
+.team_card header h4{
+  font-weight: 700;
+  font-size: 1.6rem;
+}
 .team_card .card_content {
   font-size: calc(1.6rem * var(--type-scale, 1));
   line-height: calc(2.5rem * var(--height-scale, 1));
@@ -772,6 +809,7 @@ div.balls {
 .team_card .card_footer p {
   margin-right: 1rem;
   margin-bottom: 0 !important;
+  font-weight: 700;
 }
 
 /* Insight section */
@@ -880,7 +918,12 @@ div.balls {
   line-height: calc(3.2rem * var(--height-scale, 1));
   font-weight: 700;
 }
-
+.disruption p.more_info a{
+  color: #0d6efd;
+}
+.insight .first_column p a, .complexity p.more_info a{
+  color: #fff;
+}
 .insight .second_column {
   flex: 1;
   display: grid;
@@ -989,10 +1032,13 @@ div.balls {
   min-height: 30vh;
   color: #fff;
   padding: 2rem 1.5rem;
+  
+  align-items: center;
+}
+.assurance >div{
   display: grid;
   grid-template-rows: 1fr;
   grid-gap: 1.5rem;
-  align-items: center;
 }
 
 .assurance_content {
@@ -1048,7 +1094,10 @@ div.balls {
   display: flex;
   align-items: center;
 }
-
+.assurance_footer div p {
+  font-weight: bold;
+  font-size: 13px;
+}
 .assurance_footer img {
   margin-right: 1rem;
 }
@@ -1078,10 +1127,22 @@ div.balls {
   font-size: calc(1.4rem * var(--type-scale));
   line-height: calc(2.4rem * var(--height-scale));
   font-weight: 400;
+  font-size: 14px;
 }
-
+.footer p a{
+  color: #212529;
+  margin: 0 4px;
+}
+.footer p a:hover{
+  text-decoration: underline !important;
+  color: #424cab;
+}
+.footer a.social_link img {
+  width: 16px;
+}
 .footer ul {
   list-style: none;
+  padding-left: 0;
 }
 
 .main_footer-content {
@@ -1093,6 +1154,7 @@ div.balls {
   display: inline-block;
   text-decoration: none;
   padding: 1rem 0;
+  
 }
 
 .footer_header {
@@ -1442,7 +1504,7 @@ div.balls {
     padding: 0.5rem 1.5rem;
   }
 
-  .assurance {
+  .assurance >div {
     grid-template-rows: 1fr auto;
     padding: 5rem 12rem;
   }
@@ -1495,3 +1557,66 @@ div.balls {
     background-size: cover;
   }
 }
+@media (max-width: 475px) {
+  .reason {
+    padding: 5rem 2rem;
+    }
+}
+
+.CookieConsent {
+  max-width: 1140px;
+  width: 95% !important;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 16px !important;
+  padding: 20px 25px;
+  font-size: 15px;
+  align-items: center !important;
+  background: rgb(0, 0, 0) !important;
+  animation-duration: .5s;
+  animation-delay: 7s;
+  animation-fill-mode: both;
+  animation-name: fadeInBottom;
+}
+    @keyframes fadeInBottom {
+      from {
+          opacity: 0;
+          transform: translateY(100%);
+      }
+      to { opacity: 1 }
+    }
+  .cookie_message__title{
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  .CookieConsent a{
+    color: #fff; 
+    text-decoration: underline !important;
+  }
+  .CookieConsent .leftCol {
+    font-size: 14px;
+  }
+  .CookieConsent button{
+    cursor: pointer !important;
+    font-size: 16px !important;
+    padding: 12px !important;
+    min-width: 140px;
+    border-radius: 50px !important;
+    background-color: white !important;
+    color: #030303 !important;
+    font-weight: bold;
+  }
+  .CookieConsent button:hover{
+     color: #000000 !important;
+      background-color: rgb(243, 243, 243) !important;
+      font-weight: bold;
+    }
+    @media (max-width: 475px) {
+    .CookieConsent > div {
+        flex: 100% !important;
+        margin: 0 !important;
+    }
+  }

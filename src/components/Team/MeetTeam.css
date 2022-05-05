@@ -34,7 +34,12 @@
   gap: 2em;
   width: 100%;
 }
-
+@media screen and (max-width: 767px) {
+  .team_wrap .team_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+}
 .team_grid>.team_card {
   display: flex;
   flex-direction: column;

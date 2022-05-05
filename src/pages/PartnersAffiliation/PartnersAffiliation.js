@@ -5,6 +5,7 @@ import { Card } from "react-bootstrap";
 // import ikea from "../../images/ikea.svg";
 import paddington from "../../images/paddington.svg";
 import Pagination from "../../components/pagination";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const PartnersAffiliation = () => {
   return (
@@ -12,6 +13,7 @@ const PartnersAffiliation = () => {
       <section className="partner--hero">
         <Container>
           <div className="partner--hero_content">
+          <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
             <div className="partner--hero_info">
               <h1>Partners And Affliations</h1>
               <p>
@@ -26,11 +28,14 @@ const PartnersAffiliation = () => {
                 <button>Join Us</button>
               </div>
             </div>
+            </ScrollAnimation>
           </div>
         </Container>
       </section>
 
+     
       <section className="partner_section">
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
         <header>
           <h3 className="partner_section_header">Our Partners</h3>
         </header>
@@ -317,8 +322,9 @@ const PartnersAffiliation = () => {
             nextClassName="paginate-next"
             marginPagesDisplayed={1}
           />
+      </ScrollAnimation>
+
       </section>
-      
     
     </>
   );

@@ -14,6 +14,7 @@ import leftArrow from "../../../images/comm-left-arrow.png";
 import rightArrow from "../../../images/comm-right-arrow.png";
 
 import "./BusinessAffiliation.scss";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const BusinessAffiliation = () => {
   return (
@@ -28,10 +29,12 @@ const BusinessAffiliation = () => {
       <CommitmentTab />
       {/* section:-  In our managements’ words */}
       <section className="comm-section2">
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
         <div className="comm_text-area">
           <small>INCLUSION & DIVERSITY</small>
           <h6>In our managements’ words</h6>
         </div>
+        
         <div className="banner_area">
           <img src={commImgOne} alt="" />
           <div className="comm-post_area">
@@ -53,10 +56,12 @@ const BusinessAffiliation = () => {
             </div>
           </div>
         </div>
+        </ScrollAnimation>
       </section>
 
       {/* section: A commitment to our people */}
       <section className="comm-section3">
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
         <div className="">
           <h6>A commitment to our people</h6>
           <p>
@@ -65,6 +70,8 @@ const BusinessAffiliation = () => {
             aliquam.
           </p>
         </div>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
         <div className="comm_gallery">
           <figure className="figure">
             <img src={commImgTwo} alt="" />
@@ -131,6 +138,7 @@ const BusinessAffiliation = () => {
             </figcaption>
           </figure>
         </div>
+        </ScrollAnimation>
       </section>
     </div>
   );

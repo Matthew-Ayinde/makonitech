@@ -12,6 +12,7 @@ import commImgSix from "../../../images/comm-img-six.png";
 import commImgSeven from "../../../images/comm-img-seven.png";
 import leftArrow from "../../../images/comm-left-arrow.png";
 import rightArrow from "../../../images/comm-right-arrow.png";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import "./OurCommitment.scss";
 
@@ -28,6 +29,7 @@ const OurCommitment = () => {
       <CommitmentTab />
       {/* section:-  In our managements’ words */}
       <section className="comm-section2">
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
         <div className="comm_text-area">
           <small>INCLUSION & DIVERSITY</small>
           <h6>In our managements’ words</h6>
@@ -53,84 +55,89 @@ const OurCommitment = () => {
             </div>
           </div>
         </div>
+        </ScrollAnimation>
       </section>
 
       {/* section: A commitment to our people */}
       <section className="comm-section3">
-        <div className="">
-          <h6>A commitment to our people</h6>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            tristique tristique morbi etiam amet. Gravida morbi lectus vivamus
-            aliquam.
-          </p>
-        </div>
-        <div className="comm_gallery">
-          <figure className="figure">
-            <img src={commImgTwo} alt="" />
-            <figcaption className="fig-caption">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              <br />
-              <Link to="/" className="learn_more">
-                Learn More
-              </Link>
-            </figcaption>
-          </figure>
-          <figure className="figure">
-            <img src={commImgThree} alt="" />
-            <figcaption className="fig-caption">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Ullamcorper euismod arcu e volutpat turpis bibendum.
-              <br />
-              <Link to="/" className="learn_more">
-                Learn More
-              </Link>
-            </figcaption>
-          </figure>
-          <figure className="figure">
-            <img src={commImgFour} alt="" />
-            <figcaption className="fig-caption">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              Ullamcorper euismod arcu e volutpat turpis bibendum.
-              <br />
-              <Link to="/" className="learn_more">
-                Learn More
-              </Link>
-            </figcaption>
-          </figure>
-          <figure className="figure">
-            <img src={commImgFive} alt="" />
-            <figcaption className="fig-caption">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              <br />
-              <Link to="/" className="learn_more">
-                Learn More
-              </Link>
-            </figcaption>
-          </figure>
-          <figure className="figure">
-            <img src={commImgSix} alt="" />
-            <figcaption className="fig-caption">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Ullamcorper euismod arcu e volutpat turpis bibendum.
-              <br />
-              <Link to="/" className="learn_more">
-                Learn More
-              </Link>
-            </figcaption>
-          </figure>
-          <figure className="figure">
-            <img src={commImgSeven} alt="" />
-            <figcaption className="fig-caption">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              Ullamcorper euismod arcu e volutpat turpis bibendum.
-              <br />
-              <Link to="/" className="learn_more">
-                Learn More
-              </Link>
-            </figcaption>
-          </figure>
-        </div>
+        <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+          <div className="">
+            <h6>A commitment to our people</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              tristique tristique morbi etiam amet. Gravida morbi lectus vivamus
+              aliquam.
+            </p>
+          </div>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+          <div className="comm_gallery">
+            <figure className="figure">
+              <img src={commImgTwo} alt="" />
+              <figcaption className="fig-caption">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <br />
+                <Link to="/" className="learn_more">
+                  Learn More
+                </Link>
+              </figcaption>
+            </figure>
+            <figure className="figure">
+              <img src={commImgThree} alt="" />
+              <figcaption className="fig-caption">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Ullamcorper euismod arcu e volutpat turpis bibendum.
+                <br />
+                <Link to="/" className="learn_more">
+                  Learn More
+                </Link>
+              </figcaption>
+            </figure>
+            <figure className="figure">
+              <img src={commImgFour} alt="" />
+              <figcaption className="fig-caption">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                Ullamcorper euismod arcu e volutpat turpis bibendum.
+                <br />
+                <Link to="/" className="learn_more">
+                  Learn More
+                </Link>
+              </figcaption>
+            </figure>
+            <figure className="figure">
+              <img src={commImgFive} alt="" />
+              <figcaption className="fig-caption">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <br />
+                <Link to="/" className="learn_more">
+                  Learn More
+                </Link>
+              </figcaption>
+            </figure>
+            <figure className="figure">
+              <img src={commImgSix} alt="" />
+              <figcaption className="fig-caption">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Ullamcorper euismod arcu e volutpat turpis bibendum.
+                <br />
+                <Link to="/" className="learn_more">
+                  Learn More
+                </Link>
+              </figcaption>
+            </figure>
+            <figure className="figure">
+              <img src={commImgSeven} alt="" />
+              <figcaption className="fig-caption">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                Ullamcorper euismod arcu e volutpat turpis bibendum.
+                <br />
+                <Link to="/" className="learn_more">
+                  Learn More
+                </Link>
+              </figcaption>
+            </figure>
+          </div>
+        </ScrollAnimation>
       </section>
     </div>
   );

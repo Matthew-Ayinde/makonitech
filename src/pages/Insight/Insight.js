@@ -11,6 +11,7 @@ import Pagination from "./pagination";
 import httpService from "../../utils/axios";
 import dateFormatter from "../../utils/dateFormatter";
 import isEmpty from "is-empty";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Insight = () => {
   // const [posts, setPosts] = useState([]);
@@ -41,6 +42,7 @@ const Insight = () => {
   return (
     <div className="portfolio_wrapper_page">
       <div className="portfolio_wrapper_hero">
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
         <div className="hero_contents">
           <h1>Insight</h1>
           <p>
@@ -51,76 +53,79 @@ const Insight = () => {
             odio ut risus. Ut cursus tortor viverra viverra nec in lectus.
           </p>
         </div>
+        </ScrollAnimation>
       </div>
 
       <div className="sort_clients_contents">
         <div className="container">
-          <div className="vacancy-wrapper-head add_padding">
-            <div className="vacancy-wrapper-head-group">
-              <label htmlFor="vacancies-filter">Categories</label>
-              <div className="select-wrapper">
-                <select id="vacancies-filter"></select>
+          <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+            <div className="vacancy-wrapper-head add_padding">
+              <div className="vacancy-wrapper-head-group">
+                <label htmlFor="vacancies-filter">Categories</label>
+                <div className="select-wrapper">
+                  <select id="vacancies-filter"></select>
+                </div>
+              </div>
+              <div className="vacancy-wrapper-head-group">
+                <label htmlFor="location">Month</label>
+                <div className="select-wrapper">
+                  <select id="location"></select>
+                </div>
+              </div>
+              <div className="vacancy-wrapper-head-group">
+                <button>Show All</button>
               </div>
             </div>
-            <div className="vacancy-wrapper-head-group">
-              <label htmlFor="location">Month</label>
-              <div className="select-wrapper">
-                <select id="location"></select>
-              </div>
-            </div>
-            <div className="vacancy-wrapper-head-group">
-              <button>Show All</button>
-            </div>
-          </div>
 
-          <div className="insight_contents_wrapper">
-            {display
-              .slice(
-                activePage * countPerPage,
-                activePage * countPerPage + countPerPage
-              )
-              .map((post, i) => (
-                <div key={i} className="insight_card_contents">
-                  <img src={img} alt="img" />
-                  <div className="insight_card_text_wrapper">
-                    <div className="insight_card_text">
-                      <h3>{post.title}</h3>
-                      <p className="plain-text">
-                        {/* Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
-                        amet,consectetur adipiscing elit, sed do e */}
-                      </p>
-                      <p className="plain-text-link">
-                        <Link to={`/insight/${post.id}`}>Read more</Link>
-                      </p>
-                    </div>
-                    <div className="insight_card_footer">
-                      <p className="special-insight">
-                        Posted on {dateFormatter(post.createdAt)}
-                      </p>
-                      {!isEmpty(post.createdBy) && (
-                        <p className="special-insight2">
-                          By {post.createdBy.firstName}&nbsp;
-                          {post.createdBy.lastName[0]}.
+            <div className="insight_contents_wrapper">
+              {display
+                .slice(
+                  activePage * countPerPage,
+                  activePage * countPerPage + countPerPage
+                )
+                .map((post, i) => (
+                  <div key={i} className="insight_card_contents">
+                    <img src={img} alt="img" />
+                    <div className="insight_card_text_wrapper">
+                      <div className="insight_card_text">
+                        <h3>{post.title}</h3>
+                        <p className="plain-text">
+                          {/* Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+                          amet,consectetur adipiscing elit, sed do e */}
                         </p>
-                      )}
+                        <p className="plain-text-link">
+                          <Link to={`/insight/${post.id}`}>Read more</Link>
+                        </p>
+                      </div>
+                      <div className="insight_card_footer">
+                        <p className="special-insight">
+                          Posted on {dateFormatter(post.createdAt)}
+                        </p>
+                        {!isEmpty(post.createdBy) && (
+                          <p className="special-insight2">
+                            By {post.createdBy.firstName}&nbsp;
+                            {post.createdBy.lastName[0]}.
+                          </p>
+                        )}
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
-          </div>
+                ))}
+            </div>
 
-          <div className="pagination-insight">
-            <Pagination
-              containerClassName="pagination"
-              pageCount={noOfPages}
-              activeClassName="paginate-active"
-              disabledClassName="paginate-disabled"
-              previousClassName="paginate-previous"
-              nextClassName="paginate-next"
-              marginPagesDisplayed={1}
-              onPageChange={onPagination}
-            />
-          </div>
+            <div className="pagination-insight">
+              <Pagination
+                containerClassName="pagination"
+                pageCount={noOfPages}
+                activeClassName="paginate-active"
+                disabledClassName="paginate-disabled"
+                previousClassName="paginate-previous"
+                nextClassName="paginate-next"
+                marginPagesDisplayed={1}
+                onPageChange={onPagination}
+              />
+            </div>
+          </ScrollAnimation>
         </div>
       </div>
     </div>

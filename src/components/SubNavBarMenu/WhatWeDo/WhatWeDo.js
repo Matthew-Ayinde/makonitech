@@ -10,7 +10,7 @@ const WhatWeDo = ({ handleCloseSubNav }) => {
       <div className='what-we-do-links'>
         <div className='single-nav-links'>
           <h2>Cloud Services</h2>
-          <ul className='what-we-do-link'>
+          {/* <ul className='what-we-do-link'>
             <li>
               <Link to='/aws-cloud-services' onClick={handleCloseSubNav}>
                 <span>
@@ -35,7 +35,18 @@ const WhatWeDo = ({ handleCloseSubNav }) => {
                 Cloud Adoption
               </Link>
             </li>
-          </ul>
+          </ul> */}
+           <ul>
+                <li>
+                  <Link to='/aws-cloud-services'>AWS Cloud Services</Link>
+                </li>
+                <li>
+                  <Link to='/aws-cloud-services'>Azure Cloud Services</Link>
+                </li>
+                <li>
+                  <Link to='/cloud-adoption'>Cloud Adoption</Link>
+                </li>
+              </ul>
         </div>
         <div className='single-nav-links'>
           <h2>Cloud Security</h2>

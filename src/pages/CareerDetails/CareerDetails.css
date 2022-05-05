@@ -13,7 +13,7 @@
   align-items: center;
   text-align: flex-start;
   padding: 257px 0px 203px;
-  margin-left: -150px;
+  /* margin-left: -150px; */
 }
 
 .career_details--hero_info h1 {
@@ -40,7 +40,7 @@
   border-bottom: 1px solid #fff;
 }
 .career_details_sub {
-  padding: 80px 100px;
+  padding: 80px 50px;
   /* margin-top: -150px; */
   background-color: #fff;
   margin: -150px 50px 0;

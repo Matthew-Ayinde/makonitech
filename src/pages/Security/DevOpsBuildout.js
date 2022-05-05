@@ -7,12 +7,43 @@ import AdvertOne from "../../components/Adverts/AvertOne";
 import MakoniWay from "../../components/MakoniWay/MakoniWay";
 import Insight from "../../components/Insight";
 import OurWork from "../../components/Work/OurWork";
-
+import ScrollAnimation from 'react-animate-on-scroll';
+import { Link } from "react-router-dom";
 const DevOpsBuildout = () => {
 
   return (
     <>
-      <ServicesHero title='DevOps Buildout' category='DevOps'/>
+      {/* <ServicesHero title='DevOps Buildout' category='DevOps'/> */}
+      <div className='security_hero'>
+        <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+          <div className='security_hero_content'>
+            <div className='security_hero_info'>
+              <h1>SECURITY</h1>
+              <h2>DevOps Buildout</h2>
+              <p>
+                Defending your users and data, no matter where they are,<br /> is a more
+                critical job than ever before.
+              </p>
+            </div>
+            <div className='security_hero_extra'>
+              <div className='related_services'>
+                <h3>Related Services</h3>
+                <ul>
+                  {/* <li>
+                    <Link to='/devops-buildout'>DevOps Buildout</Link>
+                  </li> */}
+                  <li>
+                    <Link to='/devops-security-operations'>DevOps Security Operations</Link>
+                  </li>
+                  <li>
+                    <Link to='/big-data-analytics'>Big Data Analytics</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </ScrollAnimation>
+      </div>
       <ServicesTab />
       <Results />
       <OurWork />

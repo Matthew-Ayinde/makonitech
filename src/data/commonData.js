@@ -18,10 +18,10 @@ export const footerData = [
         page: "Pricing",
         url: "./"
       }, 
-      {
-        page: "Releases",
-        url: "./"
-      }, 
+      // {
+      //   page: "Releases",
+      //   url: "./"
+      // }, 
     ],
   },
   {
@@ -31,10 +31,10 @@ export const footerData = [
         page:"About",
         url: "./"
       }, 
-      {
-        page:"Press",
-        url: "./"
-      }, 
+      // {
+      //   page:"Press",
+      //   url: "./"
+      // }, 
       {
         page: "Careers",
         url: "./"
@@ -68,10 +68,10 @@ export const footerData = [
         page: "Privacy Policy",
         url: "./"
       },
-      {
-        page: "Status",
-        url: "./"
-      }
+      // {
+      //   page: "Status",
+      //   url: "./"
+      // }
     ]
   }
 ]

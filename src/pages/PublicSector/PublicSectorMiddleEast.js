@@ -5,18 +5,21 @@ import AdvertOne from "../../components/Adverts/AvertOne";
 import MakoniWay from "../../components/MakoniWay/MakoniWay";
 import Insight from "../../components/Insight";
 import Testimonial from "../../components/Testimonial";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const PublicSectorMiddleEast = () => {
   return (
     <div className='public-sector'>
       <div className='public-sector-middle-east-hero'>
-        <div className='public-sector-content'>
-          <h1>Public Sector in the Middle East</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
-            purus tristique tincidunt sem ac dictum nam.
-          </p>
-        </div>
+        <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+          <div className='public-sector-content'>
+            <h1>Public Sector in the Middle East</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
+              purus tristique tincidunt sem ac dictum nam.
+            </p>
+          </div>
+          </ScrollAnimation>
       </div>
       <PublicSectopTab />
       <AdvertOne />

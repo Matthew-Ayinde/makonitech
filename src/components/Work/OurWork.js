@@ -2,6 +2,7 @@ import React from "react";
 import WorkItem from "./WorkItem";
 import Carousel from 'react-elastic-carousel';
 import './our-work.css'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const OurWork = () => {
 
@@ -15,15 +16,19 @@ const OurWork = () => {
 
   return (
     <section className="work">
-      <header>
-        <h3>Our Work</h3>
-        <p>Kobofund me Project</p>
-      </header>
-      <Carousel breakPoints={breakPoints}>
-        <WorkItem />
-        <WorkItem />
-        <WorkItem />
-      </Carousel>
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+        <header>
+          <h3>Our Work</h3>
+          <p>Kobofund me Project</p>
+        </header>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+        <Carousel breakPoints={breakPoints} infiniteLoop={true} enableAutoPlay autoPlaySpeed={13000} >
+          <WorkItem />
+          <WorkItem />
+          <WorkItem />
+        </Carousel>
+      </ScrollAnimation>
     </section>
   )
 }

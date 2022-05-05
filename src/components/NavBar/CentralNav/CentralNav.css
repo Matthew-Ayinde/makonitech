@@ -8,7 +8,12 @@
   max-width: 512px;
   min-height: 426px;
   width: 100%;
-  margin: 7em auto;
+  margin: 7em auto; 
+}
+@media screen and (max-width: 475px) {
+  .cnav-wrap {
+    width: 90%;
+  }
 }
 
 .cnav-wrap::before {

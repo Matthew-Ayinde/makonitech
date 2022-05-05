@@ -11,6 +11,7 @@ import circleThree from "../../../images/circle-three.svg";
 import Carousel from "react-elastic-carousel";
 
 import "./HowWeWork.scss";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const HowWeWork = () => {
   return (
@@ -24,13 +25,15 @@ const HowWeWork = () => {
       <TabComponent />
 
       {/* Section2: How we work with our clients */}
-      <section className="sec_container2">
-        <div className="sec_header">
-          <h4 style={{ color: "#C4C4C4" }}>How we work with our clients </h4>
-        </div>
-        <div className="sec-content">
-          <img src={treeImg} alt="" />
-        </div>
+      <section className="sec_container2" id="clientresult">
+        <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+          <div className="sec_header">
+            <h4 style={{ color: "#C4C4C4" }}>How we work with our clients </h4>
+          </div>
+          <div className="sec-content">
+            <img src={treeImg} alt="" />
+          </div>
+        </ScrollAnimation>
       </section>
       {/* // background: #FFFFFF;
 // box-shadow: 0px 0px 5px 1px rgba(89, 89, 89, 0.1);
@@ -50,10 +53,13 @@ const HowWeWork = () => {
 
       {/* Section4: What we do */}
       <section className="sec_container2">
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
         <div className="sec_header">
           <h4 style={{ color: "#C4C4C4" }}>What we do </h4>
         </div>
         <Carousel
+         enableAutoPlay 
+         autoPlaySpeed={13000}
           easing="cubic-bezier(1,.15,.55,1.54)"
           tiltEasing="cubic-bezier(0.110, 1, 1.000, 0.210)"
           transitionMs={700}
@@ -154,6 +160,7 @@ const HowWeWork = () => {
             <img src={carouselImg} alt="" />
           </div>
         </Carousel>
+        </ScrollAnimation>
       </section>
     </div>
   );

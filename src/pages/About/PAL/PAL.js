@@ -3,6 +3,7 @@ import React from "react";
 import "./Pal.scss";
 import AboutHero from "../../../components/Hero/AboutHero/AboutHero";
 import MeetTeam from "../../../components/Team/MeetTeam"
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const PAL = () => {
   return (
@@ -12,12 +13,12 @@ const PAL = () => {
         desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim purus tristique tincidunt sem ac dictum nam."
         heroImageIndex="bg_styles--5"
       />
-
+<ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
       <section className="culture_section">
         <h3>Our Culture</h3>
         <div className="culture_wrap">
           <div className="first_col">
-            <h4>THE CLOUDFIFT WAY</h4>
+            <h4>THE Makonitech WAY</h4>
             <h5>We create innovative solutions for industries</h5>
             <p>
               We are driven by the power of data to create extraordinary
@@ -81,7 +82,7 @@ const PAL = () => {
           </div>
         </div>
       </section>
-
+</ScrollAnimation>
       {/* Section: import Team component */}
       <MeetTeam />
     </div>

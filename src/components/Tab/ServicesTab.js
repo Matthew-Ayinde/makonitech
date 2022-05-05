@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./ServicesTab.scss";
 import TabContent from "./TabContent/TabContent";
-
+import ScrollAnimation from 'react-animate-on-scroll';
+import { Link } from 'react-router-dom';
+import 'react-tabs/style/react-tabs.css';
 const ServicesTab = () => {
   const [selectedTabOne, setSelectedTabOne] = useState(true);
   const [selectedTabTwo, setSelectedTabTwo] = useState(false);
@@ -38,49 +40,52 @@ const ServicesTab = () => {
 
   return (
     <div className='service_tab_wrapper'>
-      <div className='service_tabs'>
-        <ul>
-          <li className={selectedTabOne && "tab_active"} onClick={handleTabOne}>
-            Overview
-          </li>
-          <li className={selectedTabTwo && "tab_active"} onClick={handleTabTwo}>
-            Client Result
-          </li>
-          <li
-            className={selectedTabThree && "tab_active"}
-            onClick={handleTabThree}
-          >
-            How we can help
-          </li>
-          <li
-            className={selectedTabFour && "tab_active"}
-            onClick={handleTabFour}
-          >
-            Insights
-          </li>
-        </ul>
-      </div>
+      {/* <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+        <div className='service_tabs'>
+          <ul>
+            <li className={selectedTabOne && "tab_active"} onClick={handleTabOne}>
+              <Link to="#overview">Overview</Link> 
+            </li>
+            <li className={selectedTabTwo && "tab_active"} onClick={handleTabTwo}>
+            <Link to="#clientresult">Client Result</Link>
+            </li>
+            <li
+              className={selectedTabThree && "tab_active"} onClick={handleTabThree}>
+              <Link to="#howcanhelp">How we can help</Link>
+            </li>
+            <li
+              className={selectedTabFour && "tab_active"} onClick={handleTabFour}>
+              <Link to="#insights">Insights</Link>
+            </li>
+          </ul>
+        </div>
+      </ScrollAnimation> */}
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+        {selectedTabOne && (
+          <div id="overview" className='service_tab_contents'>
+            <TabContent />
+          </div>
+        )}
+        {selectedTabTwo && (
+          <div id="clientresult" className='service_tab_contents'>
+            <TabContent />
+          </div>
+        )}
+        {selectedTabThree && (
+          <div id="howcanhelp" className='service_tab_contents'>
+            <TabContent />
+          </div>
+        )}
+        {selectedTabFour && (
+          <div id="insights" className='service_tab_contents'>
+            <TabContent />
+          </div>
+        )}
+      </ScrollAnimation>
 
-      {selectedTabOne && (
-        <div className='service_tab_contents'>
-          <TabContent />
-        </div>
-      )}
-      {selectedTabTwo && (
-        <div className='service_tab_contents'>
-          <TabContent />
-        </div>
-      )}
-      {selectedTabThree && (
-        <div className='service_tab_contents'>
-          <TabContent />
-        </div>
-      )}
-      {selectedTabFour && (
-        <div className='service_tab_contents'>
-          <TabContent />
-        </div>
-      )}
+
+
+
     </div>
   );
 };

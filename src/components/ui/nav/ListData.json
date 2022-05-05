@@ -1,0 +1,288 @@
+[
+    {
+        "id": 1,
+        "text": "saved jobs",
+        "path": "/career/savedjobs"
+    },
+    {
+        "id": 2,
+        "text": "meet our team",
+        "path": "/career/meet-our-team"
+    },
+    {
+        "id": 3,
+        "text": "insight",
+        "path": "/insight"
+    },
+    {
+        "id": 4,
+        "text": "portfolio",
+        "path": "/portfolio"
+    },
+    {
+        "id": 5,
+        "text": "portfolio details",
+        "path": "/portfolio-details"
+    },
+    {
+        "id": 6,
+        "text": "public sector africa",
+        "path": "/public-sector-africa"
+    },
+    {
+        "id": 7,
+        "text": "public sector europe",
+        "path": "/public-sector-europe"
+    },
+    {
+        "id": 8,
+        "text": "public sector usa",
+        "path": "/public-sector-usa"
+    },
+    {
+        "id": 9,
+        "text": "public sector middle-east",
+        "path": "/public-sector-middle-east"
+    },
+    {
+        "id": 10,
+        "text": "industries",
+        "path": "/industries"
+    },
+    {
+        "id": 11,
+        "text": "csr",
+        "path": "/csr"
+    },
+    {
+        "id": 12,
+        "text": "pal",
+        "path": "/pal"
+    },
+    {
+        "id": 13,
+        "text": "about",
+        "path": "/about"
+    },
+    {
+        "id": 14,
+        "text": "how we work",
+        "path": "/how_we_work"
+    },
+    {
+        "id": 15,
+        "text": "our commitment",
+        "path": "/our_commitment"
+    },
+    {
+        "id": 16,
+        "text": "aerospace",
+        "path": "/aerospace"
+    },
+    {
+        "id": 17,
+        "text": "consumer products",
+        "path": "/consumer-products"
+    },
+    {
+        "id": 18,
+        "text": "energy and natural resources",
+        "path": "/energy-and-natural-resources"
+    },
+    {
+        "id": 19,
+        "text": "financial services",
+        "path": "/financial-services"
+    },
+    {
+        "id": 20,
+        "text": "automobile and mobility",
+        "path": "/automobile-and-mobility"
+    },
+    {
+        "id": 21,
+        "text": "forest products",
+        "path": "/forest-products"
+    },
+    {
+        "id": 22,
+        "text": "security detection",
+        "path": "/security-detection"
+    },
+    {
+        "id": 23,
+        "text": "security protection",
+        "path": "/security-protection"
+    },
+    {
+        "id": 24,
+        "text": "cloud assessments",
+        "path": "/cloud-assessments"
+    },
+    {
+        "id": 25,
+        "text": "zero trust network",
+        "path": "/zero-trust-network"
+    },
+    {
+        "id": 26,
+        "text": "firewall managment",
+        "path": "/firewall-managment"
+    },
+    {
+        "id": 27,
+        "text": "vulnerability management",
+        "path": "/vulnerability-management"
+    },
+    {
+        "id": 28,
+        "text": "data migration",
+        "path": "/data-migration"
+    },
+    {
+        "id": 29,
+        "text": "application migration",
+        "path": "/application-migration"
+    },
+    {
+        "id": 30,
+        "text": "business continuity planning",
+        "path": "/business-continuity-planning"
+    },
+    {
+        "id": 30,
+        "text": "application discovery",
+        "path": "/application-discovery"
+    },
+    {
+        "id": 31,
+        "text": "data backup",
+        "path": "/data-backup"
+    },
+    {
+        "id": 32,
+        "text": "ongoing maintenance",
+        "path": "/ongoing-maintenance"
+    },
+    {
+        "id": 33,
+        "text": "devops buildout",
+        "path": "/devops-buildout"
+    },
+    {
+        "id": 34,
+        "text": "devops security operations",
+        "path": "/devops-security-operations"
+    },
+    {
+        "id": 35,
+        "text": "big data analytics",
+        "path": "/big-data-analytics"
+    },
+    {
+        "id": 36,
+        "text": "careers",
+        "path": "/careers"
+    },
+    {
+        "id": 37,
+        "text": "contact",
+        "path": "/contact"
+    },
+    {
+        "id": 38,
+        "text": "aws cloud services",
+        "path": "/aws-cloud-services"
+    },
+    {
+        "id": 39,
+        "text": "azure cloud services",
+        "path": "/azure-cloud-services"
+    },
+    {
+        "id": 40,
+        "text": "cloud adoption",
+        "path": "/cloud-adoption"
+    },
+    {
+        "id": 41,
+        "text": "disaster recovery",
+        "path": "/disaster-recovery"
+    },
+    {
+        "id": 42,
+        "text": "implementation deployment",
+        "path": "/implementation-deployment"
+    },
+    {
+        "id": 43,
+        "text": "agriculture",
+        "path": "/agriculture"
+    },
+    {
+        "id": 44,
+        "text": "fintech",
+        "path": "/fintech"
+    },
+    {
+        "id": 45,
+        "text": "nearshore",
+        "path": "/nearshore"
+    },
+    {
+        "id": 46,
+        "text": "logistics",
+        "path": "/logistics"
+    },
+    {
+        "id": 47,
+        "text": "entertainment",
+        "path": "/entertainment"
+    },
+    {
+        "id": 48,
+        "text": "manufacturing offshore",
+        "path": "/manufacturing-offshore"
+    },
+    {
+        "id": 49,
+        "text": "business affiliation",
+        "path": "/business-affiliation"
+    },
+    {
+        "id": 50,
+        "text": "corporate responsibility",
+        "path": "/corporate-responsibility"
+    },
+    {
+        "id": 51,
+        "text": "build your team",
+        "path": "/build-your-team"
+    },
+    {
+        "id": 52,
+        "text": "inclusion-diversity",
+        "path": "/inclusion diversity"
+    }
+    ,
+    {
+        "id": 53,
+        "text": "partners affiliation",
+        "path": "/partners-affiliation"
+    } ,
+    {
+        "id": 54,
+        "text": "insight details",
+        "path": "/insight/:id"
+    },
+    {
+        "id": 55,
+        "text": "career details",
+        "path": "/career/career-details"
+    },
+    {
+        "id": 56,
+        "text": "What We Believe",
+        "path": "/What_We_Believe"
+    }
+] 

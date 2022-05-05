@@ -5,6 +5,7 @@ import imgUrl from '../../images/jack-img.png'
 import fbIcon from "../../images/fbIcon.png";
 import twIcon from "../../images/twIcon.png";
 import inIcon from "../../images/inIcon.png";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const teamData = [
   {
@@ -77,49 +78,51 @@ const teamData = [
 const MeetTeam = () => {
   return (
     <div className="team_wrap">
-      <section className="container ">
-        <div className="header">
-          <h3>Meet The Team</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+        <section className="container ">
+          <div className="header">
+            <h3>Meet The Team</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
 
-        <div className="team_grid">
-          {teamData.map((card) => (
-            <div key={card.id} className="team_card">
-              <div className="team_img">
-                {/* <img src={card.imgUrl} alt="" /> */}
-                <img src={imgUrl} alt="" />
+          <div className="team_grid">
+            {teamData.map((card) => (
+              <div key={card.id} className="team_card">
+                <div className="team_img">
+                  {/* <img src={card.imgUrl} alt="" /> */}
+                  <img src={imgUrl} alt="" />
+                </div>
+                <div className="img_details">
+                  <div className="team-title">
+                    <h4>{card.name}</h4>
+                    <h6>{card.title}</h6>
+                  </div>
+                  <div className="card-desc">
+                    <p>{card.desc}</p>
+                  </div>
+                  <div className="social_icons">
+                    <Link to={card.fbLink}>
+                      <img src={fbIcon} alt="" />
+                    </Link>
+                    <Link to={card.InLink}>
+                      <img src={twIcon} alt="" />
+                    </Link>
+                    <Link to={card.twLink}>
+                      <img src={inIcon} alt="" />
+                    </Link>
+                  </div>
+                </div>
               </div>
-              <div className="img_details">
-                <div className="team-title">
-                  <h4>{card.name}</h4>
-                  <h6>{card.title}</h6>
-                </div>
-                <div className="card-desc">
-                  <p>{card.desc}</p>
-                </div>
-                <div className="social_icons">
-                  <Link to={card.fbLink}>
-                    <img src={fbIcon} alt="" />
-                  </Link>
-                  <Link to={card.InLink}>
-                    <img src={twIcon} alt="" />
-                  </Link>
-                  <Link to={card.twLink}>
-                    <img src={inIcon} alt="" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="team_btn">
-          <button>See More</button>
-        </div>
-      </section>
+            ))}
+          </div>
+          <div className="team_btn">
+            <button>See More</button>
+          </div>
+        </section>
+      </ScrollAnimation>
     </div>
   );
 };

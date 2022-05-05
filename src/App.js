@@ -57,7 +57,8 @@ import Header from "./components/ui/header";
 import Assurance from "./components/Assurance";
 import Footer from "./components/Footer";
 import AwsCloudServices from "./pages/Security/AwsCloudServices";
-import AzureCloudServices from "./pages/Security/AwsCloudServices";
+// import AzureCloudServices from "./pages/Security/AwsCloudServices";
+import AzureCloudServices from "./pages/Security/AzureCloudServices";
 import CloudAdoption from "./pages/Security/CloudAdoption";
 import DisasterRecovery from "./pages/Security/DisasterRecovery";
 import ImplementationDeployment from "./pages/Security/ImplementationDeployment";
@@ -71,6 +72,11 @@ import BusinessAffiliation from "./pages/About/BusinessAffiliation/BusinessAffil
 import CorporateResponsibility from "./pages/About/CorporateResponsibility/CorporateResponsibility";
 import BuildYourTeam from "./pages/About/BuildYourTeam/BuildYourTeam";
 import InclusionDiversity from "./pages/About/InclusionDiversity/InclusionDiversity";
+import Cookiespolicy from "./pages/cookies-policy/cookies-policy";
+import Privacypolicy from "./pages/privacy-policy/privacy-policy";
+import TermsOfService from "./pages/terms-of-service/terms-of-service";
+
+
 // import Layout from "./Layout/Layout";
 
 import { ToastContainer } from "react-toastify";
@@ -407,6 +413,18 @@ function App() {
           <WhatWeBelieve />
         </Route>
 
+        <Route path="/cookies-policy" exact>
+          <Cookiespolicy />
+        </Route>
+
+        <Route path="/privacy-policy" exact>
+          <Privacypolicy />
+        </Route>
+
+        <Route path="/terms-of-service" exact>
+          <TermsOfService />
+        </Route>
+        
         {/* </Layout> */}
       </Switch>
 

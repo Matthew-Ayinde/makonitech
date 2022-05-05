@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./PublicSectorTab.scss";
 import TabContent from "./TabContent/TabContent"
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const PublicSectopTab = () => {
   const [selectedTabOne, setSelectedTabOne] = useState(true);
@@ -51,60 +52,63 @@ const PublicSectopTab = () => {
 
   return (
     <div className='service_tab_wrapper'>
-      <div className='service_tabs'>
-        <ul>
-          <li className={selectedTabOne && "tab_active"} onClick={handleTabOne}>
-            Overview
-          </li>
-          <li className={selectedTabTwo && "tab_active"} onClick={handleTabTwo}>
-            Europe
-          </li>
-          <li
-            className={selectedTabThree && "tab_active"}
-            onClick={handleTabThree}
-          >
-            Middle East
-          </li>
-          <li
-            className={selectedTabFour && "tab_active"}
-            onClick={handleTabFour}
-          >
-            United States
-          </li>
-          <li
-            className={selectedTabFive && "tab_active"}
-            onClick={handleTabFive}
-          >
-            Africa
-          </li>
-        </ul>
-      </div>
-
-      {selectedTabOne && (
-        <div className='service_tab_contents'>
-          <TabContent />
+      {/* <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+        <div className='service_tabs'>
+          <ul>
+            <li className={selectedTabOne && "tab_active"} onClick={handleTabOne}>
+              Overview
+            </li>
+            <li className={selectedTabTwo && "tab_active"} onClick={handleTabTwo}>
+              Europe
+            </li>
+            <li
+              className={selectedTabThree && "tab_active"}
+              onClick={handleTabThree}
+            >
+              Middle East
+            </li>
+            <li
+              className={selectedTabFour && "tab_active"}
+              onClick={handleTabFour}
+            >
+              United States
+            </li>
+            <li
+              className={selectedTabFive && "tab_active"}
+              onClick={handleTabFive}
+            >
+              Africa
+            </li>
+          </ul>
         </div>
-      )}
-      {selectedTabTwo && (
-        <div className='service_tab_contents'>
-          <TabContent />
-        </div>
-      )}
-      {selectedTabThree && (
-        <div className='service_tab_contents'>
-          <TabContent />
-        </div>
-      )}
-      {selectedTabFour && (
-        <div className='service_tab_contents'>
-          <TabContent />
-        </div>
-      )}
-      {selectedTabFive && (
-        <div className='service_tab_contents'>
-          <TabContent />
-        </div>
-      )}
+      </ScrollAnimation> */}
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+        {selectedTabOne && (
+          <div className='service_tab_contents'>
+            <TabContent />
+          </div>
+        )}
+        {selectedTabTwo && (
+          <div className='service_tab_contents'>
+            <TabContent />
+          </div>
+        )}
+        {selectedTabThree && (
+          <div className='service_tab_contents'>
+            <TabContent />
+          </div>
+        )}
+        {selectedTabFour && (
+          <div className='service_tab_contents'>
+            <TabContent />
+          </div>
+        )}
+        {selectedTabFive && (
+          <div className='service_tab_contents'>
+            <TabContent />
+          </div>
+        )}
+      </ScrollAnimation>
     </div>
   );
 };

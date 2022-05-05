@@ -2,6 +2,7 @@ import React from "react";
 import "./CareerDetails.css";
 import { Container } from "react-bootstrap";
 import profile from "../../images/Ellipse-14.png";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const CareersDetails = () => {
   return (
@@ -9,21 +10,24 @@ const CareersDetails = () => {
       <section className="career_details--hero">
         <Container>
           <div className="career_details--hero_content">
-            <div className="career_details--hero_info">
-              <h1>RESEARCH AND DEVELOPMENT ENGINEER</h1>
-              <div className="d-flex justify-content-flex-start gap-5">
-                <h4>Lagos</h4>
-                <h4>Remote</h4>
-                <h4>Software</h4>
+            <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+              <div className="career_details--hero_info">
+                <h1>RESEARCH AND DEVELOPMENT ENGINEER</h1>
+                <div className="d-flex justify-content-flex-start gap-5">
+                  <h4>Lagos</h4>
+                  <h4>Remote</h4>
+                  <h4>Software</h4>
+                </div>
               </div>
-            </div>
+            </ScrollAnimation>
           </div>
         </Container>
       </section>
-
+      
       <section className="career_details_sub">
         <div className="d-flex justify-content-between">
           <div className="left-side">
+            <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
             <div className=" ">
               <div className="d-flex justify-content-flex-start flex-column align-items-start text-start career_details_sub_sub">
                 <h2 className="career_details_sub_h2">About MAKONI TECH</h2>
@@ -43,6 +47,8 @@ const CareersDetails = () => {
                 </p>
               </div>
             </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
             <div className="">
               <div className="d-flex justify-content-flex-start flex-column align-items-start text-start career_details_sub_sub">
                 <h2 className="career_details_sub_h2">REQUIREMENTS</h2>
@@ -60,6 +66,8 @@ const CareersDetails = () => {
                 </p>
               </div>
             </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
             <div className=" ">
               <div className="d-flex justify-content-flex-start flex-column align-items-start text-start career_details_sub_sub">
                 <h2 className="career_details_sub_h2">RESPONSIBILITIES</h2>
@@ -85,6 +93,8 @@ const CareersDetails = () => {
                 </p>
               </div>
             </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
             <div className=" ">
               <div className="d-flex justify-content-flex-start flex-column align-items-start text-start career_details_sub_sub">
                 <h5 className="career_details_sub_h5">
@@ -104,10 +114,12 @@ const CareersDetails = () => {
                 <p className="career_details_sub_p">Placement</p>
               </div>
             </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
             <div className=" ">
               <div className="d-flex justify-content-flex-start flex-column align-items-start text-start career_details_sub_sub">
                 <h2 className="career_details_sub_h2">
-                  WHAT WILL YOU GET WITH CLOUDFIFT
+                  WHAT WILL YOU GET WITH Makonitech
                 </h2>
                 <p className="career_details_sub_p">
                   Plan and execute all stages of the recruitment-related process
@@ -131,6 +143,8 @@ const CareersDetails = () => {
                 </p>
               </div>
             </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
             <div className=" ">
               <div className="d-flex justify-content-flex-start flex-column align-items-start text-start career_details_sub_sub">
                 <h2 className="career_details_sub_h2">
@@ -194,7 +208,9 @@ const CareersDetails = () => {
                 </div>
               </div>
             </div>
+            </ScrollAnimation>
           </div>
+          <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
           <div className="right-side">
             <div className="d-flex justify-content-center flex-column align-items-center text-center career_details_sub_sub_right">
               <img src={profile} alt="profile-img" className="mb-4" />
@@ -208,6 +224,7 @@ const CareersDetails = () => {
               </div>
             </div>
           </div>
+          </ScrollAnimation>
         </div>
       </section>
     </>

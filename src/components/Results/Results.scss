@@ -1,6 +1,10 @@
 .results_wrapper {
   text-align: center;
   // margin-bottom: 20em;
+  margin: 85px 0;
+  @media screen and (max-width: 767px) {
+  margin: 55px 0;
+  }
 
   h4 {
     font-style: normal;

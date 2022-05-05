@@ -8,6 +8,7 @@ import img2 from "../../images/image-2.png";
 import img3 from "../../images/image-3.png";
 import httpService from "../../utils/axios";
 import dateFormatter from "../../utils/dateFormatter";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const InsightDetails = () => {
   const { id } = useParams();
@@ -32,15 +33,18 @@ const InsightDetails = () => {
       <section className="insight_details--hero">
         <Container>
           <div className="insight_details--hero_content">
+          <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
             <div className="insight_details--hero_info">
               <h4>Insights</h4>
               <h1>{loading ? "Loading..." : details.title}</h1>
             </div>
+            </ScrollAnimation>
           </div>
         </Container>
       </section>
 
       <section className="insight_details_main_sub">
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
         <section className="d-flex justify-content-between insight_sub">
           <div className="d-flex justify-content-center ">
             <div className=" insight_details_image">
@@ -71,14 +75,16 @@ const InsightDetails = () => {
             </div>
           </div>
         </section>
-
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
         <section className="d-flex justify-content-between insight_sub">
           <div
             style={{ fontSize: 18 }}
             dangerouslySetInnerHTML={{ __html: details.body }}
           />
         </section>
-
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
         <div className="insight_details-grid">
           <Card
             className="d-flex justify-content-center flex-column align-items-center text-left insight_details-card "
@@ -169,6 +175,7 @@ const InsightDetails = () => {
             </Card.Body>
           </Card>
         </div>
+        </ScrollAnimation>
       </section>
     </>
   );

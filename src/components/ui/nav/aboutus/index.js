@@ -67,7 +67,7 @@ const aboutDrop = () => {
           </div>
           <div className={styles.reviewInfo}>
             <span>Lucky Onoriode,</span>
-            <span>CEO, Cloudfift</span>
+            <span>CEO, Makonitech</span>
           </div>
         </div>
       </div>

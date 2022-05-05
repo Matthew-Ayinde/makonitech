@@ -8,6 +8,8 @@ import secImg2 from "../../images/rectangle1730.png";
 import secImg3 from "../../images/rectangle1731.png";
 import secImg4 from "../../images/Group1000.png";
 import TabContent from "../../components/Tab/AboutTab/AboutTabContent";
+import ScrollAnimation from 'react-animate-on-scroll';
+import { Link } from "react-router-dom";
 
 import "./About.scss";
 
@@ -24,89 +26,95 @@ const About = () => {
       <TabContent />
       
       <section className='sec_containerTwo'>
-        <div className='container sec_content'>
-          <div className='sec_text'>
-            <h2>Ready to realise your product vision?</h2>
-            <p>
-              Partner with Us
-              <span className='partner-icon'>
-                <img src={partnerIcon} alt='' />
-              </span>
-            </p>
+        <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+          <div className='container sec_content'>
+            <div className='sec_text'>
+              <h2>Ready to realise your product vision?</h2>
+              <p>
+              <Link to="/contact">
+                Partner with Us
+                <span className='partner-icon'>
+                  <img src={partnerIcon} alt='' />
+                </span>
+                </Link>
+              </p>
+            </div>
+            <div className='sec_img'>
+              <img src={secImg} alt='' />
+            </div>
           </div>
-          <div className='sec_img'>
-            <img src={secImg} alt='' />
-          </div>
-        </div>
+        </ScrollAnimation>
       </section>
 
       {/* What we do section */}
-      <section className='sec-containerThree'>
-        <div className='sec_header'>
-          <h3>What we do</h3>
-        </div>
-        <div className='sec_content'>
-          <div className='container sec_content-one'>
-            <div className='sec-one_img'>
-              <img src={secImg2} alt='' />
-            </div>
-            <div className='sec-one_text'>
-              <div>
-                <h5>Superior quality of work</h5>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt do amet sint. Velit officia
-                  consequat duis enim velit mollit. Exercitation veniam
-                  consequat sunt{" "}
-                </p>
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+        <section className='sec-containerThree'>
+          <div className='sec_header'>
+            <h3>What we do</h3>
+          </div>
+          <div className='sec_content'>
+            <div className='container sec_content-one'>
+              <div className='sec-one_img'>
+                <img src={secImg2} alt='' />
               </div>
-              <div>
-                <h5>Interactive consultation</h5>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt do amet sint. Velit officia
-                  consequat duis enim velit mollit. Exercitation veniam
-                  consequat sunt{" "}
-                </p>
+              <div className='sec-one_text'>
+                <div>
+                  <h5>Superior quality of work</h5>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                    amet sint. Velit officia consequat duis enim velit mollit.
+                    Exercitation veniam consequat sunt do amet sint. Velit officia
+                    consequat duis enim velit mollit. Exercitation veniam
+                    consequat sunt{" "}
+                  </p>
+                </div>
+                <div>
+                  <h5>Interactive consultation</h5>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                    amet sint. Velit officia consequat duis enim velit mollit.
+                    Exercitation veniam consequat sunt do amet sint. Velit officia
+                    consequat duis enim velit mollit. Exercitation veniam
+                    consequat sunt{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className='container sec_content-two'>
+              <div className='sec-one_text'>
+                <div>
+                  <h5>High quality and detailed deliverables</h5>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                    amet sint. Velit officia consequat duis enim velit mollit.
+                    Exercitation veniam consequat sunt do amet sint. Velit officia
+                    consequat duis enim velit mollit. Exercitation veniam
+                    consequat sunt
+                  </p>
+                </div>
+                <div>
+                  <h5>Superior quality of work</h5>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                    amet sint. Velit officia consequat duis enim velit mollit.
+                    Exercitation veniam consequat sunt do amet sint. Velit officia
+                    consequat duis enim velit mollit. Exercitation veniam
+                    consequat sunt
+                  </p>
+                </div>
+              </div>
+              <div className='sec-one_img'>
+                <img src={secImg3} alt='' />
               </div>
             </div>
           </div>
-          <div className='container sec_content-two'>
-            <div className='sec-one_text'>
-              <div>
-                <h5>High quality and detailed deliverables</h5>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt do amet sint. Velit officia
-                  consequat duis enim velit mollit. Exercitation veniam
-                  consequat sunt
-                </p>
-              </div>
-              <div>
-                <h5>Superior quality of work</h5>
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt do amet sint. Velit officia
-                  consequat duis enim velit mollit. Exercitation veniam
-                  consequat sunt
-                </p>
-              </div>
-            </div>
-            <div className='sec-one_img'>
-              <img src={secImg3} alt='' />
-            </div>
-          </div>
-        </div>
-      </section>
-
+        </section>
+      </ScrollAnimation>
       {/* Why Cloud Fift Section */}
       <section className='sec_container4'>
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
         <div className='sec_header'>
-          <h3>Why Cloudfift</h3>
+          <h3>Why Makonitech</h3>
         </div>
         <div className='sec_content'>
           <div>
@@ -159,36 +167,39 @@ const About = () => {
             </p>
           </div>
         </div>
-        <section className='inner-sec'>
-          <div>
-            <img src={secImg4} alt='' />
-          </div>
-          <div className='inner_sec-text'>
-            <h4>Our Nearshore & Offshore Teams</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <div className='inner_sec-aside'>
-              <p>
-                We offer flexible cooperation models that fit your goals,
-                resources and timeline.
-                <br />
-              </p>
-                <h5>
-                  <a href='/'>Learn More</a>
-                </h5>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
+          <section className='inner-sec'>
+            <div>
+              <img src={secImg4} alt='' />
             </div>
-          </div>
-        </section>
+            <div className='inner_sec-text'>
+              <h4>Our Nearshore & Offshore Teams</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <div className='inner_sec-aside'>
+                <p>
+                  We offer flexible cooperation models that fit your goals,
+                  resources and timeline.
+                  <br />
+                </p>
+                  <h5>
+                    <a href='/'>Learn More</a>
+                  </h5>
+              </div>
+            </div>
+          </section>
+        </ScrollAnimation>
       </section>
     </div>
   );

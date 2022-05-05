@@ -28,6 +28,11 @@
         line-height: 37px;
         padding-top: 1em;
       }
+      p{
+        a{
+          color: #fff;
+        }
+      }
     }
     .sec_img {
       max-width: 536px;
@@ -314,6 +319,7 @@
     }
     .sec_text {
       flex-direction: column;
+
     }
     .sec_img {
       margin-bottom: 0;

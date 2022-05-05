@@ -47,8 +47,14 @@
       grid-template-columns: 1fr 1fr 1fr;
       // background: green;
     }
+    .what_we_do_link {
+      @media (max-width: 1264px) {
+        display: flex;
+        flex-flow: column;
+      }
+    }
     @media (max-width: 1264px) {
-      margin-bottom: 15px;
+      margin-bottom: 40px;
     }
   }
 

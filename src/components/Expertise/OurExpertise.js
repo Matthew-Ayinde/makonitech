@@ -1,5 +1,6 @@
 import React from "react";
 import "./OurExpertise.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const expertiseData = [
   {
@@ -94,7 +95,10 @@ function OurExpertise() {
   return (
     <>
       <div className='expertise-wrap'>
+      <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
         <h3>OUR EXPERTISE</h3>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
         <div className='expertise-grid'>
           {expertiseData.map((card) => (
             // <Link to={card.route} >
@@ -108,6 +112,7 @@ function OurExpertise() {
             // </Link>
           ))}
         </div>
+        </ScrollAnimation>
       </div>
     </>
   );

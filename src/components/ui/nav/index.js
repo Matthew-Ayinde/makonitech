@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./styles.module.scss";
 import Dropdown from "../dropdown";
 import AboutDrop from "./aboutus";
@@ -7,7 +7,7 @@ import IndustriesDrop from "./industries";
 import PublicServiceDrop from "./publicService";
 import PortfolioDrop from "./portfolio";
 import { Link } from "react-router-dom";
-
+import List from './List';
 const Nav = ({ clicked, isDrop, isOpen }) => {
   const [showLang, setShowLang] = useState(false);
   const [about, openAbout] = useState(false);
@@ -16,6 +16,7 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
   const [publicService, openPublicService] = useState(false);
   const [portfolio, openPortfolio] = useState(false);
 
+  
   useEffect(() => {
     const hideLang = () => {
       setShowLang(false);
@@ -37,7 +38,32 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
       openPortfolio(false);
     }
   }, [isOpen]);
+  const [show, setShow] = React.useState();
+  const ref = useRef();
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  useEffect(() => {
+    const checkIfClickedOutside = (e) => {
+      // If the menu is open and the clicked target is not within the menu,
+      // then close the menu
+      if (isMenuOpen && ref.current && !ref.current.contains(e.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", checkIfClickedOutside);
+
+    return () => {
+      // Cleanup the event listener
+      document.removeEventListener("mousedown", checkIfClickedOutside);
+    };
+  }, [isMenuOpen]);
+  const [inputText, setInputText] = useState("");
+  let inputHandler = (e) => {
+    //convert input text to lower case
+    var lowerCase = e.target.value.toLowerCase();
+    setInputText(lowerCase);
+  };
   return (
     <nav className={`${styles.nav} ${isOpen ? styles.show : ""}`} id="navbar">
       <ul className={styles.navLinks}>
@@ -46,7 +72,16 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
             className={`${styles.hasDropBtn} ${about ? styles.boldText : ""} ${
               isDrop ? styles.darkText : ""
             }`}
-            onClick={() => {
+            // onClick={() => {
+            //   openAbout(!about);
+            //   openServices(false);
+            //   openIndustries(false);
+            //   openPublicService(false);
+            //   openPortfolio(false);
+            //   about ? clicked(false) : clicked(true);
+            //   document.querySelector("nav").classList.toggle(styles.hidden);
+            // }}
+            onMouseEnter={() => {
               openAbout(!about);
               openServices(false);
               openIndustries(false);
@@ -55,12 +90,23 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
               about ? clicked(false) : clicked(true);
               document.querySelector("nav").classList.toggle(styles.hidden);
             }}
+            
           >
             <span>Who we are</span>
             <i className="far fa-chevron-down"></i>
           </button>
           <div className={`${styles.dropdownMenu} ${about ? styles.show : ""}`}>
-            <div className={styles.dropdownContainer}>
+            <div className={styles.dropdownContainer}
+            onMouseLeave={() => {
+              openAbout(!about);
+              openServices(false);
+              openIndustries(false);
+              openPublicService(false);
+              openPortfolio(false);
+              about ? clicked(false) : clicked(true);
+              document.querySelector("nav").classList.toggle(styles.hidden);
+            }}
+            >
               <div className={`${styles.dropdownWrapper} ${styles.about}`}>
                 <AboutDrop />
               </div>
@@ -72,7 +118,16 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
             className={`${styles.hasDropBtn} ${
               services ? styles.boldText : ""
             } ${isDrop ? styles.darkText : ""}`}
-            onClick={() => {
+            // onClick={() => {
+            //   openServices(!services);
+            //   openAbout(false);
+            //   openIndustries(false);
+            //   openPublicService(false);
+            //   openPortfolio(false);
+            //   services ? clicked(false) : clicked(true);
+            //   document.querySelector("nav").classList.toggle(styles.hidden);
+            // }}
+            onMouseEnter={() => {
               openServices(!services);
               openAbout(false);
               openIndustries(false);
@@ -88,7 +143,17 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
           <div
             className={`${styles.dropdownMenu} ${services ? styles.show : ""}`}
           >
-            <div className={styles.dropdownContainer}>
+            <div className={styles.dropdownContainer}
+            onMouseLeave={() => {
+              openServices(!services);
+              openAbout(false);
+              openIndustries(false);
+              openPublicService(false);
+              openPortfolio(false);
+              services ? clicked(false) : clicked(true);
+              document.querySelector("nav").classList.toggle(styles.hidden);
+            }}
+            >
               <div className={`${styles.dropdownWrapper} ${styles.services}`}>
                 <ServicesDrop />
               </div>
@@ -100,7 +165,16 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
             className={`${styles.hasDropBtn} ${
               industries ? styles.boldText : ""
             } ${isDrop ? styles.darkText : ""}`}
-            onClick={() => {
+            // onClick={() => {
+            //   openIndustries(!industries);
+            //   openServices(false);
+            //   openAbout(false);
+            //   openPublicService(false);
+            //   openPortfolio(false);
+            //   industries ? clicked(false) : clicked(true);
+            //   document.querySelector("nav").classList.toggle(styles.hidden);
+            // }}
+            onMouseEnter={() => {
               openIndustries(!industries);
               openServices(false);
               openAbout(false);
@@ -118,7 +192,17 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
               industries ? styles.show : ""
             }`}
           >
-            <div className={styles.dropdownContainer}>
+            <div className={styles.dropdownContainer}
+            onMouseLeave={() => {
+              openIndustries(!industries);
+              openServices(false);
+              openAbout(false);
+              openPublicService(false);
+              openPortfolio(false);
+              industries ? clicked(false) : clicked(true);
+              document.querySelector("nav").classList.toggle(styles.hidden);
+            }}
+            >
               <div className={`${styles.dropdownWrapper} ${styles.industries}`}>
                 <IndustriesDrop />
               </div>
@@ -130,7 +214,16 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
             className={`${styles.hasDropBtn} ${
               publicService ? styles.boldText : ""
             } ${isDrop ? styles.darkText : ""}`}
-            onClick={() => {
+            // onClick={() => {
+            //   openPublicService(!publicService);
+            //   openIndustries(false);
+            //   openServices(false);
+            //   openAbout(false);
+            //   openPortfolio(false);
+            //   publicService ? clicked(false) : clicked(true);
+            //   document.querySelector("nav").classList.toggle(styles.hidden);
+            // }}
+            onMouseEnter={() => {
               openPublicService(!publicService);
               openIndustries(false);
               openServices(false);
@@ -148,7 +241,17 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
               publicService ? styles.show : ""
             }`}
           >
-            <div className={styles.dropdownContainer}>
+            <div className={styles.dropdownContainer}
+             onMouseLeave={() => {
+              openPublicService(!publicService);
+              openIndustries(false);
+              openServices(false);
+              openAbout(false);
+              openPortfolio(false);
+              publicService ? clicked(false) : clicked(true);
+              document.querySelector("nav").classList.toggle(styles.hidden);
+            }}
+            >
               <div
                 className={`${styles.dropdownWrapper} ${styles.publicService}`}
               >
@@ -163,7 +266,16 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
             className={`${styles.hasDropBtn} ${
               portfolio ? styles.boldText : ""
             } ${isDrop ? styles.darkText : ""}`}
-            onClick={() => {
+            // onClick={() => {
+            //   openPortfolio(!portfolio);
+            //   openPublicService(false);
+            //   openIndustries(false);
+            //   openServices(false);
+            //   openAbout(false);
+            //   portfolio ? clicked(false) : clicked(true);
+            //   document.querySelector("nav").classList.toggle(styles.hidden);
+            // }}
+            onMouseEnter={() => {
               openPortfolio(!portfolio);
               openPublicService(false);
               openIndustries(false);
@@ -179,7 +291,17 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
           <div
             className={`${styles.dropdownMenu} ${portfolio ? styles.show : ""}`}
           >
-            <div className={styles.dropdownContainer}>
+            <div className={styles.dropdownContainer}
+            onMouseLeave={() => {
+              openPortfolio(!portfolio);
+              openPublicService(false);
+              openIndustries(false);
+              openServices(false);
+              openAbout(false);
+              portfolio ? clicked(false) : clicked(true);
+              document.querySelector("nav").classList.toggle(styles.hidden);
+            }}
+            >
               <div className={`${styles.dropdownWrapper} ${styles.portfolio}`}>
                 <PortfolioDrop />
               </div>
@@ -199,10 +321,26 @@ const Nav = ({ clicked, isDrop, isOpen }) => {
             Shoot Us A Message
           </Link>
         </div>
-        <div className={styles.searchBtn}>
+        {/* <div className={styles.searchBtn}>
           <button className={`${isDrop ? styles.darkText : ""}`}>
             <i className="far fa-search"></i>
           </button>
+        </div> */}
+         <div className={`${styles.searchBtn} searchbtnCol`} ref={ref}>
+          <button onClick={() => setIsMenuOpen(true)} className={`${isDrop ? styles.darkText : ""}`}>
+            <i className="far fa-search"></i>
+          </button>
+         
+            {isMenuOpen && (<div>
+            <div className={styles.searchArea}>
+              <form>
+                  <input onChange={inputHandler} type="text" class="search__field" maxlength="150" placeholder="What are you looking for?…"  title="Search for:"/>
+                  <button><i className="far fa-search"></i></button>
+              </form>
+              <List input={inputText} />
+            </div>
+          </div>         
+           )}
         </div>
         <Dropdown
           btnText="EN"

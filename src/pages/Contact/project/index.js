@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import countries from "../../../utils/countries.json";
 import axios from "../../../config";
 import { toast } from "react-toastify";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Project = () => {
   const [didFocus, setDidFocus] = useState({
@@ -67,138 +68,141 @@ const Project = () => {
   });
 
   return (
+    <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
     <section className="contact-project">
-      <div className="contact-project__left">
-        <h2>Let's talk about your next big project.</h2>
+        <div className="contact-project__left">
+          <h2>Let's talk about your next big project.</h2>
 
-        <form onSubmit={formik.handleSubmit}>
-          <div className="contact-form-group">
-            <label htmlFor="fullName">Full Name</label>
-            <input
-              placeholder="Add your name"
-              id="fullName"
-              type="text"
-              name="fullName"
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.fullName}
-              onFocus={handleFocus}
-            />
-            {(!!didFocus.fullName &&
-              formik.values.fullName.trim().length > 0 &&
-              formik.errors.fullName) ||
-            formik.touched.fullName ? (
-              <div className="input-error">{formik.errors.fullName}</div>
-            ) : null}
-          </div>
-          <div className="contact-form-group">
-            <label htmlFor="country">Country</label>
-            <div className="select-wrapper">
-              <select
-                id="country"
-                name="country"
+          <form onSubmit={formik.handleSubmit}>
+            <div className="contact-form-group">
+              <label htmlFor="fullName">Full Name</label>
+              <input
+                placeholder="Add your name"
+                id="fullName"
+                type="text"
+                name="fullName"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
-                value={formik.values.country}
+                value={formik.values.fullName}
                 onFocus={handleFocus}
-              >
-                <option value="">Select Country</option>
-                {countries?.map((item, index) => {
-                  return (
-                    <option key={index} value={item.name}>
-                      {item.name}
-                    </option>
-                  );
-                })}
-              </select>
+              />
+              {(!!didFocus.fullName &&
+                formik.values.fullName.trim().length > 0 &&
+                formik.errors.fullName) ||
+              formik.touched.fullName ? (
+                <div className="input-error">{formik.errors.fullName}</div>
+              ) : null}
             </div>
-            {(!!didFocus.country &&
-              formik.values.country.trim().length > 0 &&
-              formik.errors.country) ||
-            formik.touched.country ? (
-              <div className="input-error">{formik.errors.country}</div>
-            ) : null}
-          </div>
-          <div className="contact-form-group">
-            <label htmlFor="email">Email</label>
-            <input
-              placeholder="Add your email"
-              id="email"
-              type="email"
-              name="email"
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.email}
-              onFocus={handleFocus}
-            />
-            {(!!didFocus.email &&
-              formik.values.email.trim().length > 0 &&
-              formik.errors.email) ||
-            formik.touched.email ? (
-              <div className="input-error">{formik.errors.email}</div>
-            ) : null}
-          </div>
-          <div className="contact-form-group">
-            <label htmlFor="phoneNumber">Phone</label>
-            <input
-              placeholder="Add your phone number"
-              id="phoneNumber"
-              type="text"
-              name="phoneNumber"
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.phoneNumber}
-              onFocus={handleFocus}
-            />
-            {(!!didFocus.phoneNumber &&
-              formik.values.phoneNumber.trim().length > 0 &&
-              formik.errors.phoneNumber) ||
-            formik.touched.phoneNumber ? (
-              <div className="input-error">{formik.errors.phoneNumber}</div>
-            ) : null}
-          </div>
-          <div className="contact-form-group">
-            <label htmlFor="message">Message</label>
-            <input
-              placeholder="Add your message"
-              id="message"
-              type="text"
-              name="message"
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.message}
-              onFocus={handleFocus}
-            />
-            {(!!didFocus.message &&
-              formik.values.message.trim().length > 0 &&
-              formik.errors.message) ||
-            formik.touched.message ? (
-              <div className="input-error">{formik.errors.message}</div>
-            ) : null}
-          </div>
-          <div className="contact-form-group">
-            <div className="submit-btn">
-              <button disabled={loading} type="submit">
-                {loading ? "Please wait.." : "Submit"}
-              </button>
+            <div className="contact-form-group">
+              <label htmlFor="country">Country</label>
+              <div className="select-wrapper">
+                <select
+                  id="country"
+                  name="country"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.country}
+                  onFocus={handleFocus}
+                >
+                  <option value="">Select Country</option>
+                  {countries?.map((item, index) => {
+                    return (
+                      <option key={index} value={item.name}>
+                        {item.name}
+                      </option>
+                    );
+                  })}
+                </select>
+              </div>
+              {(!!didFocus.country &&
+                formik.values.country.trim().length > 0 &&
+                formik.errors.country) ||
+              formik.touched.country ? (
+                <div className="input-error">{formik.errors.country}</div>
+              ) : null}
             </div>
-          </div>
-        </form>
+            <div className="contact-form-group">
+              <label htmlFor="email">Email</label>
+              <input
+                placeholder="Add your email"
+                id="email"
+                type="email"
+                name="email"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.email}
+                onFocus={handleFocus}
+              />
+              {(!!didFocus.email &&
+                formik.values.email.trim().length > 0 &&
+                formik.errors.email) ||
+              formik.touched.email ? (
+                <div className="input-error">{formik.errors.email}</div>
+              ) : null}
+            </div>
+            <div className="contact-form-group">
+              <label htmlFor="phoneNumber">Phone</label>
+              <input
+                placeholder="Add your phone number"
+                id="phoneNumber"
+                type="text"
+                name="phoneNumber"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.phoneNumber}
+                onFocus={handleFocus}
+              />
+              {(!!didFocus.phoneNumber &&
+                formik.values.phoneNumber.trim().length > 0 &&
+                formik.errors.phoneNumber) ||
+              formik.touched.phoneNumber ? (
+                <div className="input-error">{formik.errors.phoneNumber}</div>
+              ) : null}
+            </div>
+            <div className="contact-form-group">
+              <label htmlFor="message">Message</label>
+              <input
+                placeholder="Add your message"
+                id="message"
+                type="text"
+                name="message"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.message}
+                onFocus={handleFocus}
+              />
+              {(!!didFocus.message &&
+                formik.values.message.trim().length > 0 &&
+                formik.errors.message) ||
+              formik.touched.message ? (
+                <div className="input-error">{formik.errors.message}</div>
+              ) : null}
+            </div>
+            <div className="contact-form-group">
+              <div className="submit-btn">
+                <button disabled={loading} type="submit">
+                  {loading ? "Please wait.." : "Submit"}
+                </button>
+              </div>
+            </div>
+          </form>
 
-        <div className="contact-form-info">
-          <p>
-            By submitting, you consent to Slalom processing your information in
-            accordance with our <a href="/">Privacy Policy</a>. We take your
-            privacy seriously; opt out of <strong>email updates</strong> at any
-            time. <br /> This site is protected by reCAPTCHA and the Google{" "}
-            <strong>Privacy Policy</strong> and{" "}
-            <strong>Terms of Service</strong> apply.
-          </p>
+          <div className="contact-form-info">
+            <p>
+              By submitting, you consent to Slalom processing your information in
+              accordance with our <a href="/">Privacy Policy</a>. We take your
+              privacy seriously; opt out of <strong>email updates</strong> at any
+              time. <br /> This site is protected by reCAPTCHA and the Google{" "}
+              <strong>Privacy Policy</strong> and{" "}
+              <strong>Terms of Service</strong> apply.
+            </p>
+          </div>
         </div>
-      </div>
 
       <div className="contact-project__right"></div>
     </section>
+    </ScrollAnimation>
+
   );
 };
 

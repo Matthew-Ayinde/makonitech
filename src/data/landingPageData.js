@@ -48,7 +48,8 @@ export const TestimonialData = [
 ];
 
 export const disData = [
-  "Retail", "Private Equity", "Private Equity", "Private Equity", "Retail", "Private Equity", "Private Equity", "Private Equity", "Retail", "Private Equity", "Private Equity", "Private Equity", "Retail", "Private Equity", "Private Equity", "Private Equity" 
+  
+  "Aerospace and Defense", "Consumer Products", "Energy And Natural Resources", "Financial Services", "Automotive and Mobility", "Healthcare", "Agriculture", "Fintech", "Nearshore", "Banking & Financial Services", "Industrial & Logistics", "Media & Entertainment", "Manufacturing Offshore"
 ];
 
 export const industryInfo = [

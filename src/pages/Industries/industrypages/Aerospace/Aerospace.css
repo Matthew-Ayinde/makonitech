@@ -44,6 +44,11 @@
 .sec {
   margin: 10em auto;
 }
+@media screen and (max-width: 767px) {
+  .sec {
+    margin: 5em auto;
+  }
+}
 
 .custom-header {
   width: 100%;

@@ -1,8 +1,9 @@
 .makoniway_wrapper {
-  padding: 100px 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  padding: 70px 0px 75px;
+  display: flex;
+  flex-flow: column;
+  background-color: #000;
+  margin-top: 80px;
 
   .makoniway_contents {
     display: grid;
@@ -15,7 +16,7 @@
         font-weight: 800;
         font-size: 18px;
         line-height: 50px;
-        color: #000000;
+        color: #ffffff;
       }
 
       p {
@@ -23,7 +24,43 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 25px;
-        color: #040404;
+        color: #ffffff;
+      }
+    }
+    .accordion{
+      .accordion__button {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 12px 18px;
+        margin-bottom: 2px;
+        border-bottom: 1px solid #525252;
+        background-color: transparent;
+        &:before{
+          display: inline-block;
+          content: "";
+          height: 10px;
+          width: 10px;
+          margin-right: 12px;
+          position: absolute;
+          right: 6px;
+          -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+          border-bottom: 2px solid #fff;
+          border-right: 2px solid #fff;
+        }
+        
+        h2{
+          line-height: normal;
+          margin-bottom: 0;
+          font-weight: bold;
+          font-size: 16px;
+        }
+      }
+      .accordion__panel {
+        background-color: transparent;
+        padding: 14px 20px 18px;
+        border-bottom: 1px solid #858585;
       }
     }
   }
@@ -32,38 +69,13 @@
     position: relative;
     display: flex;
 
-    img {
-      position: absolute;
-      width: 300px;
-      height: 350px;
-      top: 45px;
-    }
-    .makoni_header {
-      margin-left: 150px;
-      padding: 50px 20px 50px 150px;
-      max-width: 100%;
-      width: 370px;
-      background: #1d1b1b;
-      color: #ffffff;
-
-      h1 {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 60px;
-        line-height: 50px;
-        letter-spacing: 0.01em;
-        color: #f9f9fb;
-        margin-bottom: 20px;
-      }
-
-      p {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 25px;
-        color: #ffffff;
-      }
-    }
+    // img {
+    //   position: absolute;
+    //   width: 300px;
+    //   height: 350px;
+    //   top: 45px;
+    // }
+    
   }
 }
 
@@ -147,4 +159,39 @@
       }
     }
   }
+}
+.dividedsection{
+  display: flex;
+  .makoniway_img{
+    width: 50%;
+    padding: 0 15px;
+    img{
+      width: 100%;
+      border-radius: 10px;
+      height: 430px;
+      object-fit: cover;
+    }
+  }
+  .makoniway_contents{
+    width: 50%;
+    padding: 0 15px;
+  }
+}
+.makoni_header {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 50px;
+  h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom:20px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+.accordion__button[aria-expanded=true]:before, .accordion__button[aria-selected=true]:before {
+  transform: rotate(45deg) !important;
 }
