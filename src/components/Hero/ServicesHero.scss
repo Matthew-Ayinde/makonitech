@@ -1,12 +1,13 @@
 .security_hero {
   width: 100%;
-  color: aliceblue;
-  background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.83) 33.86%,
-      rgba(0, 0, 0, 0) 114.81%
-    ),
-    url("../../images/security-hero.png") 50% / cover no-repeat;
+  height:100%;
+  // color: aliceblue;
+  // background: linear-gradient(
+  //     90deg,
+  //     rgba(0, 0, 0, 0.83) 33.86%,
+  //     rgba(0, 0, 0, 0) 114.81%
+  //   ),
+  //   url("../../images/security-hero.png") 50% / cover no-repeat;
 
   .security_hero_content {
     padding: 220px 50px 50px 130px;
@@ -144,5 +145,25 @@
         }
       }
     }
+  }
+}
+.slideWrappervideo {
+  position: absolute;
+  top: 50%;
+  width: 90%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  transform: translate(0px, -50%);
+  z-index: 1;
+  @media (max-width: 991px) {
+    .slideWrappervideo{
+      top: 55%;
+      width: 95%;
+    }
+  }
+  .related-cs{
+    top: 40px !important;
+    right: 30px !important;
   }
 }

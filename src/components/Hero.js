@@ -73,7 +73,7 @@ const HomeHero = () => {
               muted
               // controls
               alt="All the devices"
-              src={HomeVideo}
+              src={"https://makoni-website-videos.s3.amazonaws.com/HomePageCompressed.mp4"}
               ref={videoEl}
               type="video/mp4"
             />
@@ -81,7 +81,7 @@ const HomeHero = () => {
               spaceBetween={0}
               slidesPerView={1}
               pagination={pagination}
-              className="swiper-wrapper video slideWrappervideo"
+              className="swiper-wrapper video slideWrappervideo2"
               loop
               autoHeight={true}
               centeredSlides={true}
