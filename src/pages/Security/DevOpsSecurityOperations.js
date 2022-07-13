@@ -65,6 +65,24 @@ const DevOpsSecurityOperations = () => {
               </div>
             </div>
           </ScrollAnimation>
+          <div className={`hero-wrapper slideWrappervideo`}>
+            <h5>Security</h5>
+            <h3>DevOps Security Operations</h3>
+            <p>Defending your users and data, no matter where they are, is a more
+                critical job than ever before.
+            </p>
+
+            <div className={`related-cs`}>
+              <div>
+                <h5>Related Services</h5>
+                <ul>
+                  <li><a style={{color:'#fff'}} href='/big-data-analytics'>Big Data Analytics</a></li>
+                  <li><a style={{color:'#fff'}} href='/devops-buildout'>DevOps Buildout</a></li>
+                  {/* <li><a style={{color:'#fff'}} href='/devops-security-operations'>DevOps Security Operations</a></li> */}
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <ServicesTab />

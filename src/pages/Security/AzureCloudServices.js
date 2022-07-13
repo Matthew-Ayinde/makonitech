@@ -36,34 +36,23 @@ const AzureCloudServices = () => {
             ref={videoEl}
             type="video/mp4"
           />
-          <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
-            <div className='security_hero_content slideWrappervideo'>
-              <div className='security_hero_info'>
-                <h1>Security</h1>
-                <h2>Azure Cloud Services</h2>
-                <p>
-                  Defending your users and data, no matter where they are,<br /> is a more
-                  critical job than ever before.
-                </p>
-              </div>
-              <div className='security_hero_extra'>
-                <div className='related_services'>
-                  <h3>Related Services</h3>
-                  <ul>
-                    <li>
-                      <Link to='/aws-cloud-services'>AWS Cloud Services</Link>
-                    </li>
-                    {/* <li>
-                      <Link to='/aws-cloud-services'>Azure Cloud Services</Link>
-                    </li> */}
-                    <li>
-                      <Link to='/cloud-adoption'>Cloud Adoption</Link>
-                    </li>
-                  </ul>
-                </div>
+          <div className={`hero-wrapper slideWrappervideo`}>
+            <h5>Security</h5>
+            <h3>Azure Cloud Services</h3>
+            <p>Defending your users and data, no matter where they are, is a more
+                critical job than ever before.
+            </p>
+
+            <div className={`related-cs`}>
+              <div>
+                <h5>Related Services</h5>
+                <ul>
+                  <li><a style={{color:'#fff'}} href='/aws-cloud-services'>Azure Cloud Services</a></li>
+                  <li><a style={{color:'#fff'}} href='/cloud-adoption'>Cloud Adoption</a></li>
+                </ul>
               </div>
             </div>
-          </ScrollAnimation>
+          </div>
         </div>
       </div>
       <ServicesTab />
