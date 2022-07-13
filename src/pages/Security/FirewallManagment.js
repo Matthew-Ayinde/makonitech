@@ -33,7 +33,7 @@ const FirewallManagment = () => {
             muted
             // controls
             alt="All the devices"
-            src={"https://makoni-website-videos.s3.amazonaws.com/AWSCloudServices1Compressed.mp4"}
+            src={"https://makoni-website-videos.s3.amazonaws.com/FirewallManagementCompressed.mp4"}
             ref={videoEl}
             type="video/mp4"
           />

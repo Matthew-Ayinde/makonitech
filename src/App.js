@@ -19,7 +19,7 @@ import ApplicationMigration from "./pages/Security/ApplicationMigration";
 import DataBackup from "./pages/Security/DataBackup";
 import OngoingMaintenance from "./pages/Security/OngoingMaintenance";
 import DevOpsBuildout from "./pages/Security/DevOpsBuildout";
-import ApplicationDiscovery from "./pages/Security/Vulnerability Management";
+import ApplicationDiscovery from "./pages/Security/ApplicationDiscovery";
 import DevOpsSecurityOperations from "./pages/Security/DevOpsSecurityOperations";
 import BigDataAnalytics from "./pages/Security/BigDataAnalytics";
 import AutomobileMobility from "./pages/Industries/industrypages/AutomobileMobility/AutomobileMobility";
