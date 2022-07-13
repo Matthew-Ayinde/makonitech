@@ -15,7 +15,7 @@ const Join = () => {
 
         <section>
           {
-            industryInfo.map(data => {
+            industryInfo.map((data,i) => {
               const {title, text, more, icons} = data;
               return (
                 <JoinCard 
@@ -23,6 +23,7 @@ const Join = () => {
                   text={text}
                   more={more}
                   icons={icons}
+                  key={i}
                 />
               )
             })

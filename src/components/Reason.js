@@ -49,10 +49,10 @@ const Reason = () => {
           
           <section className="reason_list">
             {
-              reasonData.map(reas => {
+              reasonData.map((reas, i)=> {
                 const {label, heading, content} = reas;
                 return (
-                  <ReasonList  label={label} heading={heading} content={content} />
+                  <ReasonList  label={label} heading={heading} content={content} key={i}/>
                 )
               })
             }

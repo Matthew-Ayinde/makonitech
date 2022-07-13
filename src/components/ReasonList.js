@@ -5,7 +5,7 @@ const ReasonList  = ({label, heading, content}) => {
   return (
     <div className="reason_item">
       <header>
-        <div class="label">
+        <div className="label">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="107" height="4" viewBox="0 0 107 4">
             <path fill="#484646" d="M0 0h107v4H0z"/>
           </svg>

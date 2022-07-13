@@ -49,7 +49,7 @@ const ServerMigration = () => {
                 <h5>Related Services</h5>
                 <ul>
                   <li><a style={{color:'#fff'}} href='/data-migration'>Data Migration</a></li>
-                  <li><a a style={{color:'#fff'}} href='/database-migration'>Database Migration</a></li>
+                  <li><a style={{color:'#fff'}} href='/database-migration'>Database Migration</a></li>
                   {/* <li><a style={{color:'#fff'}} href='/server-migration'>Server Migration</a></li> */}
                   <li><a style={{color:'#fff'}} href='/application-migration'>Application Migration</a></li>
                   <li><a style={{color:'#fff'}} href='/disaster-recovery'>Backup & Disaster Recovery</a></li>

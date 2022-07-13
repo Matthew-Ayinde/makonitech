@@ -10,8 +10,8 @@ const Help = () => {
         <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
         <h3>How We Can Help</h3>
         <div className='help_contents'>
-          {helpData.map((data) => (
-            <div className='team_cards'>
+          {helpData.map((data, i) => (
+            <div className='team_cards' key={i}>
               <img src={data.icons[0]} alt='' />
               <h4>{data.title}</h4>
               <div className='card_contents'>

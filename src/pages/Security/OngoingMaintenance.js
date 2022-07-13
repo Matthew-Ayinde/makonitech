@@ -50,7 +50,7 @@ const OngoingMaintenance = () => {
                 <ul>
                   <li><a style={{color:'#fff'}} href='/data-backup'>Data Backup & Restore</a></li>
                   <li><a style={{color:'#fff'}} href='/application-discovery'>Application Discovery</a></li>
-                  <li><a a style={{color:'#fff'}} href='/business-continuity-planning'>Business Continuity Planning</a></li>
+                  <li><a style={{color:'#fff'}} href='/business-continuity-planning'>Business Continuity Planning</a></li>
                   {/* <li><a style={{color:'#fff'}} href='/ongoing-maintenance'>Ongoing Maintenance</a></li> */}
                 </ul>
               </div>

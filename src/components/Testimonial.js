@@ -32,10 +32,10 @@ const Testimonial = () => {
           </div>
           <div className="second_test-row">
             {
-              TestimonialData.map(data => {
+              TestimonialData.map((data, i) => {
                 const {title, text, img} = data;
                 return (
-                  <SingleTestimonial title={title} text={text} img={img} />
+                  <SingleTestimonial title={title} text={text} img={img} key={i}/>
                 )
               })
             }
