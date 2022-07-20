@@ -27,7 +27,7 @@ const HowWeWork = () => {
       {/* Section2: How we work with our clients */}
       <section className="sec_container2" id="clientresult">
         <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
-          <div className="sec_header">
+          <div className="sec_header w">
             <h4 style={{ color: "#C4C4C4" }}>How we work with our clients </h4>
           </div>
           <div className="sec-content">

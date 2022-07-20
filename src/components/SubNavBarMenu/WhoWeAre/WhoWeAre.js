@@ -17,9 +17,9 @@ const WhoWeAre = ({handleCloseSubNav}) => {
               <li>
                 <Link to="/pal" onClick={handleCloseSubNav}>Our People Leadership</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/csr" onClick={handleCloseSubNav}>How we work with Clients</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/how_we_work" onClick={handleCloseSubNav}>How we work</Link>
               </li>

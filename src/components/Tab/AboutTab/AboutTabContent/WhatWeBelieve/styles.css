@@ -200,6 +200,11 @@
   background: #c4c4c4;
 }
 
+.sec_header.w h4::before,
+.sec_header.w h4::after{
+  width: 30%;
+}
+
 .sec_header h4::before {
   left: 0;
 }

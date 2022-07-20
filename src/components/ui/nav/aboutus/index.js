@@ -15,9 +15,9 @@ const aboutDrop = () => {
             <li>
               <a href="/pal">Our People Leadership</a>
             </li>
-            <li>
+            {/* <li>
               <a href="/csr">How we work with Clients</a>
-            </li>
+            </li> */}
             <li>
               <a href="/how_we_work">How we work</a>
             </li>

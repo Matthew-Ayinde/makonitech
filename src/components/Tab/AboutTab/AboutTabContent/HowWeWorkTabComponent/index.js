@@ -15,7 +15,7 @@ const TabComponent = () => {
     <div className=" tab-component-wrap">
       <ScrollAnimation animateIn="fadeIn" duration={.8} delay={400} animateOnce={true}>
         <section className="sec_container1">
-          <div className="sec_header">
+          <div className="sec_header w">
             <h4>What you get with Makonitech</h4>
           </div>
           <div className="container sec_content--one">
